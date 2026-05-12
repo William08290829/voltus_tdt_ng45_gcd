@@ -1,0 +1,19 @@
+{
+    "db_identifier": "M7G7EV3CB4R5",
+    "version": "2",
+    "Tag": "1",
+    "hasHiR": "false",
+    "die_size": {
+        "llx": "0",
+        "lly": "0",
+        "urx": "71630",
+        "ury": "71630"
+    },
+    "dbu": "2000",
+    "x_size": "16",
+    "y_size": "16",
+    "jouleHeatOnly": "false",
+    "deltaTemperatureThreshold": "-1",
+    "min_BEOL_T": "6.40047656e-15",
+    "max_BEOL_T": "39.7499008"
+}

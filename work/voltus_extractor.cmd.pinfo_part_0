@@ -1,0 +1,36 @@
+
+Begin Preparing Data for Parasitic Extraction
+.
+Ended Preparing Data for Parasitic Extraction: (cpu=0:00:00, real=0:00:01, mem(process/total/peak)=209.12MB/22298.10MB/3575.29MB)
+
+Begin Parasitic Extraction
+
+Nets to Extract:
+VSS
+VDD
+
+** INFO:  (VOLTUS_EXTR-1054): Extracting following DFM effects:
+ MetalFill        : OFF 
+ WEE Effects      : n/a 
+ Erosion Effects  : n/a 
+ T/B Enlargements : n/a 
+ R(w) Effects     : n/a 
+ R(w,s) Effects   : n/a 
+ R(sw,st) Effects : n/a 
+ TC(w) Effects    : n/a 
+Some effects indicate n/a because of non-availability of relevant input
+data (or) requested to be off.
+
+   0% at 17:50:09 05/12/2026 
+
+ 100% at 17:50:09 05/12/2026 
+
+Ended Parasitic Extraction: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=216.65MB/22330.69MB/3575.29MB)
+
+Hostname TC-DL5
+
+Wall clock 5.215943
+
+CPU time 0.271880
+
+Peak memory (process): 314171392

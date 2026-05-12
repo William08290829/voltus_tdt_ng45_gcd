@@ -1,0 +1,66 @@
+cmd: /cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_power -logfile /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/powercollect_dummy.log -cmdlog /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/powercollect_dummy.cmdlog /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/voltus_power_collect_942733.cmd -x 0001B13AE4030FAB65C39206EC3F3E8F4FF9AE2DD7030FA364C9B43F912C60CB3E81B775B2613F963FD8B668B02168C97980B226A16025887CC49338C72D259E4FC1AF0DF02F3E9C7EEF943EF6667F9473D4AC3BB72C7F9F64C3A033CB360F9F79D3B226FA6025887CC4A238ED2F0F9875C2A72CDD690FC273C4AC20BA633396239EFA38B82D61CA21828805779DF83B10B0F93FA35969FB2882C94CB97F50FB5C859702D23C6FFB2F8FA83DED3C50FB10B0A83DED3C50FB10B0C23F1A82A7457AB200005815
+---------------------------------------------------------------------------------------------
+Voltus Power Analysis - Power Calculator - Version v23.11-s059_1 64-bit (04/24/2024 16:19:08)
+---------------------------------------------------------------------------------------------
+Copyright 2007, Cadence Design Systems, Inc.
+
+~~~~~~~~~~~~~~~~~~~~ System Information ~~~~~~~~~~~~~~~~~~~~
+Hardware/Operating System information:
+  Username                 = "wei0829"
+  Hostname                 = "TC-DL5"
+  Main Process Id          = 943251
+  Working directory        = /home/wei0829/voltus_tdt_question_ng45_gcd
+  Number of processors     = 32
+  Open Access Version      = <No Open Access Version>
+  Hardware                 = x86_64
+  Operating System         = Linux 4.18.0-553.36.1.el8_10.x86_64
+                             [Red Hat Enterprise Linux release 8.10 (Ootpa)]
+  Memory page size         = 4,096 bytes
+  Total physical RAM       = 267,448,037,376 bytes
+  Available RAM            = 39,823,675,392 bytes
+  Available shared mem     = 244,056,064 bytes
+  Buffer space used        = 11,268,096 bytes
+  Total swap space         = 8,589,930,496 bytes
+  Available swap           = 4,744,802,304 bytes
+  OS additional info       = #1 SMP Fri Jan 10 05:56:06 EST 2025
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Number of command line arguments: 7
+Arguments:
+ "-logfile"
+ "/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/powercollect_dummy.log"
+ "-cmdlog"
+ "/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/powercollect_dummy.cmdlog"
+ "/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/voltus_power_collect_942733.cmd"
+ "-x"
+ "0001B13AE4030FAB65C39206EC3F3E8F4FF9AE2DD7030FA364C9B43F912C60CB3E81B775B2613F963FD8B668B02168C97980B226A16025887CC49338C72D259E4FC1AF0DF02F3E9C7EEF943EF6667F9473D4AC3BB72C7F9F64C3A033CB360F9F79D3B226FA6025887CC4A238ED2F0F9875C2A72CDD690FC273C4AC20BA633396239EFA38B82D61CA21828805779DF83B10B0F93FA35969FB2882C94CB97F50FB5C859702D23C6FFB2F8FA83DED3C50FB10B0A83DED3C50FB10B0C23F1A82A7457AB200005815"
+
+Executing: set_message -limit 20 
+Executing: sxclDesign design /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db
+Executing: design rUseSfeDefParser  1
+Executing: design rSuppressStdout  1
+Executing: design calLef /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/voltus_dummy.lef
+Executing: design calDef voltus_dummy.def
+Executing: sxclPowerMeter ChipPwr design
+Executing: create_result_json -dir {/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db}
+Finished Power Analysis at 17:49:50 05/12/2026 (cpu=0:00:00, real=0:00:01, peak mem=2906.87MB)
+Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:14, real=0:00:25, mem=2906.87MB)
+
+
+~~~~~~~~~~~~~~~~~~~~ Process Information ~~~~~~~~~~~~~~~~~~~~
+Process Info :
+  User time          = 0 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  Children sys time  = 0 seconds
+  Virtual mem. size  = 1,090,949,120 bytes
+  Total alloc size   = 0 bytes
+  In use alloc size  = 0 bytes
+  Page fault w/o IO  = 5,618
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Exit code 0.
+Voltus Power Analysis exited successfully.

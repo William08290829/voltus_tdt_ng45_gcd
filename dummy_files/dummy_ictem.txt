@@ -1,0 +1,244 @@
+# Dummy ICT-EM file for Voltus / self-heat flow bring-up
+# Purpose:
+#   - Provide ICT-EM rules so analyze_signal_self_heat / verifyACLimit
+#     can find AC/DC EM rules from an ICT-EM source.
+#   - NOT for signoff or physical reliability analysis.
+#
+# Notes:
+#   - This follows the EM Only ICT File structure from the Voltus UG:
+#       process { ... }
+#       conductor "name" { em_model { ... } }
+#   - It also adds via sections using standard ICT via syntax with em_model.
+#   - Units are deliberately set to mA per the EM Only ICT file section.
+#   - Limits are intentionally generous to avoid false failures while debugging.
+#   - Layer names follow the names seen in your Voltus logs: metal1..metal10, via1..via9.
+
+process "dummy_ng45_ictem" {
+    background_dielectric_constant 1.0
+    layout_scale 1.0
+    temp_reference 25
+    em_tref 25
+    em_output_wlt drawn
+    em_variables w delta_T
+    em_conductor_unit mA
+    em_via_unit mA
+    em_via_area_unit mA
+    em_segment_length centerline
+}
+
+conductor "metal1" {
+    em_model {
+        em_jmax_dc_avg  EQU 200.0 * ( w + 0.001 )
+        em_jmax_ac_avg  EQU 300.0 * ( w + 0.001 )
+        em_jmax_ac_rms  EQU sqrt( 500000.0 * ( w + 0.001 ) * ( delta_T + 1.0 ) )
+        em_jmax_ac_peak EQU 1000.0 * ( w + 0.001 )
+        em_recover 0.5
+    }
+}
+
+conductor "metal2" {
+    em_model {
+        em_jmax_dc_avg  EQU 220.0 * ( w + 0.001 )
+        em_jmax_ac_avg  EQU 330.0 * ( w + 0.001 )
+        em_jmax_ac_rms  EQU sqrt( 550000.0 * ( w + 0.001 ) * ( delta_T + 1.0 ) )
+        em_jmax_ac_peak EQU 1100.0 * ( w + 0.001 )
+        em_recover 0.5
+    }
+}
+
+conductor "metal3" {
+    em_model {
+        em_jmax_dc_avg  EQU 240.0 * ( w + 0.001 )
+        em_jmax_ac_avg  EQU 360.0 * ( w + 0.001 )
+        em_jmax_ac_rms  EQU sqrt( 600000.0 * ( w + 0.001 ) * ( delta_T + 1.0 ) )
+        em_jmax_ac_peak EQU 1200.0 * ( w + 0.001 )
+        em_recover 0.5
+    }
+}
+
+conductor "metal4" {
+    em_model {
+        em_jmax_dc_avg  EQU 260.0 * ( w + 0.001 )
+        em_jmax_ac_avg  EQU 390.0 * ( w + 0.001 )
+        em_jmax_ac_rms  EQU sqrt( 650000.0 * ( w + 0.001 ) * ( delta_T + 1.0 ) )
+        em_jmax_ac_peak EQU 1300.0 * ( w + 0.001 )
+        em_recover 0.5
+    }
+}
+
+conductor "metal5" {
+    em_model {
+        em_jmax_dc_avg  EQU 280.0 * ( w + 0.001 )
+        em_jmax_ac_avg  EQU 420.0 * ( w + 0.001 )
+        em_jmax_ac_rms  EQU sqrt( 700000.0 * ( w + 0.001 ) * ( delta_T + 1.0 ) )
+        em_jmax_ac_peak EQU 1400.0 * ( w + 0.001 )
+        em_recover 0.5
+    }
+}
+
+conductor "metal6" {
+    em_model {
+        em_jmax_dc_avg  EQU 300.0 * ( w + 0.001 )
+        em_jmax_ac_avg  EQU 450.0 * ( w + 0.001 )
+        em_jmax_ac_rms  EQU sqrt( 750000.0 * ( w + 0.001 ) * ( delta_T + 1.0 ) )
+        em_jmax_ac_peak EQU 1500.0 * ( w + 0.001 )
+        em_recover 0.5
+    }
+}
+
+conductor "metal7" {
+    em_model {
+        em_jmax_dc_avg  EQU 320.0 * ( w + 0.001 )
+        em_jmax_ac_avg  EQU 480.0 * ( w + 0.001 )
+        em_jmax_ac_rms  EQU sqrt( 800000.0 * ( w + 0.001 ) * ( delta_T + 1.0 ) )
+        em_jmax_ac_peak EQU 1600.0 * ( w + 0.001 )
+        em_recover 0.5
+    }
+}
+
+conductor "metal8" {
+    em_model {
+        em_jmax_dc_avg  EQU 340.0 * ( w + 0.001 )
+        em_jmax_ac_avg  EQU 510.0 * ( w + 0.001 )
+        em_jmax_ac_rms  EQU sqrt( 850000.0 * ( w + 0.001 ) * ( delta_T + 1.0 ) )
+        em_jmax_ac_peak EQU 1700.0 * ( w + 0.001 )
+        em_recover 0.5
+    }
+}
+
+conductor "metal9" {
+    em_model {
+        em_jmax_dc_avg  EQU 360.0 * ( w + 0.001 )
+        em_jmax_ac_avg  EQU 540.0 * ( w + 0.001 )
+        em_jmax_ac_rms  EQU sqrt( 900000.0 * ( w + 0.001 ) * ( delta_T + 1.0 ) )
+        em_jmax_ac_peak EQU 1800.0 * ( w + 0.001 )
+        em_recover 0.5
+    }
+}
+
+conductor "metal10" {
+    em_model {
+        em_jmax_dc_avg  EQU 380.0 * ( w + 0.001 )
+        em_jmax_ac_avg  EQU 570.0 * ( w + 0.001 )
+        em_jmax_ac_rms  EQU sqrt( 950000.0 * ( w + 0.001 ) * ( delta_T + 1.0 ) )
+        em_jmax_ac_peak EQU 1900.0 * ( w + 0.001 )
+        em_recover 0.5
+    }
+}
+
+via "via1" {
+    top_layer "metal2"
+    bottom_layer "metal1"
+    contact_resistance 0.0
+    em_model {
+        em_vcwidth 0.12
+        em_jmax_dc_avg 10.0
+        em_jmax_ac_avg 12.0
+        em_jmax_ac_rms 15.0
+        em_jmax_ac_peak 20.0
+    }
+}
+
+via "via2" {
+    top_layer "metal3"
+    bottom_layer "metal2"
+    contact_resistance 0.0
+    em_model {
+        em_vcwidth 0.12
+        em_jmax_dc_avg 10.0
+        em_jmax_ac_avg 12.0
+        em_jmax_ac_rms 15.0
+        em_jmax_ac_peak 20.0
+    }
+}
+
+via "via3" {
+    top_layer "metal4"
+    bottom_layer "metal3"
+    contact_resistance 0.0
+    em_model {
+        em_vcwidth 0.12
+        em_jmax_dc_avg 10.0
+        em_jmax_ac_avg 12.0
+        em_jmax_ac_rms 15.0
+        em_jmax_ac_peak 20.0
+    }
+}
+
+via "via4" {
+    top_layer "metal5"
+    bottom_layer "metal4"
+    contact_resistance 0.0
+    em_model {
+        em_vcwidth 0.12
+        em_jmax_dc_avg 10.0
+        em_jmax_ac_avg 12.0
+        em_jmax_ac_rms 15.0
+        em_jmax_ac_peak 20.0
+    }
+}
+
+via "via5" {
+    top_layer "metal6"
+    bottom_layer "metal5"
+    contact_resistance 0.0
+    em_model {
+        em_vcwidth 0.12
+        em_jmax_dc_avg 10.0
+        em_jmax_ac_avg 12.0
+        em_jmax_ac_rms 15.0
+        em_jmax_ac_peak 20.0
+    }
+}
+
+via "via6" {
+    top_layer "metal7"
+    bottom_layer "metal6"
+    contact_resistance 0.0
+    em_model {
+        em_vcwidth 0.12
+        em_jmax_dc_avg 10.0
+        em_jmax_ac_avg 12.0
+        em_jmax_ac_rms 15.0
+        em_jmax_ac_peak 20.0
+    }
+}
+
+via "via7" {
+    top_layer "metal8"
+    bottom_layer "metal7"
+    contact_resistance 0.0
+    em_model {
+        em_vcwidth 0.20
+        em_jmax_dc_avg 20.0
+        em_jmax_ac_avg 24.0
+        em_jmax_ac_rms 30.0
+        em_jmax_ac_peak 40.0
+    }
+}
+
+via "via8" {
+    top_layer "metal9"
+    bottom_layer "metal8"
+    contact_resistance 0.0
+    em_model {
+        em_vcwidth 0.20
+        em_jmax_dc_avg 20.0
+        em_jmax_ac_avg 24.0
+        em_jmax_ac_rms 30.0
+        em_jmax_ac_peak 40.0
+    }
+}
+
+via "via9" {
+    top_layer "metal10"
+    bottom_layer "metal9"
+    contact_resistance 0.0
+    em_model {
+        em_vcwidth 0.20
+        em_jmax_dc_avg 20.0
+        em_jmax_ac_avg 24.0
+        em_jmax_ac_rms 30.0
+        em_jmax_ac_peak 40.0
+    }
+}

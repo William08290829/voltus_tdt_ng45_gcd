@@ -1,0 +1,6 @@
+temperature 25
+extraction_tech_file /home/wei0829/ORFS/platforms/nangate45/qrc/NG45.tch
+spice_subckts_xyscaling 1000
+use_powergate_data_from_lib 0
+default_frequency 2e+08
+decap_frequency 1e+09

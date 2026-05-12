@@ -1,0 +1,38 @@
+{
+  "file_type": "UTI",
+  "file_info": [
+    {
+      "block": "",
+      "path": "/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VDD.ptiavg"
+    },
+    {
+      "block": "",
+      "path": "/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VSS.ptiavg"
+    }
+  ],
+  "current_files": [
+    {
+      "block": "",
+      "path": "/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VDD.ptiavg",
+      "file_type": "UTI",
+      "datatype": "average",
+      "sim_type": "dynamic",
+      "has_rail_connection": true
+    },
+    {
+      "block": "",
+      "path": "/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VSS.ptiavg",
+      "file_type": "UTI",
+      "datatype": "average",
+      "sim_type": "dynamic",
+      "has_rail_connection": true
+    }
+  ],
+  "trigger_files": [],
+  "pgtrigger_files": [],
+  "driver_db": [],
+  "timing_db": [],
+  "is_pin_based_dynamic_current": false,
+  "is_enable_voltage_interpolation": false,
+  "cell_type": ""
+}

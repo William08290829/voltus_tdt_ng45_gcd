@@ -1,0 +1,8 @@
+#Layer NodeCount ResCount TotalRes TotalCap
+metal1 2944 2932 2266.57 5.8866e-14
+metal2 12 0 0 3.84792e-16
+metal3 12 0 0 4.60627e-16
+metal4 15 14 13.5494 4.19077e-15
+via1 0 12 20 0
+via2 0 12 20 0
+via3 0 12 20 0
