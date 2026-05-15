@@ -1,4 +1,4 @@
-# Voltus TDT File Interpretation Question - ng45_gcd testcase
+# Voltus SHE- ng45_gcd testcase
 
 ## Design information
 - Design name: gcd
