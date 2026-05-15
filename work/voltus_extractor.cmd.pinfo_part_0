@@ -1,7 +1,7 @@
 
 Begin Preparing Data for Parasitic Extraction
 .
-Ended Preparing Data for Parasitic Extraction: (cpu=0:00:00, real=0:00:01, mem(process/total/peak)=209.12MB/22298.10MB/3575.29MB)
+Ended Preparing Data for Parasitic Extraction: (cpu=0:00:00, real=0:00:01, mem(process/total/peak)=213.21MB/22299.73MB/3572.01MB)
 
 Begin Parasitic Extraction
 
@@ -21,16 +21,16 @@ VDD
 Some effects indicate n/a because of non-availability of relevant input
 data (or) requested to be off.
 
-   0% at 17:50:09 05/12/2026 
+   0% at 13:51:49 05/14/2026 
 
- 100% at 17:50:09 05/12/2026 
+ 100% at 13:51:49 05/14/2026 
 
-Ended Parasitic Extraction: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=216.65MB/22330.69MB/3575.29MB)
+Ended Parasitic Extraction: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=219.69MB/22332.32MB/3572.01MB)
 
 Hostname TC-DL5
 
-Wall clock 5.215943
+Wall clock 5.181913
 
-CPU time 0.271880
+CPU time 0.239011
 
-Peak memory (process): 314171392
+Peak memory (process): 313114624

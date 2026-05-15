@@ -138,7 +138,7 @@ proc write_instance_power_file {infile outfile} {
 # Generate a simple cell thermal-resistance file from library-cell area.
 # This was used in the original experimental flow as a dummy TRF source.
 # Format written: <cell_name> <rth_value>
-proc generate_area_based_dummy_trf {output_file {base_constant 2000.0}} {
+proc generate_area_based_dummy_trf {output_file {base_constant 500.0}} {
     set fout [open $output_file w]
     set count 0
 
@@ -175,6 +175,53 @@ proc generate_area_based_dummy_trf {output_file {base_constant 2000.0}} {
     close $fout
     puts "INFO: Generated $count thermal-resistance entries in $output_file"
     return $count
+}
+
+proc check_trf_covers_used_cells {trf_file} {
+    puts "INFO: Checking whether TRF covers all used master cells..."
+
+    array set trf_cells {}
+
+    set fin [open $trf_file r]
+    while {[gets $fin line] >= 0} {
+        set s [string trim $line]
+        if {$s eq ""} {
+            continue
+        }
+
+        set fields [regexp -all -inline {\S+} $s]
+        if {[llength $fields] < 2} {
+            continue
+        }
+
+        set cell_name [lindex $fields 0]
+        set trf_cells($cell_name) 1
+    }
+    close $fin
+
+    set used_cells [lsort -unique [dbGet top.insts.cell.name]]
+
+    set missing_cells {}
+
+    foreach cell_name $used_cells {
+        if {$cell_name eq "" || $cell_name eq "0x0"} {
+            continue
+        }
+
+        if {![info exists trf_cells($cell_name)]} {
+            lappend missing_cells $cell_name
+        }
+    }
+
+    if {[llength $missing_cells] > 0} {
+        puts stderr "ERROR: The following used master cells are missing in TRF:"
+        foreach c $missing_cells {
+            puts stderr "  $c"
+        }
+        error "TRF coverage check failed: missing Rth entries for used cells."
+    } else {
+        puts "INFO: TRF coverage check passed. All used master cells have Rth entries."
+    }
 }
 
 # ---------------------------------------------------------------------------- --
@@ -343,6 +390,7 @@ set_rail_analysis_mode \
 set trf_file [file join $output_root dummy_TRF_area_based.txt]
 set trf_count [generate_area_based_dummy_trf $trf_file 2000.0]
 puts "INFO: Generated $trf_count rows in $trf_file"
+check_trf_covers_used_cells $trf_file
 
 set idt_file    [file join $output_root ${platform_name}_${design_name}_idt.txt]
 set tdt_file    [file join $output_root ${platform_name}_${design_name}_tdt.txt]

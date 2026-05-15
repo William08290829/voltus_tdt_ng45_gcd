@@ -1,0 +1,40 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*  Voltus Scheduler (RC extraction scheduler)
+*  Copyright 2013 Cadence Design Systems, Inc.
+*  Version: v23.11-s059_1 (04/24/2024 16:19:08)
+*  Excecutable: /usr/cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_scheduler
+*  Command Line: -nt 8 -usecellid -session_file ./work/sfe.session -prev_session_file ./work/sfe.session.prev -cmd ./work/voltus_scheduler.cmd 
+*  Run by wei0829 on Fri May 15 23:21:35 2026
+*  Hostname: TC-DL5
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Started Voltus Scheduler at 23:21:34 05/15/2026
+
+Extraction option setup as:
+setenv gray_data NONE
+setenv enable_cluster_overhang_via false
+setenv enable_dfm_mask_conflict_shape false
+Extraction data found under work directory, data can be reused, skip preparation.
+Finished Voltus Scheduler at 23:21:35 05/15/2026 (cpu=0:00:00, real=0:00:01, peak mem=3037.52MB)
+Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:14, real=0:00:29, mem=3037.52MB)
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*  Voltus Scheduler (RC extraction scheduler)
+*  Copyright 2013 Cadence Design Systems, Inc.
+*  Version: v23.11-s059_1 (04/24/2024 16:19:08)
+*  Excecutable: /usr/cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_scheduler
+*  Command Line: -skip_prep -nt 8 -usecellid -session_file ./work/sfe.session -prev_session_file ./work/sfe.session.prev -cmd ./work/voltus_scheduler.cmd -zx /usr/cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_extractor 
+*  Run by wei0829 on Fri May 15 23:21:35 2026
+*  Hostname: TC-DL5
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Started Voltus Scheduler at 23:21:34 05/15/2026
+
+Extraction option setup as:
+setenv gray_data NONE
+setenv enable_cluster_overhang_via false
+setenv enable_dfm_mask_conflict_shape false
+Extraction data found under work directory, data can be reused, skip extraction.
+Extraction data found under work directory, data can be reused, skip zx extraction.
+Finished Voltus Scheduler at 23:21:35 05/15/2026 (cpu=0:00:00, real=0:00:01, peak mem=3034.04MB)
+Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:14, real=0:00:29, mem=3034.04MB)

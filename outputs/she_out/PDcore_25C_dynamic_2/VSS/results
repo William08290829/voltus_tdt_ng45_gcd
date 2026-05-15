@@ -1,0 +1,108 @@
+
+Results for ir (linear filters):
+================================
+
+*
+* Data filtering results for IR drop:
+	Minimum, Average, Maximum IR Drop: 7.04683e-12V, 0.00623759V, 0.0155423V
+	Range 1(0.0135995V  - 0.0155439V ):       90 (3.69%)
+	Range 2(0.0116567V  - 0.0135995V ):       39 (1.60%)
+	Range 3(0.00971395V  - 0.0116567V ):      194 (7.96%)
+	Range 4(0.00777116V  - 0.00971395V ):      377 (15.48%)
+	Range 5(0.00582837V  - 0.00777116V ):      543 (22.29%)
+	Range 6(0.00388558V  - 0.00582837V ):      637 (26.15%)
+	Range 7(0.00194279V  - 0.00388558V ):      458 (18.80%)
+	Range 8(7.04612e-12V  - 0.00194279V ):       98 (4.02%)
+
+
+
+Results for ir (limit filters):
+===============================
+
+*
+* Data filtering results for IR drop:
+	Minimum, Average, Maximum IR Drop: 7.04683e-12V, 0.00623759V, 0.0155423V
+	Range 1(    0.11V  - 0.110011V ):        0 (0.00%)
+	Range 2(0.100833V  -     0.11V ):        0 (0.00%)
+	Range 3(0.0916667V  - 0.100833V ):        0 (0.00%)
+	Range 4(  0.0825V  - 0.0916667V ):        0 (0.00%)
+	Range 5(0.0733333V  -   0.0825V ):        0 (0.00%)
+	Range 6(0.0641667V  - 0.0733333V ):        0 (0.00%)
+	Range 7(   0.055V  - 0.0641667V ):        0 (0.00%)
+	Range 8(-1.0001e-06V  -    0.055V ):     2436 (100.00%)
+
+======> PASSED !
+
+
+Results for tc:
+===============
+
+*
+* Data filtering results for tap current:
+	Minimum, Average, Maximum Tap Current: -0.000466451A, -3.06927e-05A, 0A
+	Range 1(-1.0001e+09A  -   -0.001A ):        0 (0.00%)
+	Range 2(  -0.001A  -  -0.0001A ):       41 (5.00%)
+	Range 3( -0.0001A  -   -1e-05A ):      501 (61.10%)
+	Range 4(  -1e-05A  -   -1e-06A ):       47 (5.73%)
+	Range 5(  -1e-06A  -   -1e-07A ):        0 (0.00%)
+	Range 6(  -1e-07A  -   -1e-08A ):        3 (0.37%)
+	Range 7(  -1e-08A  -   -1e-09A ):        0 (0.00%)
+	Range 8(  -1e-09A  -        0A ):      228 (27.80%)
+
+
+
+Results for rc:
+===============
+
+*
+* Data filtering results for resistor current:
+	Minimum, Average, Maximum Resistor Current: 0A, 0.000102277A, 0.0014378A
+	Range 1(   0.001A  - 1.0001e+09A ):        6 (0.24%)
+	Range 2(  0.0001A  -    0.001A ):      808 (32.99%)
+	Range 3(   1e-05A  -   0.0001A ):      533 (21.76%)
+	Range 4(   1e-06A  -    1e-05A ):        8 (0.33%)
+	Range 5(   1e-07A  -    1e-06A ):        0 (0.00%)
+	Range 6(   1e-08A  -    1e-07A ):      290 (11.84%)
+	Range 7(   1e-09A  -    1e-08A ):      349 (14.25%)
+	Range 8(       0A  -    1e-09A ):      455 (18.58%)
+
+
+
+Results for rv:
+===============
+
+*
+* Data filtering results for resistor voltage:
+	Minimum, Average, Maximum Resistor Voltage: 0V, 9.39776e-05V, 0.00130852V
+	Range 1(0.00114495V  - 0.00130865V ):        1 (0.04%)
+	Range 2(0.000981389V  - 0.00114495V ):       10 (0.41%)
+	Range 3(0.000817824V  - 0.000981389V ):       14 (0.57%)
+	Range 4(0.00065426V  - 0.000817824V ):       52 (2.12%)
+	Range 5(0.000490695V  - 0.00065426V ):       59 (2.41%)
+	Range 6(0.00032713V  - 0.000490695V ):       96 (3.92%)
+	Range 7(0.000163565V  - 0.00032713V ):      212 (8.66%)
+	Range 8(       0V  - 0.000163565V ):     2005 (81.87%)
+
+
+
+Results for rj:
+===============
+
+*
+* Data filtering results for Current Density (JRMS/JMAX):
+*	No data found.
+
+
+
+Begin Capacitance Report Generation
+	Type                  disconnected          connected             used                
+	Intrinsic-decap/filler  0.000F                0.000F                0.000F              
+	Intrinsic-standard    0.000F                0.000F                0.000F              
+	Intrinsic-macro       0.000F                0.000F                0.000F              
+	Load Cap              0.000F                1.670pF               1.670pF             
+	Grid Cap              0.000F                70.194fF              70.194fF            
+	Total Cap             0.000F                1.740pF               1.740pF             
+
+
+Ended Capacitance Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=512.63MB/83701.07MB/3772.01MB)
+

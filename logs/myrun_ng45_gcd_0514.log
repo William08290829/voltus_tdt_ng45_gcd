@@ -1,0 +1,1612 @@
+
+Cadence Voltus(TM) IC Power Integrity Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.11-s111_1, built Thu May 16 09:07:16 PDT 2024
+Options:	-no_gui -log ./logs/myrun_ng45_gcd_0514 -overwrite -files ./scripts/ng45_gcd_self.tcl 
+Date:		Thu May 14 23:31:23 2026
+Host:		TC-DL5 (x86_64 w/Linux 4.18.0-553.36.1.el8_10.x86_64) (16cores*32cpus*AMD Ryzen 9 9950X 16-Core Processor 1024KB)
+OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+
+License:
+		[23:31:23.255857] Configured Lic search path (23.02-s005): 5280@lshc
+
+		vtsxl	Voltus Power Integrity Solution XL	23.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (510 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_2207965_e8wUPZ'.
+#@ Processing -files option
+Sourcing tcl/tk file './scripts/ng45_gcd_self.tcl' ...
+<CMD> set_multi_cpu_usage -localCpu 8 -verbose
+setMultiCpuUsage -localCpu 8
+<CMD> read_lib -lef /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.tech.lef /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.mod.lef /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.rect.lef
+<CMD> read_lib -min /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lib/NangateOpenCellLibrary_typical.lib
+<CMD> read_lib -max /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lib/NangateOpenCellLibrary_typical.lib
+<CMD> read_verilog /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.v
+<CMD> set_top_module gcd
+#% Begin Load MMMC data ... (date=05/14 23:31:33, mem=1678.8M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=05/14 23:31:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1679.9M, current mem=1679.9M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+
+Loading LEF file /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.tech.lef ...
+
+Loading LEF file /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.mod.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+Loading LEF file /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.rect.lef ...
+**WARN: (IMPLF-58):	MACRO 'AND2_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AND2_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AND2_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AND3_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AND3_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AND3_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AND4_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AND4_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AND4_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'ANTENNA_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI211_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI211_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI211_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI21_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI21_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI21_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI221_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI221_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI221_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI222_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (EMS-62):	Message <IMPLF-58> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+**WARN: (IMPLF-61):	134 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from .ssv_emulate_view_definition_2207965_a19904b8-4d54-4ec9-8cce-d0dd8c39e9a9.tcl
+Starting library reading in 'Multi-threaded flow' (with '8' threads)
+Reading   timing library /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lib/NangateOpenCellLibrary_typical.lib.
+Read 135 cells in library NangateOpenCellLibrary.
+Library reading multithread flow ended.
+*** End library_loading (cpu=0.01min, real=0.00min, mem=192.0M, fe_cpu=0.16min, fe_real=0.17min, fe_mem=1881.5M) ***
+#% Begin Load netlist data ... (date=05/14 23:31:33, mem=1755.5M)
+*** Begin netlist parsing (mem=1881.5M) ***
+Reading verilog netlist '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.v'
+
+*** Memory Usage v#2 (Current mem = 2169.547M, initial mem = 840.254M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2169.5M) ***
+#% End Load netlist data ... (date=05/14 23:31:33, total cpu=0:00:00.2, real=0:00:00.0, peak res=1860.8M, current mem=1860.8M)
+Set top cell to gcd.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell gcd ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 136 modules.
+** info: there are 609 stdCell insts.
+** info: there are 609 stdCell insts with at least one signal pin.
+
+*** Memory Usage v#2 (Current mem = 2497.578M, initial mem = 840.254M) ***
+Start create_tracks
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started for TopCell gcd 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Multithreaded Timing Analysis is initialized with 8 threads
+
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:10.5, real=0:00:11.0, peak res=2537.5M, current mem=2500.1M)
+Total number of combinational cells: 93
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 7
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+default_emulate_constraint_mode
+Extraction setup Started for TopCell gcd 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+Extraction setup Started for TopCell gcd 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+Extraction setup Started for TopCell gcd 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Initializing multi-corner resistance tables ...
+default_emulate_libset_max default_emulate_libset_min
+<CMD> create_library_set -name libs_min -timing $timing_libs
+<CMD> create_library_set -name libs_max -timing $timing_libs
+<CMD> create_rc_corner -name nominal -qx_tech_file $qrc_tech_file
+<CMD> create_delay_corner -name corner_min -library_set libs_min -rc_corner nominal
+<CMD> create_delay_corner -name corner_max -library_set libs_max -rc_corner nominal
+<CMD> create_constraint_mode -name setup_func_mode -sdc_files $sdc_file
+<CMD> create_analysis_view -constraint_mode setup_func_mode \
+  -name setup_func \
+  -delay_corner corner_max
+<CMD> create_analysis_view -constraint_mode setup_func_mode \
+  -name hold_func \
+  -delay_corner corner_min
+<CMD> set_analysis_view -setup [list setup_func] -hold [list hold_func]
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.sdc
+Extraction setup Started for TopCell gcd 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: setup_func
+    RC-Corner Name        : nominal
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner Technology file: '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/qrc/NG45.tch'
+ 
+ Analysis View: hold_func
+    RC-Corner Name        : nominal
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner Technology file: '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/qrc/NG45.tch'
+Initializing multi-corner resistance tables ...
+Reading timing constraints file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.sdc' ...
+Current (total cpu=0:00:11.0, real=0:00:11.0, peak res=2537.5M, current mem=2490.4M)
+gcd
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2504.2M, current mem=2504.2M)
+Current (total cpu=0:00:11.1, real=0:00:11.0, peak res=2537.5M, current mem=2504.2M)
+Total number of combinational cells: 93
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 7
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+<CMD> set_analysis_mode -analysisType onChipVariation -checkType hold
+**WARN: (IMPSYC-6134):	Setting analysis mode to hold does not have any impact on timing analysis as simultaneous setup/hold mode analysis is on. Use '-early' option to report hold timing reports.
+<CMD> set_design_mode -process 45
+##  Process: 45            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+<CMD> read_def /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def
+Reading DEF file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def', current time is Thu May 14 23:31:34 2026 ...
+--- DIVIDERCHAR '/'
+--- UnitsPerDBU = 1.0000
+Start create_tracks
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+--- DIEAREA (0 0) (71630 71630)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+DEF file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def' is parsed, current time is Thu May 14 23:31:34 2026.
+Updating the floorplan ...
+floor plan core box changed from {{0.000000,0.000000},{35.815000,35.815000}} to {{1.140000,1.400000},{34.770000,33.600000}}
+<CMD> read_spef -rc_corner nominal /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.spef
+
+SPEF files for RC Corner nominal:
+Top-level spef file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.spef'.
+Start spef parsing (MEM=3445.62).
+SPEF file /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.spef.
+Number of Resistors     : 1693
+Number of Ground Caps   : 2136
+Number of Coupling Caps : 10036
+
+End spef parsing (MEM=3460.62 CPU=0:00:00.1 REAL=0:00:00.0).
+33 nets are missing in SPEF file. The names of these nets are saved in ./nominal.missing_nets.rpt.
+<CMD> set_default_switching_activity -input_activity 0.2 -period 10ns -seq_activity 0.1 -clock_gates_output_ratio 2.0
+** INFO:  (VOLTUS_POWR-3229): Using user defined default frequency 100MHz for power calculation.
+
+'set_default_switching_activity' finished successfully.
+<CMD> propagate_activity
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE DB initialization (MEM=3487.06 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: gcd
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (8 T). (MEM=2611.97)
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.sdc
+End delay calculation. (MEM=2796.73 CPU=0:00:00.1 REAL=0:00:00.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=2793.98 CPU=0:00:00.2 REAL=0:00:00.0)
+core_clock(2173.91MHz) 
+Starting Levelizing
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT)
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 10%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 20%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 30%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 40%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 50%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 60%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 70%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 80%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 90%
+
+Finished Levelizing
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT)
+
+Starting Activity Propagation
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT)
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 10%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 20%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 30%
+
+Finished Activity Propagation
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT)
+<CMD> set_power_analysis_mode -reset
+<CMD> set_power_analysis_mode -method static -write_static_currents true -create_binary_db true -binary_db_name staticPower.db
+<CMD> set_power_output_dir /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/static_db
+<CMD> report_power -rail_analysis_format VS -outfile /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/static_db/static_power.rpt
+env CDS_WORKAREA is set to /home/wei0829/voltus_tdt_question_ng45_gcd
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+           1.1V	    VDD
+Using Power View: hold_func.
+             0V	    VSS
+           1.1V	    VDD
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT)
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 10%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 20%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 30%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 40%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 50%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 60%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 70%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 80%
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT): 90%
+
+Finished Calculating power
+2026-May-14 23:31:35 (2026-May-14 15:31:35 GMT)
+      # of MSMV cell(s) missing power_level: 0
+Begin Processing set_power
+Ended Processing set_power: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2788.09MB/7103.41MB/2788.09MB)
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2788.09MB/7103.41MB/2788.09MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.97738385 	   56.7266%
+Total Switching Power:       0.72065315 	   41.8261%
+Total Leakage Power:         0.02493724 	    1.4473%
+Total Power:                 1.72297424
+-----------------------------------------------------------------------------------------
+** WARN:  (VOLTUS_POWR-3424): Cell NOR4_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell AND3_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell OAI22_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell DFF_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell NAND2_X2 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell OAI21_X2 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell NAND2_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell AOI21_X2 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell NOR2_X4 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell NAND4_X4 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell AND2_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell CLKBUF_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell CLKBUF_X3 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell XNOR2_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell BUF_X2 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell AOI21_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell NOR2_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell INV_X4 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell NAND2_X4 has no power pin defined in LEF/PGV.
+
+** WARN:  (VOLTUS_POWR-3424): Cell NAND4_X1 has no power pin defined in LEF/PGV.
+
+** WARN:  (EMS-27): Message (VOLTUS_POWR-3424) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2788.73MB/7103.41MB/2788.73MB)
+
+Begin Creating Binary Database
+Ended Creating Binary Database: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2793.56MB/8641.84MB/2793.56MB)
+
+Output file is
+/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/static_db/static_power.rpt.
+<CMD> set_power_analysis_mode -reset
+-binary_db_name ""
+-create_binary_db false
+-write_static_currents false
+<CMD> set_power_analysis_mode -method dynamic -create_binary_db true -binary_db_name dynamicPower.db
+<CMD> set_power_output_dir /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db
+<CMD> report_power -rail_analysis_format VS -outfile /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_power.rpt
+env CDS_WORKAREA is set to /home/wei0829/voltus_tdt_question_ng45_gcd
+-add_simulation false                     # bool, default=false
+-adjust_input_activity_in_iterations true
+                                          # bool, default=true
+-adjust_macro_activity_in_iterations true
+                                          # bool, default=true
+-annotation_detail_report false           # bool, default=false
+-auto_twf_delay_annotation false          # bool, default=false
+-average_rise_fall_cap false              # bool, default=false
+-binary_db_name dynamicPower.db           # string, default="", user setting
+-block_independent_peakpower false        # bool, default=false
+-boundary_gate_leakage_file {}            # string, default=""
+-boundary_gate_leakage_report false       # bool, default=false
+-boundary_leakage_cell_property_file {}   # string, default=""
+-boundary_leakage_edge_annotation_file {}
+                                          # string, default=""
+-boundary_leakage_multi_pgpin_support false
+                                          # bool, default=false
+-boundary_leakage_pessimism_removal true
+                                          # bool, default=true
+-boundary_leakage_PXE_support false       # bool, default=false
+-bulk_pins {}                             # string, default=""
+-capacity low                             # enums={low medium high}, default=low
+-case_insensitive_mapping false           # bool, default=false
+-clock_source_as_clock false              # bool, default=false
+-comprehensive_automapping false          # bool, default=false
+-constant_override false                  # bool, default=false
+-corner {}                                # string, default=""
+-create_binary_db true                    # bool, default=false, user setting
+-create_driver_db false                   # bool, default=false
+-create_gui_db true                       # bool, default=true
+-current_generation_method avg            # string, default=avg
+-custom_report_config {}                  # string, default=""
+-decap_cell_list {}                       # string, default=""
+-default_frequency -1                     # float, default=-1
+-default_slew {}                          # string, default=""
+-default_supply_voltage {}                # string, default=""
+-detailed_view_current_only true          # bool, default=true
+-disable_clock_gate_clipping true         # bool, default=true
+-disable_leakage_scaling false            # bool, default=false
+-disable_static false                     # bool, default=false
+-distribute_switching_power false         # bool, default=false
+-distributed_combine_report_format reduced
+                                          # string, default=reduced
+-distributed_setup {}                     # string, default=""
+-domain_based_clipping false              # bool, default=false
+-dynamic_glitch_filter -1                 # float, default=-1
+-dynamic_scale_clock_by_frequency {}      # string, default=""
+-dynamic_scale_clock_by_name {}           # string, default=""
+-dynamic_vectorless_ranking_methods {}    # string, default=""
+-enable_auto_mapping false                # bool, default=false
+-enable_auto_queue false                  # bool, default=false
+-enable_disk_mapping false                # bool, default=false
+-enable_duty_prop_with_global false       # bool, default=false
+-enable_dynamic_current_slew_load_interpolation false
+                                          # bool, default=false
+-enable_dynamic_scaling false             # bool, default=false
+-enable_flop_state_propagation false      # bool, default=false
+-enable_generated_clock true              # bool, default=true
+-enable_input_net_power false             # bool, default=false
+-enable_interactive_reports true          # bool, default=true
+-enable_mt_in_vectorbasedflow true        # bool, default=true
+-enable_mt_reports false                  # bool, default=false
+-enable_mt_state_propagation true         # bool, default=true
+-enable_pba_for_tempus_pi true            # bool, default=true
+-enable_power_target_flow false           # bool, default=false
+-enable_rtl_vectorbased_dynamic_analysis false
+                                          # bool, default=false
+-enable_scan_report false                 # bool, default=false
+-enable_single_cycle_scheduling false     # bool, default=false
+-enable_slew_based_ccs_pin_cap false      # bool, default=false
+-enable_stable_clock_gating false         # bool, default=false
+-enable_stable_flop_scheduling false      # bool, default=false
+-enable_state_propagation false           # bool, default=false
+-enable_tempus_pi false                   # bool, default=false
+-enable_xp false                          # bool, default=false
+-enhanced_blackbox_avg false              # bool, default=false
+-enhanced_blackbox_max false              # bool, default=false
+-equivalent_annotation false              # bool, default=false
+-event_based_leakage_power false          # bool, default=false
+-external_load_config_file {}             # string, default=""
+-extraction_tech_file {}                  # string, default=""
+-extractor_include {}                     # string, default=""
+-fanout_limit -1                          # int, default=-1
+-flatten_xpgv_block_instances {}          # string, default=""
+-force_library_merging false              # bool, default=false
+-from_x_transition_factor 0.5             # float, default=0.5
+-from_z_transition_factor 0.25            # float, default=0.25
+-generate_activity_mapping_report false   # bool, default=false
+-generate_current_for_rail {}             # string, default=""
+-generate_flop_ranking_data {}            # string, default=""
+-generate_leakage_power_map_based_on_calculated_leakage false
+                                          # bool, default=false
+-generate_static_report_from_state_propagation false
+                                          # bool, default=false
+-handle_glitch false                      # bool, default=false
+-handle_transport_glitch false            # bool, default=false
+-handle_tri_state false                   # bool, default=false
+-hier_delimiter {}                        # string, default=""
+-honor_combinational_logic_on_clock_net true
+                                          # bool, default=true
+-honor_negative_energy true               # bool, default=true
+-honor_net_activity true                  # bool, default=true
+-honor_non_mission_leakage false          # bool, default=false
+-hybrid_analysis false                    # bool, default=false
+-ignore_control_signals true              # bool, default=true
+-ignore_data_phase_for_clk false          # bool, default=false
+-ignore_end_toggles_in_profile false      # bool, default=false
+-ignore_glitches_at_same_time_stamp true
+                                          # bool, default=true
+-ignore_inout_pin_cap false               # bool, default=false
+-ignore_macro_leakage_scale_for_temp false
+                                          # bool, default=false
+-include_seq_clockpin_power false         # bool, default=false
+-include_timing_in_current_file false     # bool, default=false
+-ir_derated_timing_view {}                # string, default=""
+-keep_clock_gate_ratio_in_iterations false
+                                          # bool, default=false
+-leakage_scale_factor_for_temp 1          # float, default=1
+-library_preference voltage               # string, default=voltage
+-macro_pgv_leakage true                   # bool, default=true
+-macro_toggle_pin_percentage 0            # float, default=0
+-mbff_toggle_behavior independent         # enums={simultaneous independent sbff pin_percentage}, default=independent
+-mbff_toggle_pin_percentage 0             # float, default=0
+-memory_current_scaling_method 0          # int, default=0
+-merge_switched_net_currents false        # bool, default=false
+-method dynamic                           # enums={static dynamic dynamic_vectorless dynamic_vectorbased dynamic_mixed_mode vector_profile event_based}, default=static, user setting
+-min_leaf_count 0                         # int, default=0
+-multi_scenario_simulation false          # bool, default=false
+-off_pg_nets {}                           # string, default=""
+-output_current_data_prefix {}            # string, default=""
+-partition_count 0                        # int, default=0
+-partition_twf false                      # bool, default=false
+-pin_based_twf false                      # bool, default=false
+-power_grid_library {}                    # string, default=""
+-power_include_initial_x_transitions true
+                                          # bool, default=true
+-power_match_state_for_logic_x x          # string, default=x
+-pre_simulation_empty_period {}           # string, default=""
+-pre_simulation_period {}                 # string, default=""
+-pre_simulation_power_exclude_period {}   # string, default=""
+-precision 8                              # int, default=8
+-quit_on_activity_coverage_threshold 0    # float, default=0
+-read_rcdb false                          # bool, default=false
+-relax_arc_match false                    # bool, default=false
+-report_black_boxes false                 # bool, default=false
+-report_clock_instance_switching_info None
+                                          # string, default=None
+-report_idle_instances false              # bool, default=false
+-report_instance_switching_info none      # enums={all output_logic none}, default=none
+-report_instance_switching_list {}        # string, default=""
+-report_library_usage false               # bool, default=false
+-report_missing_bulk_connectivity false   # bool, default=false
+-report_missing_input false               # bool, default=false
+-report_missing_nets false                # bool, default=false
+-report_scan_chain_stats false            # bool, default=false
+-report_stat false                        # bool, default=false
+-report_time_display_fraction_digits -1   # int, default=-1
+-report_twf_attributes {}                 # string, default=""
+-reuse_flop_ranking_data {}               # string, default=""
+-reuse_flop_ranking_data_hier {}          # string, default=""
+-save_bbox false                          # bool, default=false
+-save_thermal_data false                  # bool, default=false
+-scale_to_sdc_clock_frequency false       # bool, default=false
+-scan_chain_activity {}                   # string, default=""
+-scan_chain_name {}                       # string, default=""
+-scan_control_file {}                     # string, default=""
+-scan_mbff_chain_type liberty             # string, default=liberty
+-set_power_event_based false              # bool, default=false
+-settling_buffer {}                       # string, default=""
+-smart_window false                       # bool, default=false
+-split_bus_power false                    # bool, default=false
+-start_time_alignment true                # bool, default=true
+-state_dependent_leakage true             # bool, default=true
+-stateprop_ignore_unannot_pins false      # bool, default=false
+-static_multi_mode_scenario_file {}       # string, default=""
+-static_netlist verilog                   # string, default=verilog
+-switching_power_on_rise_only false       # bool, default=false
+-thermal_input_file {}                    # string, default=""
+-thermal_leakage_temperature_scale_table_file {}
+                                          # string, default=""
+-to_x_transition_factor 0.5               # float, default=0.5
+-to_z_transition_factor 0.25              # float, default=0.25
+-transition_factor_based_duty false       # bool, default=false
+-transition_time_method max               # string, default=max
+-twf_delay_annotation avg                 # string, default=avg
+-twf_load_cap max                         # string, default=max
+-unified_power_switch_flow false          # bool, default=false
+-use_cell_leakage_power_density true      # bool, default=true
+-use_fastest_clock_for_dynamic_scheduling false
+                                          # bool, default=false
+-use_lef_for_missing_cells false          # bool, default=false
+-use_only_ddv_current true                # bool, default=true
+-use_physical_partition false             # bool, default=false
+-use_zero_delay_vector_file false         # bool, default=false
+-vector_profile_mode event_based          # enums={activity event_based power_density transient}, default=event_based
+-worst_case_vector_activity false         # bool, default=false
+-worst_step_size {}                       # string, default=""
+-worst_window_count 1                     # int, default=1
+-worst_window_coverage {}                 # string, default=""
+-worst_window_reports full                # string, default=full
+-worst_window_size {}                     # string, default=""
+-worst_window_type {}                     # string, default=""
+-write_boundary_leakage_edge_annotation false
+                                          # bool, default=false
+-write_default_uti true                   # bool, default=true
+-write_dynamic_currents false             # bool, default=false
+-write_profiling_db false                 # bool, default=false
+-write_simulation_db false                # bool, default=false
+-write_static_currents false              # bool, default=false
+-x_count_transition_using_3_states false
+                                          # bool, default=false
+-x_transition_factor 0.5                  # float, default=0.5
+-z_transition_factor 0.25                 # float, default=0.25
+-zero_delay_vector_toggle_shift {}        # string, default=""
+
+** WARN:  (VOLTUS_POWR-3362): The set_power_analysis_mode -method dynamic command parameter is obsolete. Use the set_power_analysis_mode -method dynamic_vectorbased | dynamic_vectorless | dynamic_mixed_mode | static | vector_profile “ parameter to perform power analysis. The obsolete parameter still works in this release and runs dynamic_vectorless, but to avoid this warning and to ensure compatibility with future releases, update your scripts to use the new option set.
+
+** WARN:  (VOLTUS_POWR-1227): Rail based static power reports are not available during dynamic power analysis as
+set_power_analysis_mode -disable_static is set to true (default).
+User should set the -disable_static option to false and re-run power calculation to generate these reports.
+
+#################################################################################
+# Design Name: gcd
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (8 T). (MEM=2794.2)
+End delay calculation. (MEM=2904.99 CPU=0:00:00.1 REAL=0:00:00.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=2904.99 CPU=0:00:00.1 REAL=0:00:00.0)
+**WARN: (TCLCMD-1233):	The -view option should be specified for the command write_timing_windows in MMMC mode. For now The tool will assume the view specified as 'setup_func' and write the timing windows corresponding to this view. For compatibility with future releases, update your scripts to provide -view option.
+** WARN:  (VOLTUS_POWR-1229): Power binary database will not be created during dynamic power analysis as
+set_power_analysis_mode -disable_static is set to true (default).
+User should set the -disable_static option to false and re-run power calculation to generate the power db.
+
+
+
+
+Started Power Analysis at 23:31:35 05/14/2026
+
+
+Begin Processing Timing Library for Power Calculation
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lib/NangateOpenCellLibrary_typical.lib
+Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=168.48MB/7626.48MB/3006.76MB)
+
+
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.tech.lef
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.mod.lef
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.rect.lef
+Begin Processing Netlist for Power Calculation
+** INFO:  (VOLTUS_POWR-3013): Loading DEF file "/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def".
+
+
+  Netlist Statistics:
+    Cell         :  135
+    Instance     :  609
+    Decap/Filler :  0
+    Net          :  679
+    Port         :  54
+
+Ended Processing Netlist for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=677.25MB/13246.94MB/3515.53MB)
+
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+
+Rail status:
+  1.1V    VDD
+  0V    VSS
+  
+
+** WARN:  (VOLTUS_POWR-1757): Found (44) cells had multiple entries in the Cadence cell libraries.  Only the first entry was used.
+
+AND2_X1
+AND2_X2
+AND2_X4
+AND3_X1
+AOI21_X1
+AOI21_X2
+AOI21_X4
+BUF_X1
+BUF_X16
+BUF_X2
+BUF_X4
+BUF_X8
+CLKBUF_X1
+CLKBUF_X3
+DFF_X1
+DFF_X2
+FILLCELL_X1
+FILLCELL_X16
+FILLCELL_X2
+FILLCELL_X32
+FILLCELL_X4
+FILLCELL_X8
+INV_X1
+INV_X2
+INV_X4
+MUX2_X1
+NAND2_X1
+NAND2_X2
+NAND2_X4
+NAND3_X1
+NAND3_X2
+NAND3_X4
+NAND4_X1
+NAND4_X4
+NOR2_X1
+NOR2_X2
+NOR2_X4
+NOR4_X1
+OAI21_X1
+OAI21_X2
+OAI21_X4
+OAI22_X1
+XNOR2_X1
+XNOR2_X2
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=677.25MB/13246.94MB/3515.53MB)
+
+
+Begin Processing Timing Window Data for Power Calculation
+
+  SPEF    : /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.spef
+    Name matched: 644/644
+    Annotation coverage for this file      : 644/677 (95.1256%)
+
+
+Starting Levelizing
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 10%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 20%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 30%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 40%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 50%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 60%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 70%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 80%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 90%
+
+Finished Levelizing
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+   core_clock(2173.91MHz) 
+
+  Timing Window Statistics:
+    File name                                           : design.twf.gz
+    Generator                                           : Voltus IC Power Integrity Solution
+    Block of current design (read_twf -scope)           : ""
+    Remove hierarchy from TWF (read_twf -strip_prefix)  : ""
+    Waveform definitions parsed                         : 2
+    Clock roots assigned/parsed                         : 2/2 (100%)
+    Timing windows assigned/parsed                      : 1366/1366 (100%)
+    Nets with timing windows/Nets in design             : 677/677 (100%)
+    Constants assigned/parsed                           : 0/0 (0%)
+    Nets with constants/Nets in design                  : 0/677 (0%)
+    External loads assigned/parsed                      : 0/0 (0%)
+    Slews assigned/parsed                               : 1378/1378 (100%)
+    Nets with slew/Nets in design                       : 677/677 (100%)
+    Slew range                                          : 5e-12s - 2.18e-10s
+
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.26MB/13244.93MB/3516.54MB)
+
+
+Begin Processing VCD Vectors
+Ended Processing VCD Vectors: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.26MB/13244.93MB/3516.54MB)
+
+
+Begin Processing FSDB Vectors
+Ended Processing FSDB Vectors: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.26MB/13244.93MB/3516.54MB)
+
+
+Begin Processing User Attributes
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.26MB/13244.93MB/3516.54MB)
+
+
+Begin Processing Signal Activity
+
+Starting Activity Propagation
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 10%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 20%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 30%
+
+Finished Activity Propagation
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.26MB/13244.93MB/3516.54MB)
+
+
+Begin Power Analysis
+  ----------------------------------------------------------
+  # of cell(s) missing both power/leakage table: 0
+  # of cell(s) missing power table: 7
+  # of cell(s) missing leakage table: 7
+  ----------------------------------------------------------
+  CellName                                  Missing Table(s)
+  FILLCELL_X1                               internal power, leakage power, 
+  FILLCELL_X16                              internal power, leakage power, 
+  FILLCELL_X2                               internal power, leakage power, 
+  FILLCELL_X32                              internal power, leakage power, 
+  FILLCELL_X4                               internal power, leakage power, 
+  FILLCELL_X8                               internal power, leakage power, 
+  TAPCELL_X1                                internal power, leakage power, 
+  
+
+
+Starting Calculating power
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+ ... Preparing power data for dynamic calculation
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 10%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 20%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 30%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 40%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 50%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 60%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 70%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 80%
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 90%
+
+Finished Calculating power
+2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+  # of MSMV cell(s) missing power_level: 0
+Begin Processing set_power
+Ended Processing set_power: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.83MB/13244.93MB/3517.11MB)
+Begin Processing set_power stats
+Ended Processing set_power stats: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.83MB/13244.93MB/3517.11MB)
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.83MB/13244.93MB/3517.11MB)
+
+
+Begin Writing Current Files
+  CPU              : 8
+  Simulation Period: 0.92ns
+  Step Size        : 5ps
+
+
+Scheduling events using timing window information
+
+
+
+Starting Writing current file while scheduling
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT)
+** INFO:  (VOLTUS_POWR-2042): Beginning parallel processing, using 8 CPUs
+
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 10%
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 20%
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 30%
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 40%
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 50%
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 60%
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 70%
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 80%
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 90%
+
+Finished Writing current file while scheduling
+2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT)
+Ended Writing Current Files: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=682.58MB/13260.96MB/3520.86MB)
+
+
+Power Analysis Statistics:
+  Warning messages: 1
+  Error messages: 0
+
+
+Finished Power Analysis at 23:31:42 05/14/2026 (cpu=0:00:00, real=0:00:07, peak mem=3520.86MB)
+Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:14, real=0:00:20, mem=3520.86MB)
+
+
+
+Exit code 0.
+Voltus Power Analysis exited successfully.
+<CMD> set_pg_nets -net VDD -voltage 1.1 -threshold 0.99
+<CMD> set_pg_nets -net VSS -voltage 0.0 -threshold 0.11
+<CMD> set_rail_analysis_domain -name PDcore -pwrnets VDD -gndnets VSS
+<CMD> set_power_data -reset
+<CMD> set_power_data -format current -scale 1 {/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VDD.ptiavg /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VSS.ptiavg}
+<CMD> set_power_pads -reset
+<CMD> set_power_pads -net ALL -auto_voltage_source_creation true
+<CMD> set_rail_analysis_mode -method dynamic -accuracy hd -vsrc_search_distance 100 -power_grid_library /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/pgv/techonly.cl -temperature 25 -process_techgen_em_rules true -ict_em_models /home/wei0829/voltus_tdt_question_ng45_gcd/dummy_files/dummy_ictem.txt
+**WARN: (VOLTUS-1007):	The distributed processing (DP) mode will be made obsolete in a future release and it is recommended to use the Extensively Parallel (XP) mode. The obsolete DP mode still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your scripts to use the set_rail_analysis_mode -enable_xp true..
+<CMD> set_self_heat_analysis_mode -alpha_parameters {{metal1 0.74 0.85} {metal2 0.62 0.85} {metal3 0.53 0.85} {metal4 0.53 0.85} {metal5 0.53 0.85} {metal6 0.53 0.85} {metal7 0.53 0.85} {metal8 0.53 0.85} {metal9 0.53 0.85} {metal10 0.53 0.85}} -beta_parameters {0.00423 -0.00045 0.81534} -instance_power_file /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/static_db/instance_power.txt -cell_thermal_resistance_file /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dummy_TRF_area_based.txt -instance_delta_temperature_file /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/nangate45_gcd_idt.txt -tile_delta_temperature_file /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/nangate45_gcd_tdt.txt -tiles {100 100} -detail_delta_temperature_file /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/nangate45_gcd_detail.rpt
+<CMD> analyze_self_heat -domain PDcore -output_directory /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out
+
+
+Started Rail Analysis at 23:31:51 05/14/2026
+
+ 
+Opening dproc sockets
+connection complete
+
+Multi-CPU Configuration:
+	#CPU: 8
+	Mode: local
+	Host: TC-DL5
+
+
+Start distributed processes ...
+INFO (PRL-36): The timeout for a remote job to respond is 3600 seconds.
+
+Submit command for task runs will be: local
+INFO (PRL-725): EDP: start server on TC-DL5:44545
+
+INFO (PRL-725): EDP: start server on TC-DL5:48797
+
+INFO (PRL-819): Connected to TC-DL5 60235 0 ( PID=2208387 ). Wait time was 1 seconds
+
+INFO (PRL-819): Connected to TC-DL5 45347 1 ( PID=2208409 ). Wait time was 0 seconds
+
+INFO (PRL-742): EDP: all 2 edp client(s) are launched
+
+
+Running OCI  extraction for /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def ...
+
+Extraction option setup as:
+setenv gray_data NONE
+setenv enable_cluster_overhang_via false
+setenv enable_dfm_mask_conflict_shape false
+Extraction option setup as:
+setenv gray_data NONE
+setenv enable_cluster_overhang_via false
+setenv enable_dfm_mask_conflict_shape false
+Extraction data found under work directory, data can be reused, skip extraction.
+
+Analyze Rail Settings:
+	Temp directory: /tmp/ssv_tmpdir_2207965_e8wUPZ
+	Output directory: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out
+	Run directory: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/
+
+
+(proc 1) Invoking: "/usr/cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_rail_smg -cmd /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/voltus_rail_smg.VDD.cmd -l /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/voltus_rail_smg.VDD.log" ...
+(proc 0) Invoking: "/usr/cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_rail_smg -cmd /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/voltus_rail_smg.VSS.cmd -l /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/voltus_rail_smg.VSS.log" ...
+(proc 0) Begin Merging power grid
+(proc 1) Begin Merging power grid
+(proc 0) Tech reference temperature: 25
+(proc 0) Target temperature: 25
+(proc 0) 
+(proc 1) Tech reference temperature: 25
+(proc 1) Target temperature: 25
+(proc 1) 
+(proc 0) Set Layer via6 for the Auto Ploc Vsrc feature
+(proc 1) Set Layer via3 for the Auto Ploc Vsrc feature
+(proc 1) Grid Statistics of Net VDD:
+(proc 1) - NODE
+(proc 1)   Total node: 2983
+(proc 1)     Top Level grid node: 2983
+(proc 1)       Top level interface node: 860
+(proc 1)     Missing interface node: 0
+(proc 1)     Cell internal node: 0
+(proc 1) - ELEM
+(proc 1)   Total element: 2982
+(proc 1)     Top Level grid element: 2982
+(proc 1)     Cell internal element: 0
+(proc 1) - INST
+(proc 1)   Instance logically connected: 860
+(proc 1)     Tech: 860
+(proc 1)     StdCell: 0
+(proc 1)     Macro:
+(proc 1)       Early: 0
+(proc 1)       IR: 0
+(proc 1)     Current Region:  0
+(proc 1)   Dropped instance due to missing/incomplete cell library: 0
+(proc 1) - TAP
+(proc 1)   Total tap: 860
+(proc 1) 
+(proc 1) Ended Merging power grid: (cpu=0:00:15, real=0:00:15, mem(process/total/peak)=35.83MB/22088.55MB/3520.86MB)
+(proc 0) Grid Statistics of Net VSS:
+(proc 0) - NODE
+(proc 0)   Total node: 2436
+(proc 0)     Top Level grid node: 2436
+(proc 0)       Top level interface node: 860
+(proc 0)     Missing interface node: 0
+(proc 0)     Cell internal node: 0
+(proc 0) - ELEM
+(proc 0)   Total element: 2449
+(proc 0)     Top Level grid element: 2449
+(proc 0)     Cell internal element: 0
+(proc 0) - INST
+(proc 0)   Instance logically connected: 860
+(proc 0)     Tech: 860
+(proc 0)     StdCell: 0
+(proc 0)     Macro:
+(proc 0)       Early: 0
+(proc 0)       IR: 0
+(proc 0)     Current Region:  0
+(proc 0)   Dropped instance due to missing/incomplete cell library: 0
+(proc 0) - TAP
+(proc 0)   Total tap: 860
+(proc 0) 
+(proc 0) Ended Merging power grid: (cpu=0:00:25, real=0:00:25, mem(process/total/peak)=35.95MB/19959.45MB/3520.86MB)
+
+Begin Preparing Data for Rail Analysis
+
+Net VSS
+  Power Pin Location File: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/VSS/VSS_vsrcs.rpt
+  # Voltage Source Added/Total (%): 6/6 (100.00%)
+
+  Power Database: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VSS.ptiavg
+  # Current Taps Matched/Total (%): 609/609 (100.00%)
+  # Instances Matched: 609
+
+Net VDD
+  Power Pin Location File: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/VDD/VDD_vsrcs.rpt
+  # Voltage Source Added/Total (%): 12/12 (100.00%)
+
+  Power Database: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VDD.ptiavg
+  # Current Taps Matched/Total (%): 609/609 (100.00%)
+  # Instances Matched: 609
+
+Begin PowerGrid Integrity Analysis
+
+Begin Redistribute Disconnected Cap
+Ended Redistribute Disconnected Cap: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=105.33MB/23456.42MB/3578.14MB)
+
+Ended PowerGrid Integrity Analysis: (cpu=0:00:00, real=0:00:05, mem(process/total/peak)=105.96MB/23456.42MB/3578.14MB)
+
+Ended Preparing Data for Rail Analysis: (cpu=0:00:00, real=0:00:05, mem(process/total/peak)=105.98MB/23456.42MB/3578.14MB)
+
+
+Begin Steady-State Analysis
+Ended Steady-State Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=116.05MB/72418.53MB/3578.14MB)
+
+** WARN: (VOLTUS_RAIL-5063): The following cells are not tagged as filler
+cell and is missing intrinsic capacitance.  Check the cell library by
+running "check_power_library -report_file <file> <cell_library>" to examine
+its content. Recharacterize this cell for more accurate IR Drop results. 
+  AND2_X1, AND2_X2, AND2_X4, AND3_X1, AOI21_X1, AOI21_X2, AOI21_X4, BUF_X1,
+BUF_X16, BUF_X2, BUF_X4, BUF_X8, CLKBUF_X1, CLKBUF_X3, DFF_X1, DFF_X2,
+FILLCELL_X1, FILLCELL_X16, FILLCELL_X2, FILLCELL_X32, FILLCELL_X4,
+FILLCELL_X8, INV_X1, INV_X2, INV_X4, MUX2_X1, NAND2_X1, NAND2_X2, NAND2_X4,
+NAND3_X1, NAND3_X2, NAND3_X4, NAND4_X1, NAND4_X4, NOR2_X1, NOR2_X2,
+NOR2_X4, NOR4_X1, OAI21_X1, OAI21_X2, OAI21_X4, OAI22_X1, TAPCELL_X1,
+XNOR2_X1, XNOR2_X2 
+
+Begin Dynamic Rail Simulation
+  Start Time: 0s
+  End Time: 9.2e-10s
+  Steps: 184
+  Resolution: 5e-12s
+    0% at 23:32:31 05/14/26 
+   10% at 23:32:31 05/14/26 
+   20% at 23:32:31 05/14/26 
+   30% at 23:32:31 05/14/26 
+   40% at 23:32:31 05/14/26 
+   50% at 23:32:31 05/14/26 
+   60% at 23:32:31 05/14/26 
+   70% at 23:32:31 05/14/26 
+   80% at 23:32:31 05/14/26 
+   90% at 23:32:31 05/14/26 
+  100% at 23:32:31 05/14/26 
+Ended Dynamic Rail Simulation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=130.78MB/76499.55MB/3578.14MB)
+
+Begin Report Generation
+The report generation will be performed on multiple processes and the voltus.log will be updated once all the reports are generated.
+
+
+Net VSS:
+
+
+Begin Preparing Database for Report Generation
+
+Circuit profile:
+                                                      Current    Voltage
+Layer Name                       Nodes   Resistors    Sources    Sources
+----- --------------------  ----------  ----------  ---------  ---------
+0     metal7                        15          12          0          6
+1     via6                           0           6          0          0
+2     metal6                         6           0          0          0
+3     via5                           0           6          0          0
+4     metal5                         6           0          0          0
+5     via4                           0           6          0          0
+6     metal4                        36          34          0          0
+7     via3                           0          24          0          0
+8     metal3                        24           0          0          0
+9     via2                           0          24          0          0
+10    metal2                        24           0          0          0
+11    via1                           0          24          0          0
+12    metal1                      2325        2313        820          0
+                            ----------  ----------  ---------  ---------
+13    Circuit total               2437        2449        820          6
+Ended Preparing Database for Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=353.31MB/83702.08MB/3651.14MB)
+
+Initializing Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=353.31MB/83702.08MB/3651.87MB)
+
+Begin IR Drop (Linear) Report Generation
+  Voltage: 0
+  Threshold: 0.11
+  Minimum, Average, Maximum IR Drop: 0.000V, 6.238mV, 15.542mV
+    Range 1(  13.600mV  -    15.544mV ):        90 (  3.69%)
+    Range 2(  11.657mV  -    13.600mV ):        39 (  1.60%)
+    Range 3(   9.714mV  -    11.657mV ):       194 (  7.96%)
+    Range 4(   7.771mV  -     9.714mV ):       377 ( 15.48%)
+    Range 5(   5.828mV  -     7.771mV ):       543 ( 22.29%)
+    Range 6(   3.886mV  -     5.828mV ):       637 ( 26.15%)
+    Range 7(   1.943mV  -     3.886mV ):       458 ( 18.80%)
+    Range 8(    0.000V  -     1.943mV ):        98 (  4.02%)
+    Layer with maximum IR Drop:  metal1
+      metal7: 7.3312e-12 [0 - 0]
+      metal6: 0.00054984 [0.00052851 - 0.0010784]
+      metal5: 0.00076977 [0.00073992 - 0.0015097]
+      metal4: 0.002039 [0.00095132 - 0.0029903]
+      metal3: 0.0026055 [0.0011257 - 0.0037312]
+      metal2: 0.0034873 [0.0011794 - 0.0046667]
+      metal1: 0.014309 [0.001233 - 0.015542]
+  Worst case interval: 149
+  IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/VSS.main.rpt
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/ir_linear.gif
+Ended IR Drop (Linear) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=401.50MB/83702.08MB/3711.23MB)
+
+
+Begin IR Drop (Limit) Report Generation
+  Voltage: 0
+  Threshold: 0.11
+  Minimum, Average, Maximum IR Drop: 0.000V, 6.238mV, 15.542mV
+    Range 1(    0.110V  -      0.110V ):         0 (  0.00%)
+    Range 2(    0.101V  -      0.110V ):         0 (  0.00%)
+    Range 3(  91.667mV  -      0.101V ):         0 (  0.00%)
+    Range 4(  82.500mV  -    91.667mV ):         0 (  0.00%)
+    Range 5(  73.333mV  -    82.500mV ):         0 (  0.00%)
+    Range 6(  64.167mV  -    73.333mV ):         0 (  0.00%)
+    Range 7(  55.000mV  -    64.167mV ):         0 (  0.00%)
+    Range 8(  -1.000uV  -    55.000mV ):      2436 (100.00%)
+    Layer with maximum IR Drop:  metal1
+      metal7: 7.3312e-12 [0 - 0]
+      metal6: 0.00054984 [0.00052851 - 0.0010784]
+      metal5: 0.00076977 [0.00073992 - 0.0015097]
+      metal4: 0.002039 [0.00095132 - 0.0029903]
+      metal3: 0.0026055 [0.0011257 - 0.0037312]
+      metal2: 0.0034873 [0.0011794 - 0.0046667]
+      metal1: 0.014309 [0.001233 - 0.015542]
+  Worst case interval: 149
+  IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/VSS.main.rpt
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/ir_limit.gif
+Ended IR Drop (Limit) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=403.50MB/83702.08MB/3713.70MB)
+
+
+Begin Tap Current Report Generation
+  Minimum, Average, Maximum Tap Current: -0.466mA, -30.693uA, 0.000A
+  Total Current: -25.168mA
+    Range 1(  -1.000GA  -    -1.000mA ):         0 (  0.00%)
+    Range 2(  -1.000mA  -  -100.000uA ):        41 (  5.00%)
+    Range 3(-100.000uA  -   -10.000uA ):       501 ( 61.10%)
+    Range 4( -10.000uA  -    -1.000uA ):        47 (  5.73%)
+    Range 5(  -1.000uA  -  -100.000nA ):         0 (  0.00%)
+    Range 6(-100.000nA  -   -10.000nA ):         3 (  0.37%)
+    Range 7( -10.000nA  -    -1.000nA ):         0 (  0.00%)
+    Range 8(  -1.000nA  -      0.000A ):       228 ( 27.80%)
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/tc.gif
+Ended Tap Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=403.50MB/83702.08MB/3713.70MB)
+
+
+Begin Resistor Current Report Generation
+  Minimum, Average, Maximum Resistor Current: 0.000A, 0.102mA, 1.438mA
+    Range 1(   1.000mA  -     1.000GA ):         6 (  0.24%)
+    Range 2( 100.000uA  -     1.000mA ):       808 ( 32.99%)
+    Range 3(  10.000uA  -   100.000uA ):       533 ( 21.76%)
+    Range 4(   1.000uA  -    10.000uA ):         8 (  0.33%)
+    Range 5(   0.100uA  -     1.000uA ):         0 (  0.00%)
+    Range 6(  10.000nA  -     0.100uA ):       290 ( 11.84%)
+    Range 7(   1.000nA  -    10.000nA ):       349 ( 14.25%)
+    Range 8(    0.000A  -     1.000nA ):       455 ( 18.58%)
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/rc.gif
+Ended Resistor Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=495.75MB/83702.08MB/3807.82MB)
+
+
+Begin Resistor Voltage Report Generation
+  Minimum, Average, Maximum Resistor Voltage: 0.000V, 93.978uV, 1.309mV
+    Range 1(   1.145mV  -     1.309mV ):         1 (  0.04%)
+    Range 2(   0.981mV  -     1.145mV ):        10 (  0.41%)
+    Range 3(   0.818mV  -     0.981mV ):        14 (  0.57%)
+    Range 4(   0.654mV  -     0.818mV ):        52 (  2.12%)
+    Range 5(   0.491mV  -     0.654mV ):        59 (  2.41%)
+    Range 6(   0.327mV  -     0.491mV ):        96 (  3.92%)
+    Range 7(   0.164mV  -     0.327mV ):       212 (  8.66%)
+    Range 8(    0.000V  -     0.164mV ):      2005 ( 81.87%)
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/rv.gif
+Ended Resistor Voltage Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=497.75MB/83702.08MB/3809.82MB)
+
+Info: Using Layer-stack details from : '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/pgv/techonly.cl/NG45.tch'
+Info: Using EM Rules from : '/home/wei0829/voltus_tdt_question_ng45_gcd/dummy_files/dummy_ictem.txt'
+
+Begin Current Density (JRMS/JMAX) Report Generation
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/jrms.gif
+Ended Current Density (JRMS/JMAX) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=511.63MB/83702.08MB/3823.70MB)
+
+
+Begin Self Heat deltaT Report Generation
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/dtrms.gif
+Ended Self Heat deltaT Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=513.63MB/83702.08MB/3825.70MB)
+
+
+Begin Capacitance Report Generation
+	Type                  disconnected          connected             used                
+	Intrinsic-decap/filler  0.000F                0.000F                0.000F              
+	Intrinsic-standard    0.000F                0.000F                0.000F              
+	Intrinsic-macro       0.000F                0.000F                0.000F              
+	Load Cap              0.000F                1.670pF               1.670pF             
+	Grid Cap              0.000F                70.194fF              70.194fF            
+	Total Cap             0.000F                1.740pF               1.740pF             
+Ended Capacitance Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=513.63MB/83702.08MB/3825.70MB)
+
+
+Begin Voltage Across Vias and Contacts Report Generation
+Ended Voltage Across Vias and Contacts Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=513.63MB/83702.08MB/3825.70MB)
+
+
+Begin Weak Grid Connectivity Report
+Ended Weak Grid Connectivity Report: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=513.63MB/83702.08MB/3825.70MB)
+
+
+Begin Grid Integrity Report Generation
+  # Missing Cell Power-Grid Views: 0
+  # Physically Disconnected Instances: 0
+  # Instances with Floating Power Pins: 0
+  # Disconnected Wire Segments: 0
+  # Weakly Connected Metal Segments: 0
+  # Dropped Voltage Sources: 0
+Ended Grid Integrity Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=513.63MB/83702.08MB/3825.70MB)
+
+
+
+Net VDD:
+
+
+Begin Preparing Database for Report Generation
+
+Circuit profile:
+                                                      Current    Voltage
+Layer Name                       Nodes   Resistors    Sources    Sources
+----- --------------------  ----------  ----------  ---------  ---------
+0     metal4                        15          14          0         12
+1     via3                           0          12          0          0
+2     metal3                        12           0          0          0
+3     via2                           0          12          0          0
+4     metal2                        12           0          0          0
+5     via1                           0          12          0          0
+6     metal1                      2944        2932        820          0
+                            ----------  ----------  ---------  ---------
+7     Circuit total               2984        2982        820         12
+Ended Preparing Database for Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=345.88MB/83702.08MB/3671.05MB)
+
+Initializing Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=345.88MB/83702.08MB/3671.05MB)
+
+Begin IR Drop (Linear) Report Generation
+  Voltage: 1.1
+  Threshold: 0.99
+  Minimum, Average, Maximum IR Drop: 1.087V, 1.094V, 1.100V
+    Range 1(    1.086V  -      1.088V ):        97 (  3.25%)
+    Range 2(    1.088V  -      1.090V ):       296 (  9.92%)
+    Range 3(    1.090V  -      1.092V ):       322 ( 10.79%)
+    Range 4(    1.092V  -      1.093V ):       661 ( 22.16%)
+    Range 5(    1.093V  -      1.095V ):       528 ( 17.70%)
+    Range 6(    1.095V  -      1.097V ):       670 ( 22.46%)
+    Range 7(    1.097V  -      1.098V ):       371 ( 12.44%)
+    Range 8(    1.098V  -      1.100V ):        38 (  1.27%)
+    Layer with maximum IR Drop:  metal1
+      metal4: 0 [1.1 - 1.1]
+      metal3: 0.00086284 [1.0986 - 1.0995]
+      metal2: 0.0017258 [1.0972 - 1.0989]
+      metal1: 0.011822 [1.0866 - 1.0984]
+  Worst case interval: 62
+  IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/VDD.main.rpt
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/ir_linear.gif
+Ended IR Drop (Linear) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=345.88MB/83702.08MB/3701.23MB)
+
+
+Begin IR Drop (Limit) Report Generation
+  Voltage: 1.1
+  Threshold: 0.99
+  Minimum, Average, Maximum IR Drop: 1.087V, 1.094V, 1.100V
+    Range 1(    0.990V  -      0.990V ):         0 (  0.00%)
+    Range 2(    0.990V  -      0.999V ):         0 (  0.00%)
+    Range 3(    0.999V  -      1.008V ):         0 (  0.00%)
+    Range 4(    1.008V  -      1.018V ):         0 (  0.00%)
+    Range 5(    1.018V  -      1.027V ):         0 (  0.00%)
+    Range 6(    1.027V  -      1.036V ):         0 (  0.00%)
+    Range 7(    1.036V  -      1.045V ):         0 (  0.00%)
+    Range 8(    1.045V  -      1.100V ):      2983 (100.00%)
+    Layer with maximum IR Drop:  metal1
+      metal4: 0 [1.1 - 1.1]
+      metal3: 0.00086284 [1.0986 - 1.0995]
+      metal2: 0.0017258 [1.0972 - 1.0989]
+      metal1: 0.011822 [1.0866 - 1.0984]
+  Worst case interval: 62
+  IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/VDD.main.rpt
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/ir_limit.gif
+Ended IR Drop (Limit) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=345.88MB/83702.08MB/3711.23MB)
+
+
+Begin Tap Current Report Generation
+  Minimum, Average, Maximum Tap Current: 0.000A, 25.539uA, 0.478mA
+  Total Current: 20.942mA
+    Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+    Range 2( 100.000uA  -     1.000mA ):        16 (  1.95%)
+    Range 3(  10.000uA  -   100.000uA ):       479 ( 58.41%)
+    Range 4(   1.000uA  -    10.000uA ):        95 ( 11.59%)
+    Range 5( 100.000nA  -     1.000uA ):         0 (  0.00%)
+    Range 6(  10.000nA  -   100.000nA ):         3 (  0.37%)
+    Range 7(   1.000nA  -    10.000nA ):         0 (  0.00%)
+    Range 8(    0.000A  -     1.000nA ):       227 ( 27.68%)
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/tc.gif
+Ended Tap Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=345.88MB/83702.08MB/3713.23MB)
+
+
+Begin Resistor Current Report Generation
+  Minimum, Average, Maximum Resistor Current: 0.000A, 75.023uA, 0.834mA
+    Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+    Range 2( 100.000uA  -     1.000mA ):       754 ( 25.29%)
+    Range 3(  10.000uA  -   100.000uA ):       680 ( 22.80%)
+    Range 4(   1.000uA  -    10.000uA ):        19 (  0.64%)
+    Range 5(   0.100uA  -     1.000uA ):         1 (  0.03%)
+    Range 6(  10.000nA  -     0.100uA ):       487 ( 16.33%)
+    Range 7(   1.000nA  -    10.000nA ):       418 ( 14.02%)
+    Range 8(    0.000A  -     1.000nA ):       623 ( 20.89%)
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/rc.gif
+Ended Resistor Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=346.35MB/83702.08MB/3797.95MB)
+
+
+Begin Resistor Voltage Report Generation
+  Minimum, Average, Maximum Resistor Voltage: 0.000V, 63.986uV, 1.519mV
+    Range 1(   1.329mV  -     1.519mV ):         5 (  0.17%)
+    Range 2(   1.139mV  -     1.329mV ):         5 (  0.17%)
+    Range 3(   0.949mV  -     1.139mV ):        11 (  0.37%)
+    Range 4(   0.760mV  -     0.949mV ):        21 (  0.70%)
+    Range 5(   0.570mV  -     0.760mV ):        29 (  0.97%)
+    Range 6(   0.380mV  -     0.570mV ):        59 (  1.98%)
+    Range 7(   0.190mV  -     0.380mV ):       158 (  5.30%)
+    Range 8(    0.000V  -     0.190mV ):      2694 ( 90.34%)
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/rv.gif
+Ended Resistor Voltage Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=346.35MB/83702.08MB/3799.95MB)
+
+Info: Using Layer-stack details from : '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/pgv/techonly.cl/NG45.tch'
+Info: Using EM Rules from : '/home/wei0829/voltus_tdt_question_ng45_gcd/dummy_files/dummy_ictem.txt'
+
+Begin Current Density (JRMS/JMAX) Report Generation
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/jrms.gif
+Ended Current Density (JRMS/JMAX) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3809.82MB)
+
+
+Begin Self Heat deltaT Report Generation
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/dtrms.gif
+Ended Self Heat deltaT Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3823.70MB)
+
+
+Begin Capacitance Report Generation
+	Type                  disconnected          connected             used                
+	Intrinsic-decap/filler  0.000F                0.000F                0.000F              
+	Intrinsic-standard    0.000F                0.000F                0.000F              
+	Intrinsic-macro       0.000F                0.000F                0.000F              
+	Load Cap              0.000F                1.670pF               1.670pF             
+	Grid Cap              0.000F                63.902fF              63.902fF            
+	Total Cap             0.000F                1.734pF               1.734pF             
+Ended Capacitance Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3823.70MB)
+
+
+Begin Voltage Across Vias and Contacts Report Generation
+Ended Voltage Across Vias and Contacts Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3823.70MB)
+
+
+Begin Weak Grid Connectivity Report
+Ended Weak Grid Connectivity Report: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3823.70MB)
+
+
+Begin Grid Integrity Report Generation
+  # Missing Cell Power-Grid Views: 0
+  # Physically Disconnected Instances: 0
+  # Instances with Floating Power Pins: 0
+  # Disconnected Wire Segments: 0
+  # Weakly Connected Metal Segments: 0
+  # Dropped Voltage Sources: 0
+Ended Grid Integrity Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3823.70MB)
+
+- /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5//VSS/VSS.ttm
+- /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5//VDD/VDD.ttm
+Ended Report Generation: (cpu=0:00:00, real=0:00:07, mem(process/total/peak)=105.25MB/83702.08MB/3825.72MB)
+
+
+Rail Analysis Statistics:
+Warning messages:      1
+Error messages:        0
+
+Rail Analysis completed successfully.
+
+Finished Rail Analysis at 23:32:40 05/14/2026 (cpu=0:00:01, real=0:00:49, peak mem=3826.95MB)
+Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:19, real=0:01:18, mem=2964.10MB)
+**WARN: (IMPVAC-263):	Option "-use_db_freq" is obsolete and will be removed in a future release. The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your scripts to use -toggle for setting frequency.
+
+******** Start: analyze_signal_self_heat ********
+Start Time: Thu May 14 23:35:41 2026
+
+
+******** Start: verifyACLimit ********
+Start Time: Thu May 14 23:35:41 2026
+
+Layer poly with id 64 --> poly  2
+**WARN: (IMPEXT-1221):	No poly layer found in the technology file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/qrc/NG45.tch'.
+**WARN: (IMPEXT-1222):	No CUT layer defined between the poly LAYER and first routing metal LAYER in LEF technology file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/qrc/NG45.tch'.
+db Layer metal1 with id 1 --> metal1  4
+db Layer via1 with id 34 --> via1  5
+db Layer metal2 with id 2 --> metal2  6
+db Layer via2 with id 35 --> via2  7
+db Layer metal3 with id 3 --> metal3  8
+db Layer via3 with id 36 --> via3  9
+db Layer metal4 with id 4 --> metal4  10
+db Layer via4 with id 37 --> via4  11
+db Layer metal5 with id 5 --> metal5  12
+db Layer via5 with id 38 --> via5  13
+db Layer metal6 with id 6 --> metal6  14
+db Layer via6 with id 39 --> via6  15
+db Layer metal7 with id 7 --> metal7  16
+db Layer via7 with id 40 --> via7  17
+db Layer metal8 with id 8 --> metal8  18
+db Layer via8 with id 41 --> via8  19
+db Layer metal9 with id 9 --> metal9  20
+db Layer via9 with id 42 --> via9  21
+db Layer metal10 with id 10 --> metal10  22
+
+QRCTech file: /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/qrc/NG45.tch
+
+ICTEM file: /home/wei0829/voltus_tdt_question_ng45_gcd/dummy_files/dummy_ictem.txt
+
+LayerMapping file: VAC_LayerMap_2207965.txt
+AAE_INFO: opIsDesignInPostRouteState() is 1
+#################################################################################
+# Design Name: gcd
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (8 T). (MEM=2873.95)
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.sdc
+Total number of fetched objects 680
+Total number of fetched objects 680
+Total number of fetched objects 680
+Total number of fetched objects 680
+End delay calculation. (MEM=3041.65 CPU=0:00:00.2 REAL=0:00:00.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=3030.62 CPU=0:00:00.4 REAL=0:00:00.0)
+Timing Analysis Mode: CTE
+Irms Scale Factor: 1
+Verifying all signal nets.
+View hold_func and Hold mode is used in calculation.
+**WARN: (IMPVAC-397):	No corresponding tech layer name for LEF layer active.
+**WARN: (IMPVAC-397):	No corresponding tech layer name for LEF layer OVERLAP.
+**WARN: (IMPVAC-216):	Net clk has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_rdy has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_val has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net reset has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net resp_rdy has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net resp_val has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[31] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[30] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[29] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[28] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[27] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[26] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[25] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[24] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[23] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[22] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[21] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[20] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[19] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (IMPVAC-216):	Net req_msg[18] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+**WARN: (EMS-62):	Message <IMPVAC-216> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+**WARN: (IMPVAC-131):	NET _446_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _452_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _455_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _456_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _449_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _450_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _451_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _447_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _453_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _454_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _463_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _464_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _457_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _458_ has no wire cap.
+**WARN: (EMS-62):	Message <IMPVAC-131> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+**WARN: (IMPVAC-131):	NET _460_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _461_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _462_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _448_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _465_ has no wire cap.
+**WARN: (IMPVAC-131):	NET _459_ has no wire cap.
+**WARN: (EMS-62):	Message <IMPVAC-131> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+
+End Time: Thu May 14 23:35:42 2026
+******** End: verifyACLimit ********
+  (CPU Time: 0:00:01.5  MEM: 187.965M)
+
+
+End Time: Thu May 14 23:35:42 2026
+******** End: analyze_signal_self_heat ********
+  (CPU Time: 0:00:01.5  MEM: 187.664M)
+
+
+Rail Analysis Statistics:
+Warning messages:      0
+Error messages:        0
+
+Rail Analysis completed successfully.
+
+Finished Rail Analysis at 23:35:42 05/14/2026 (cpu=0:00:00, real=0:00:01, peak mem=3076.24MB)
+Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:21, real=0:04:20, mem=3076.24MB)
+<CMD> exit
+
+--------------------------------------------------------------------------------
+Exiting Voltus IC Power Integrity Solution on Thu May 14 23:37:22 2026
+  Total CPU time:     0:00:21
+  Total real time:    0:06:00
+  Peak memory (main): 3826.95MB
+

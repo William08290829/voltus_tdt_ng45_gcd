@@ -1,0 +1,12 @@
+CMD: /usr/cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_rail -nhbPort 41715 -procInfoHost TC-DL5:55695 -temp_directory_name /tmp/ssv_tmpdir_2207965_e8wUPZ -eps -clienttimeout 3600 -machine TC-DL5 -port 48797 -hbPort 44545 -id 1 
+CWD: /home/wei0829/voltus_tdt_question_ng45_gcd
+PID: 2208409
+Host: TC-DL5
+Number of CPU(s): 32
+System total memory: 255058MB
+date_time max RSS memory(MB) RSS memory(MB) virtual memory(MB) shared memory(MB)
+2026-5-14 23:32:3 61 61 3412 46
+2026-5-14 23:32:13 61 61 3412 46
+2026-5-14 23:32:23 61 61 3412 46
+2026-5-14 23:32:33 589 345 7013 54
+end

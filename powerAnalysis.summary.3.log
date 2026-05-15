@@ -1,0 +1,237 @@
+
+
+
+Started Power Analysis at 23:17:52 05/14/2026
+
+
+Begin Processing Timing Library for Power Calculation
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lib/NangateOpenCellLibrary_typical.lib
+Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=168.77MB/7623.00MB/3042.20MB)
+
+
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.tech.lef
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.mod.lef
+/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.rect.lef
+Begin Processing Netlist for Power Calculation
+** INFO:  (VOLTUS_POWR-3013): Loading DEF file "/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def".
+
+
+  Netlist Statistics:
+    Cell         :  135
+    Instance     :  609
+    Decap/Filler :  0
+    Net          :  679
+    Port         :  54
+
+Ended Processing Netlist for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=677.47MB/13243.46MB/3475.64MB)
+
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+
+Rail status:
+  1.1V    VDD
+  0V    VSS
+  
+
+** WARN:  (VOLTUS_POWR-1757): Found (44) cells had multiple entries in the Cadence cell libraries.  Only the first entry was used.
+
+AND2_X1
+AND2_X2
+AND2_X4
+AND3_X1
+AOI21_X1
+AOI21_X2
+AOI21_X4
+BUF_X1
+BUF_X16
+BUF_X2
+BUF_X4
+BUF_X8
+CLKBUF_X1
+CLKBUF_X3
+DFF_X1
+DFF_X2
+FILLCELL_X1
+FILLCELL_X16
+FILLCELL_X2
+FILLCELL_X32
+FILLCELL_X4
+FILLCELL_X8
+INV_X1
+INV_X2
+INV_X4
+MUX2_X1
+NAND2_X1
+NAND2_X2
+NAND2_X4
+NAND3_X1
+NAND3_X2
+NAND3_X4
+NAND4_X1
+NAND4_X4
+NOR2_X1
+NOR2_X2
+NOR2_X4
+NOR4_X1
+OAI21_X1
+OAI21_X2
+OAI21_X4
+OAI22_X1
+XNOR2_X1
+XNOR2_X2
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=677.47MB/13243.46MB/3475.64MB)
+
+
+Begin Processing Timing Window Data for Power Calculation
+
+  SPEF    : /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.spef
+    Name matched: 644/644
+    Annotation coverage for this file      : 644/677 (95.1256%)
+
+
+Starting Levelizing
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT)
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 10%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 20%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 30%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 40%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 50%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 60%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 70%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 80%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 90%
+
+Finished Levelizing
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT)
+   core_clock(2173.91MHz) 
+
+  Timing Window Statistics:
+    File name                                           : design.twf.gz
+    Generator                                           : Voltus IC Power Integrity Solution
+    Block of current design (read_twf -scope)           : ""
+    Remove hierarchy from TWF (read_twf -strip_prefix)  : ""
+    Waveform definitions parsed                         : 2
+    Clock roots assigned/parsed                         : 2/2 (100%)
+    Timing windows assigned/parsed                      : 1366/1366 (100%)
+    Nets with timing windows/Nets in design             : 677/677 (100%)
+    Constants assigned/parsed                           : 0/0 (0%)
+    Nets with constants/Nets in design                  : 0/677 (0%)
+    External loads assigned/parsed                      : 0/0 (0%)
+    Slews assigned/parsed                               : 1378/1378 (100%)
+    Nets with slew/Nets in design                       : 677/677 (100%)
+    Slew range                                          : 5e-12s - 2.18e-10s
+
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.47MB/13241.46MB/3476.64MB)
+
+
+Begin Processing VCD Vectors
+Ended Processing VCD Vectors: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.47MB/13241.46MB/3476.64MB)
+
+
+Begin Processing FSDB Vectors
+Ended Processing FSDB Vectors: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.47MB/13241.46MB/3476.64MB)
+
+
+Begin Processing User Attributes
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.47MB/13241.46MB/3476.64MB)
+
+
+Begin Processing Signal Activity
+
+Starting Activity Propagation
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT)
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 10%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 20%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 30%
+
+Finished Activity Propagation
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.47MB/13241.46MB/3476.64MB)
+
+
+Begin Power Analysis
+  ----------------------------------------------------------
+  # of cell(s) missing both power/leakage table: 0
+  # of cell(s) missing power table: 7
+  # of cell(s) missing leakage table: 7
+  ----------------------------------------------------------
+  CellName                                  Missing Table(s)
+  FILLCELL_X1                               internal power, leakage power, 
+  FILLCELL_X16                              internal power, leakage power, 
+  FILLCELL_X2                               internal power, leakage power, 
+  FILLCELL_X32                              internal power, leakage power, 
+  FILLCELL_X4                               internal power, leakage power, 
+  FILLCELL_X8                               internal power, leakage power, 
+  TAPCELL_X1                                internal power, leakage power, 
+  
+
+
+Starting Calculating power
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT)
+ ... Preparing power data for dynamic calculation
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 10%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 20%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 30%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 40%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 50%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 60%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 70%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 80%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 90%
+
+Finished Calculating power
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT)
+  # of MSMV cell(s) missing power_level: 0
+Begin Processing set_power
+Ended Processing set_power: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=679.04MB/13241.46MB/3477.21MB)
+Begin Processing set_power stats
+Ended Processing set_power stats: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=679.04MB/13241.46MB/3477.21MB)
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=679.04MB/13241.46MB/3477.21MB)
+
+
+Begin Writing Current Files
+  CPU              : 8
+  Simulation Period: 0.92ns
+  Step Size        : 5ps
+
+
+Scheduling events using timing window information
+
+
+
+Starting Writing current file while scheduling
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT)
+** INFO:  (VOLTUS_POWR-2042): Beginning parallel processing, using 8 CPUs
+
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 10%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 20%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 30%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 40%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 50%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 60%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 70%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 80%
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT): 90%
+
+Finished Writing current file while scheduling
+2026-May-14 23:17:55 (2026-May-14 15:17:55 GMT)
+Ended Writing Current Files: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=682.66MB/13257.49MB/3480.82MB)
+
+
+Power Analysis Statistics:
+  Warning messages: 1
+  Error messages: 0
+
+
+Finished Power Analysis at 23:18:00 05/14/2026 (cpu=0:00:00, real=0:00:08, peak mem=3480.82MB)
+Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:13, real=0:00:20, mem=3480.82MB)
+
+
+
+Exit code 0.
+Voltus Power Analysis exited successfully.

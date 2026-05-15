@@ -1,0 +1,304 @@
+Begin Preparing Database for Report Generation
+    Net VSS:
+        
+        Circuit profile:
+                                                              Current    Voltage
+        Layer Name                       Nodes   Resistors    Sources    Sources
+        ----- --------------------  ----------  ----------  ---------  ---------
+        0     metal7                        15          12          0          6
+        1     via6                           0           6          0          0
+        2     metal6                         6           0          0          0
+        3     via5                           0           6          0          0
+        4     metal5                         6           0          0          0
+        5     via4                           0           6          0          0
+        6     metal4                        36          34          0          0
+        7     via3                           0          24          0          0
+        8     metal3                        24           0          0          0
+        9     via2                           0          24          0          0
+        10    metal2                        24           0          0          0
+        11    via1                           0          24          0          0
+        12    metal1                      2325        2313        820          0
+                                    ----------  ----------  ---------  ---------
+        13    Circuit total               2437        2449        820          6
+
+    Net VDD:
+        
+        Circuit profile:
+                                                              Current    Voltage
+        Layer Name                       Nodes   Resistors    Sources    Sources
+        ----- --------------------  ----------  ----------  ---------  ---------
+        0     metal4                        15          14          0         12
+        1     via3                           0          12          0          0
+        2     metal3                        12           0          0          0
+        3     via2                           0          12          0          0
+        4     metal2                        12           0          0          0
+        5     via1                           0          12          0          0
+        6     metal1                      2944        2932        820          0
+                                    ----------  ----------  ---------  ---------
+        7     Circuit total               2984        2982        820         12
+Ended Preparing Database for Report Generation
+
+************************************************************************************
+
+Begin IR Drop (Linear) Report Generation
+    Net VSS:
+          Voltage: 0
+          Threshold: 0.11
+          Minimum, Average, Maximum IR Drop: 0.000V, 6.238mV, 15.542mV
+            Range 1(  13.600mV  -    15.544mV ):        90 (  3.69%)
+            Range 2(  11.657mV  -    13.600mV ):        39 (  1.60%)
+            Range 3(   9.714mV  -    11.657mV ):       194 (  7.96%)
+            Range 4(   7.771mV  -     9.714mV ):       377 ( 15.48%)
+            Range 5(   5.828mV  -     7.771mV ):       543 ( 22.29%)
+            Range 6(   3.886mV  -     5.828mV ):       637 ( 26.15%)
+            Range 7(   1.943mV  -     3.886mV ):       458 ( 18.80%)
+            Range 8(    0.000V  -     1.943mV ):        98 (  4.02%)
+            Layer with maximum IR Drop:  metal1
+              metal7: 7.3312e-12 [0 - 0]
+              metal6: 0.00054984 [0.00052851 - 0.0010784]
+              metal5: 0.00076977 [0.00073992 - 0.0015097]
+              metal4: 0.002039 [0.00095132 - 0.0029903]
+              metal3: 0.0026055 [0.0011257 - 0.0037312]
+              metal2: 0.0034873 [0.0011794 - 0.0046667]
+              metal1: 0.014309 [0.001233 - 0.015542]
+          Worst case interval: 149
+          IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/VSS.main.rpt
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/ir_linear.gif
+
+    Net VDD:
+          Voltage: 1.1
+          Threshold: 0.99
+          Minimum, Average, Maximum IR Drop: 1.087V, 1.094V, 1.100V
+            Range 1(    1.086V  -      1.088V ):        97 (  3.25%)
+            Range 2(    1.088V  -      1.090V ):       296 (  9.92%)
+            Range 3(    1.090V  -      1.092V ):       322 ( 10.79%)
+            Range 4(    1.092V  -      1.093V ):       661 ( 22.16%)
+            Range 5(    1.093V  -      1.095V ):       528 ( 17.70%)
+            Range 6(    1.095V  -      1.097V ):       670 ( 22.46%)
+            Range 7(    1.097V  -      1.098V ):       371 ( 12.44%)
+            Range 8(    1.098V  -      1.100V ):        38 (  1.27%)
+            Layer with maximum IR Drop:  metal1
+              metal4: 0 [1.1 - 1.1]
+              metal3: 0.00086284 [1.0986 - 1.0995]
+              metal2: 0.0017258 [1.0972 - 1.0989]
+              metal1: 0.011822 [1.0866 - 1.0984]
+          Worst case interval: 62
+          IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VDD/VDD.main.rpt
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VDD/ir_linear.gif
+Ended IR Drop (Linear) Report Generation
+
+************************************************************************************
+
+Begin IR Drop (Limit) Report Generation
+    Net VSS:
+          Voltage: 0
+          Threshold: 0.11
+          Minimum, Average, Maximum IR Drop: 0.000V, 6.238mV, 15.542mV
+            Range 1(    0.110V  -      0.110V ):         0 (  0.00%)
+            Range 2(    0.101V  -      0.110V ):         0 (  0.00%)
+            Range 3(  91.667mV  -      0.101V ):         0 (  0.00%)
+            Range 4(  82.500mV  -    91.667mV ):         0 (  0.00%)
+            Range 5(  73.333mV  -    82.500mV ):         0 (  0.00%)
+            Range 6(  64.167mV  -    73.333mV ):         0 (  0.00%)
+            Range 7(  55.000mV  -    64.167mV ):         0 (  0.00%)
+            Range 8(  -1.000uV  -    55.000mV ):      2436 (100.00%)
+            Layer with maximum IR Drop:  metal1
+              metal7: 7.3312e-12 [0 - 0]
+              metal6: 0.00054984 [0.00052851 - 0.0010784]
+              metal5: 0.00076977 [0.00073992 - 0.0015097]
+              metal4: 0.002039 [0.00095132 - 0.0029903]
+              metal3: 0.0026055 [0.0011257 - 0.0037312]
+              metal2: 0.0034873 [0.0011794 - 0.0046667]
+              metal1: 0.014309 [0.001233 - 0.015542]
+          Worst case interval: 149
+          IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/VSS.main.rpt
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/ir_limit.gif
+
+    Net VDD:
+          Voltage: 1.1
+          Threshold: 0.99
+          Minimum, Average, Maximum IR Drop: 1.087V, 1.094V, 1.100V
+            Range 1(    0.990V  -      0.990V ):         0 (  0.00%)
+            Range 2(    0.990V  -      0.999V ):         0 (  0.00%)
+            Range 3(    0.999V  -      1.008V ):         0 (  0.00%)
+            Range 4(    1.008V  -      1.018V ):         0 (  0.00%)
+            Range 5(    1.018V  -      1.027V ):         0 (  0.00%)
+            Range 6(    1.027V  -      1.036V ):         0 (  0.00%)
+            Range 7(    1.036V  -      1.045V ):         0 (  0.00%)
+            Range 8(    1.045V  -      1.100V ):      2983 (100.00%)
+            Layer with maximum IR Drop:  metal1
+              metal4: 0 [1.1 - 1.1]
+              metal3: 0.00086284 [1.0986 - 1.0995]
+              metal2: 0.0017258 [1.0972 - 1.0989]
+              metal1: 0.011822 [1.0866 - 1.0984]
+          Worst case interval: 62
+          IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VDD/VDD.main.rpt
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VDD/ir_limit.gif
+Ended IR Drop (Limit) Report Generation
+
+************************************************************************************
+
+Begin Tap Current Report Generation
+    Net VSS:
+          Minimum, Average, Maximum Tap Current: -0.466mA, -30.693uA, 0.000A
+          Total Current: -25.168mA
+            Range 1(  -1.000GA  -    -1.000mA ):         0 (  0.00%)
+            Range 2(  -1.000mA  -  -100.000uA ):        41 (  5.00%)
+            Range 3(-100.000uA  -   -10.000uA ):       501 ( 61.10%)
+            Range 4( -10.000uA  -    -1.000uA ):        47 (  5.73%)
+            Range 5(  -1.000uA  -  -100.000nA ):         0 (  0.00%)
+            Range 6(-100.000nA  -   -10.000nA ):         3 (  0.37%)
+            Range 7( -10.000nA  -    -1.000nA ):         0 (  0.00%)
+            Range 8(  -1.000nA  -      0.000A ):       228 ( 27.80%)
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/tc.gif
+
+    Net VDD:
+          Minimum, Average, Maximum Tap Current: 0.000A, 25.539uA, 0.478mA
+          Total Current: 20.942mA
+            Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+            Range 2( 100.000uA  -     1.000mA ):        16 (  1.95%)
+            Range 3(  10.000uA  -   100.000uA ):       479 ( 58.41%)
+            Range 4(   1.000uA  -    10.000uA ):        95 ( 11.59%)
+            Range 5( 100.000nA  -     1.000uA ):         0 (  0.00%)
+            Range 6(  10.000nA  -   100.000nA ):         3 (  0.37%)
+            Range 7(   1.000nA  -    10.000nA ):         0 (  0.00%)
+            Range 8(    0.000A  -     1.000nA ):       227 ( 27.68%)
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VDD/tc.gif
+Ended Tap Current Report Generation
+
+************************************************************************************
+
+Begin Resistor Current Report Generation
+    Net VSS:
+          Minimum, Average, Maximum Resistor Current: 0.000A, 0.102mA, 1.438mA
+            Range 1(   1.000mA  -     1.000GA ):         6 (  0.24%)
+            Range 2( 100.000uA  -     1.000mA ):       808 ( 32.99%)
+            Range 3(  10.000uA  -   100.000uA ):       533 ( 21.76%)
+            Range 4(   1.000uA  -    10.000uA ):         8 (  0.33%)
+            Range 5(   0.100uA  -     1.000uA ):         0 (  0.00%)
+            Range 6(  10.000nA  -     0.100uA ):       290 ( 11.84%)
+            Range 7(   1.000nA  -    10.000nA ):       349 ( 14.25%)
+            Range 8(    0.000A  -     1.000nA ):       455 ( 18.58%)
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/rc.gif
+
+    Net VDD:
+          Minimum, Average, Maximum Resistor Current: 0.000A, 75.023uA, 0.834mA
+            Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+            Range 2( 100.000uA  -     1.000mA ):       754 ( 25.29%)
+            Range 3(  10.000uA  -   100.000uA ):       680 ( 22.80%)
+            Range 4(   1.000uA  -    10.000uA ):        19 (  0.64%)
+            Range 5(   0.100uA  -     1.000uA ):         1 (  0.03%)
+            Range 6(  10.000nA  -     0.100uA ):       487 ( 16.33%)
+            Range 7(   1.000nA  -    10.000nA ):       418 ( 14.02%)
+            Range 8(    0.000A  -     1.000nA ):       623 ( 20.89%)
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VDD/rc.gif
+Ended Resistor Current Report Generation
+
+************************************************************************************
+
+Begin Resistor Voltage Report Generation
+    Net VSS:
+          Minimum, Average, Maximum Resistor Voltage: 0.000V, 93.978uV, 1.309mV
+            Range 1(   1.145mV  -     1.309mV ):         1 (  0.04%)
+            Range 2(   0.981mV  -     1.145mV ):        10 (  0.41%)
+            Range 3(   0.818mV  -     0.981mV ):        14 (  0.57%)
+            Range 4(   0.654mV  -     0.818mV ):        52 (  2.12%)
+            Range 5(   0.491mV  -     0.654mV ):        59 (  2.41%)
+            Range 6(   0.327mV  -     0.491mV ):        96 (  3.92%)
+            Range 7(   0.164mV  -     0.327mV ):       212 (  8.66%)
+            Range 8(    0.000V  -     0.164mV ):      2005 ( 81.87%)
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/rv.gif
+
+    Net VDD:
+          Minimum, Average, Maximum Resistor Voltage: 0.000V, 63.986uV, 1.519mV
+            Range 1(   1.329mV  -     1.519mV ):         5 (  0.17%)
+            Range 2(   1.139mV  -     1.329mV ):         5 (  0.17%)
+            Range 3(   0.949mV  -     1.139mV ):        11 (  0.37%)
+            Range 4(   0.760mV  -     0.949mV ):        21 (  0.70%)
+            Range 5(   0.570mV  -     0.760mV ):        29 (  0.97%)
+            Range 6(   0.380mV  -     0.570mV ):        59 (  1.98%)
+            Range 7(   0.190mV  -     0.380mV ):       158 (  5.30%)
+            Range 8(    0.000V  -     0.190mV ):      2694 ( 90.34%)
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VDD/rv.gif
+Ended Resistor Voltage Report Generation
+
+************************************************************************************
+
+Begin Current Density (JRMS/JMAX) Report Generation
+    Net VSS:
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/jrms.gif
+
+    Net VDD:
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VDD/jrms.gif
+Ended Current Density (JRMS/JMAX) Report Generation
+
+************************************************************************************
+
+Begin Self Heat deltaT Report Generation
+    Net VSS:
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/dtrms.gif
+
+    Net VDD:
+          GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VDD/dtrms.gif
+Ended Self Heat deltaT Report Generation
+
+************************************************************************************
+
+Begin Capacitance Report Generation
+    Net VSS:
+        	Type                  disconnected          connected             used                
+        	Intrinsic-decap/filler  0.000F                0.000F                0.000F              
+        	Intrinsic-standard    0.000F                0.000F                0.000F              
+        	Intrinsic-macro       0.000F                0.000F                0.000F              
+        	Load Cap              0.000F                1.670pF               1.670pF             
+        	Grid Cap              0.000F                70.194fF              70.194fF            
+        	Total Cap             0.000F                1.740pF               1.740pF             
+
+    Net VDD:
+        	Type                  disconnected          connected             used                
+        	Intrinsic-decap/filler  0.000F                0.000F                0.000F              
+        	Intrinsic-standard    0.000F                0.000F                0.000F              
+        	Intrinsic-macro       0.000F                0.000F                0.000F              
+        	Load Cap              0.000F                1.670pF               1.670pF             
+        	Grid Cap              0.000F                63.902fF              63.902fF            
+        	Total Cap             0.000F                1.734pF               1.734pF             
+Ended Capacitance Report Generation
+
+************************************************************************************
+
+Begin Voltage Across Vias and Contacts Report Generation
+    Net VSS:
+
+    Net VDD:
+Ended Voltage Across Vias and Contacts Report Generation
+
+************************************************************************************
+
+Begin Weak Grid Connectivity Report
+    Net VSS:
+
+    Net VDD:
+Ended Weak Grid Connectivity Report
+
+************************************************************************************
+
+Begin Grid Integrity Report Generation
+    Net VSS:
+          # Missing Cell Power-Grid Views: 0
+          # Physically Disconnected Instances: 0
+          # Instances with Floating Power Pins: 0
+          # Disconnected Wire Segments: 0
+          # Weakly Connected Metal Segments: 0
+          # Dropped Voltage Sources: 0
+
+    Net VDD:
+          # Missing Cell Power-Grid Views: 0
+          # Physically Disconnected Instances: 0
+          # Instances with Floating Power Pins: 0
+          # Disconnected Wire Segments: 0
+          # Weakly Connected Metal Segments: 0
+          # Dropped Voltage Sources: 0
+Ended Grid Integrity Report Generation
+
+************************************************************************************
+

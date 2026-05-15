@@ -1,0 +1,1833 @@
+[05/14 23:31:23      0s] 
+[05/14 23:31:23      0s] Cadence Voltus(TM) IC Power Integrity Solution.
+[05/14 23:31:23      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/14 23:31:23      0s] 
+[05/14 23:31:23      0s] Version:	v23.11-s111_1, built Thu May 16 09:07:16 PDT 2024
+[05/14 23:31:23      0s] Options:	-no_gui -log ./logs/myrun_ng45_gcd_0514 -overwrite -files ./scripts/ng45_gcd_self.tcl 
+[05/14 23:31:23      0s] Date:		Thu May 14 23:31:23 2026
+[05/14 23:31:23      0s] Host:		TC-DL5 (x86_64 w/Linux 4.18.0-553.36.1.el8_10.x86_64) (16cores*32cpus*AMD Ryzen 9 9950X 16-Core Processor 1024KB)
+[05/14 23:31:23      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[05/14 23:31:23      0s] 
+[05/14 23:31:23      0s] License:
+[05/14 23:31:23      0s] 		[23:31:23.255857] Configured Lic search path (23.02-s005): 5280@lshc
+
+[05/14 23:31:24      0s] 		vtsxl	Voltus Power Integrity Solution XL	23.1	checkout succeeded
+[05/14 23:31:24      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[05/14 23:31:24      0s] {{{ isCertus 0,  isCertusOrDistOptClient = 0, isInnovusCertusClient = 0}}}
+[05/14 23:31:31      7s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Voltus IC Power Integrity Solution v23.11-s111_1 (64bit) 05/16/2024 09:07 (Linux 3.10.0-693.el7.x86_64)
+[05/14 23:31:32      8s] @(#)CDS: NanoRoute 23.11-s111_1 NR240401-0735/23_11-UB (database version 18.20.622) {superthreading v2.20}
+[05/14 23:31:32      8s] @(#)CDS: AAE 23.11-s031 (64bit) 05/16/2024 (Linux 3.10.0-693.el7.x86_64)
+[05/14 23:31:32      8s] @(#)CDS: CTE 23.11-s025_1 () May 16 2024 01:47:36 ( )
+[05/14 23:31:32      8s] @(#)CDS: SYNTECH 23.11-s010_1 () Apr  5 2024 04:21:08 ( )
+[05/14 23:31:32      8s] @(#)CDS: CPE v23.11-s059
+[05/14 23:31:32      8s] @(#)CDS: OA 22.61-p011 Thu Nov 30 12:26:13 2023
+[05/14 23:31:32      8s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[05/14 23:31:32      8s] @(#)CDS: RCDB 11.15.0
+[05/14 23:31:32      8s] @(#)CDS: STYLUS 23.10-a010_1 (02/06/2024 03:59 PST)
+[05/14 23:31:32      8s] Change the soft stacksize limit to 0.2%RAM (510 mbytes). Set global soft_stack_size_limit to change the value.
+[05/14 23:31:32      8s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_2207965_e8wUPZ'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_2207965_e8wUPZ'.
+[05/14 23:31:32      8s] #@ Processing -files option
+[05/14 23:31:32      8s] Sourcing tcl/tk file './scripts/ng45_gcd_self.tcl' ...
+[05/14 23:31:32      8s] <CMD> set_multi_cpu_usage -localCpu 8 -verbose
+[05/14 23:31:32      8s] setMultiCpuUsage -localCpu 8
+[05/14 23:31:32      8s] <CMD> read_lib -lef /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.tech.lef /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.mod.lef /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.rect.lef
+[05/14 23:31:32      8s] <CMD> read_lib -min /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lib/NangateOpenCellLibrary_typical.lib
+[05/14 23:31:32      8s] <CMD> read_lib -max /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lib/NangateOpenCellLibrary_typical.lib
+[05/14 23:31:33      9s] <CMD> read_verilog /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.v
+[05/14 23:31:33      9s] <CMD> set_top_module gcd
+[05/14 23:31:33      9s] #% Begin Load MMMC data ... (date=05/14 23:31:33, mem=1678.8M)
+[05/14 23:31:33      9s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[05/14 23:31:33      9s] #% End Load MMMC data ... (date=05/14 23:31:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1679.9M, current mem=1679.9M)
+[05/14 23:31:33      9s] 
+[05/14 23:31:33      9s] Loading LEF file /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.tech.lef ...
+[05/14 23:31:33      9s] 
+[05/14 23:31:33      9s] Loading LEF file /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.mod.lef ...
+[05/14 23:31:33      9s] Set DBUPerIGU to M2 pitch 380.
+[05/14 23:31:33      9s] 
+[05/14 23:31:33      9s] Loading LEF file /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.rect.lef ...
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AND2_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AND2_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AND2_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AND3_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AND3_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AND3_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AND4_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AND4_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AND4_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'ANTENNA_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AOI211_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AOI211_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AOI211_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AOI21_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AOI21_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AOI21_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AOI221_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AOI221_X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AOI221_X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (IMPLF-58):	MACRO 'AOI222_X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] **WARN: (EMS-62):	Message <IMPLF-58> has exceeded the default message display limit of 20.
+[05/14 23:31:33      9s] To avoid this warning, increase the display limit per unique message by
+[05/14 23:31:33      9s] using the set_message -limit <number> command.
+[05/14 23:31:33      9s] The message limit can be removed by using the set_message -no_limit command.
+[05/14 23:31:33      9s] Note that setting a very large number using the set_message -limit command
+[05/14 23:31:33      9s] or removing the message limit using the set_message -no_limit command can
+[05/14 23:31:33      9s] significantly increase the log file size.
+[05/14 23:31:33      9s] To suppress a message, use the set_message -suppress command.
+[05/14 23:31:33      9s] **WARN: (IMPLF-61):	134 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[05/14 23:31:33      9s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/14 23:31:33      9s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[05/14 23:31:33      9s] Loading view definition file from .ssv_emulate_view_definition_2207965_a19904b8-4d54-4ec9-8cce-d0dd8c39e9a9.tcl
+[05/14 23:31:33      9s] Starting library reading in 'Multi-threaded flow' (with '8' threads)
+[05/14 23:31:33      9s] Reading   timing library /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lib/NangateOpenCellLibrary_typical.lib.
+[05/14 23:31:33      9s] Read 135 cells in library NangateOpenCellLibrary.
+[05/14 23:31:33      9s] Library reading multithread flow ended.
+[05/14 23:31:33      9s] Ending "PreSetAnalysisView" (total cpu=0:00:00.5, real=0:00:00.0, peak res=1890.0M, current mem=1755.5M)
+[05/14 23:31:33      9s] *** End library_loading (cpu=0.01min, real=0.00min, mem=192.0M, fe_cpu=0.16min, fe_real=0.17min, fe_mem=1881.5M) ***
+[05/14 23:31:33      9s] #% Begin Load netlist data ... (date=05/14 23:31:33, mem=1755.5M)
+[05/14 23:31:33      9s] *** Begin netlist parsing (mem=1881.5M) ***
+[05/14 23:31:33      9s] Reading verilog netlist '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.v'
+[05/14 23:31:33      9s] 
+[05/14 23:31:33      9s] *** Memory Usage v#2 (Current mem = 2169.547M, initial mem = 840.254M) ***
+[05/14 23:31:33      9s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2169.5M) ***
+[05/14 23:31:33     10s] #% End Load netlist data ... (date=05/14 23:31:33, total cpu=0:00:00.2, real=0:00:00.0, peak res=1860.8M, current mem=1860.8M)
+[05/14 23:31:33     10s] Set top cell to gcd.
+[05/14 23:31:33     10s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[05/14 23:31:33     10s] late library set: default_emulate_libset_max
+[05/14 23:31:33     10s] early library set: default_emulate_libset_min
+[05/14 23:31:33     10s] Completed consistency checks. Status: Successful
+[05/14 23:31:33     10s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[05/14 23:31:33     10s] late library set: default_emulate_libset_max
+[05/14 23:31:33     10s] early library set: default_emulate_libset_min
+[05/14 23:31:33     10s] Completed consistency checks. Status: Successful
+[05/14 23:31:33     10s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1880.4M, current mem=1880.4M)
+[05/14 23:31:33     10s] *** Estimate the number of flat objects and h-objects before Flatten ***
+[05/14 23:31:33     10s] 	flat insts : 609
+[05/14 23:31:33     10s] 	flat terms : 1777
+[05/14 23:31:33     10s] 	HNets : 0
+[05/14 23:31:33     10s] 	HInsts : 0
+[05/14 23:31:33     10s] 	HTerms : 0
+[05/14 23:31:33     10s] Building hierarchical netlist for Cell gcd ...
+[05/14 23:31:33     10s] ***** UseNewTieNetMode *****.
+[05/14 23:31:33     10s] *** Netlist is unique.
+[05/14 23:31:33     10s] Setting Std. cell height to 2800 DBU (smallest netlist inst).
+[05/14 23:31:33     10s] ** info: there are 136 modules.
+[05/14 23:31:33     10s] ** info: there are 609 stdCell insts.
+[05/14 23:31:33     10s] ** info: there are 609 stdCell insts with at least one signal pin.
+[05/14 23:31:33     10s] 
+[05/14 23:31:33     10s] *** Memory Usage v#2 (Current mem = 2497.578M, initial mem = 840.254M) ***
+[05/14 23:31:33     10s] Start create_tracks
+[05/14 23:31:33     10s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[05/14 23:31:33     10s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[05/14 23:31:33     10s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[05/14 23:31:33     10s] Set Default Input Pin Transition as 0.1 ps.
+[05/14 23:31:33     10s] Extraction setup Started for TopCell gcd 
+[05/14 23:31:33     10s] Summary of Active RC-Corners : 
+[05/14 23:31:33     10s]  
+[05/14 23:31:33     10s]  Analysis View: default_emulate_view
+[05/14 23:31:33     10s]     RC-Corner Name        : default_emulate_rc_corner
+[05/14 23:31:33     10s]     RC-Corner Index       : 0
+[05/14 23:31:33     10s]     RC-Corner Temperature : 25 Celsius
+[05/14 23:31:33     10s]     RC-Corner Cap Table   : ''
+[05/14 23:31:33     10s]     RC-Corner PostRoute Res Factor        : 1
+[05/14 23:31:33     10s]     RC-Corner PostRoute Cap Factor        : 1
+[05/14 23:31:33     10s]     RC-Corner PostRoute XCap Factor       : 1
+[05/14 23:31:33     10s] eee: RC Grid memory allocated = 1920 (4 X 4 X 10 X 12b)
+[05/14 23:31:33     10s] eee: pegSigSF=1.070000
+[05/14 23:31:33     10s] Initializing multi-corner resistance tables ...
+[05/14 23:31:33     10s] eee: Grid unit RC data computation started
+[05/14 23:31:33     10s] eee: Grid unit RC data computation completed
+[05/14 23:31:33     10s] eee: l=1 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:33     10s] eee: l=2 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:33     10s] eee: l=3 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:33     10s] eee: l=4 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:33     10s] eee: l=5 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:33     10s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:33     10s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:33     10s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:33     10s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:33     10s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:33     10s] eee: LAM-FP: thresh=1 ; dimX=259.821429 ; dimY=250.000000 ; multX=1.000000 ; multY=1.000000 ; minP=280 ; fpMult=1.000000 ;
+[05/14 23:31:33     10s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 pModAss=50 wcR=0.535700 crit=0.000000 siPrev=0 newSi=0.000000 wHLS=1.339300 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[05/14 23:31:33     10s] eee: NetCapCache creation started. (Current Mem: 2745.344M) 
+[05/14 23:31:33     10s] eee: NetCapCache completed. (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  Curr Mem: 2745.344M) 
+[05/14 23:31:33     10s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(36.375000, 35.000000)], Layers = [f(10) b(0)], Grid size = 14.000000 um, Grid Dim = (3 X 3)
+[05/14 23:31:33     10s] eee: Metal Layers Info:
+[05/14 23:31:33     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:33     10s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[05/14 23:31:33     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:33     10s] eee: |   metal1 |   1 |   0.070 |   0.065 |   0.140 |  0.000 |   5.43 | H | 0 |  1 |
+[05/14 23:31:33     10s] eee: |   metal2 |   2 |   0.070 |   0.070 |   0.190 |  0.000 |   3.57 | V | 0 |  1 |
+[05/14 23:31:33     10s] eee: |   metal3 |   3 |   0.070 |   0.070 |   0.140 |  0.000 |   3.57 | H | 0 |  1 |
+[05/14 23:31:33     10s] eee: |   metal4 |   4 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | V | 0 |  1 |
+[05/14 23:31:33     10s] eee: |   metal5 |   5 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | H | 0 |  1 |
+[05/14 23:31:33     10s] eee: |   metal6 |   6 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | V | 0 |  1 |
+[05/14 23:31:33     10s] eee: |   metal7 |   7 |   0.400 |   0.400 |   0.840 |  0.000 |   0.19 | H | 0 |  1 |
+[05/14 23:31:33     10s] eee: |   metal8 |   8 |   0.400 |   0.400 |   0.840 |  0.000 |   0.19 | V | 0 |  1 |
+[05/14 23:31:33     10s] eee: |   metal9 |   9 |   0.800 |   0.800 |   1.600 |  0.000 |   0.04 | H | 0 |  1 |
+[05/14 23:31:33     10s] eee: |  metal10 |  10 |   0.800 |   0.800 |   1.680 |  0.000 |   0.04 | V | 0 |  1 |
+[05/14 23:31:33     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:33     10s] eee: uC/uR for corner default_emulate_rc_corner, min-width/min-spacing, 30 perc over/under densities.
+[05/14 23:31:33     10s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[05/14 23:31:33     10s] late library set: default_emulate_libset_max
+[05/14 23:31:33     10s] early library set: default_emulate_libset_min
+[05/14 23:31:33     10s] Completed consistency checks. Status: Successful
+[05/14 23:31:33     10s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2399.6M, current mem=2149.7M)
+[05/14 23:31:34     10s] Multithreaded Timing Analysis is initialized with 8 threads
+[05/14 23:31:34     10s] 
+[05/14 23:31:34     10s] Reading timing constraints file '/dev/null' ...
+[05/14 23:31:34     10s] Current (total cpu=0:00:10.5, real=0:00:11.0, peak res=2537.5M, current mem=2500.1M)
+[05/14 23:31:34     10s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[05/14 23:31:34     10s] 
+[05/14 23:31:34     10s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[05/14 23:31:34     10s] SB Latch Setting to complicate: TLAT_X1 complicate code: 9
+[05/14 23:31:34     10s] Summary for sequential cells identification: 
+[05/14 23:31:34     10s]   Identified SBFF number: 16
+[05/14 23:31:34     10s]   Identified MBFF number: 0
+[05/14 23:31:34     10s]   Identified SB Latch number: 4
+[05/14 23:31:34     10s]   Identified MB Latch number: 0
+[05/14 23:31:34     10s]   Not identified SBFF number: 0
+[05/14 23:31:34     10s]   Not identified MBFF number: 0
+[05/14 23:31:34     10s]   Not identified SB Latch number: 1
+[05/14 23:31:34     10s]   Not identified MB Latch number: 0
+[05/14 23:31:34     10s]   Number of sequential cells which are not FFs: 8
+[05/14 23:31:34     10s] Total number of combinational cells: 93
+[05/14 23:31:34     10s] Total number of sequential cells: 29
+[05/14 23:31:34     10s] Total number of tristate cells: 6
+[05/14 23:31:34     10s] Total number of level shifter cells: 0
+[05/14 23:31:34     10s] Total number of power gating cells: 0
+[05/14 23:31:34     10s] Total number of isolation cells: 0
+[05/14 23:31:34     10s] Total number of power switch cells: 0
+[05/14 23:31:34     10s] Total number of pulse generator cells: 0
+[05/14 23:31:34     10s] Total number of always on buffers: 0
+[05/14 23:31:34     10s] Total number of retention cells: 0
+[05/14 23:31:34     10s] Total number of physical cells: 7
+[05/14 23:31:34     10s] List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+[05/14 23:31:34     10s] Total number of usable buffers: 9
+[05/14 23:31:34     10s] List of unusable buffers:
+[05/14 23:31:34     10s] Total number of unusable buffers: 0
+[05/14 23:31:34     10s] List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+[05/14 23:31:34     10s] Total number of usable inverters: 6
+[05/14 23:31:34     10s] List of unusable inverters:
+[05/14 23:31:34     10s] Total number of unusable inverters: 0
+[05/14 23:31:34     10s] List of identified usable delay cells:
+[05/14 23:31:34     10s] Total number of identified usable delay cells: 0
+[05/14 23:31:34     10s] List of identified unusable delay cells:
+[05/14 23:31:34     10s] Total number of identified unusable delay cells: 0
+[05/14 23:31:34     10s] 
+[05/14 23:31:34     10s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[05/14 23:31:34     10s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[05/14 23:31:34     10s] 
+[05/14 23:31:34     10s] TimeStamp Deleting Cell Server Begin ...
+[05/14 23:31:34     10s] 
+[05/14 23:31:34     10s] TimeStamp Deleting Cell Server End ...
+[05/14 23:31:34     10s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2528.5M, current mem=2528.5M)
+[05/14 23:31:34     10s] 
+[05/14 23:31:34     10s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[05/14 23:31:34     10s] SB Latch Setting to complicate: TLAT_X1 complicate code: 9
+[05/14 23:31:34     10s] Summary for sequential cells identification: 
+[05/14 23:31:34     10s]   Identified SBFF number: 16
+[05/14 23:31:34     10s]   Identified MBFF number: 0
+[05/14 23:31:34     10s]   Identified SB Latch number: 4
+[05/14 23:31:34     10s]   Identified MB Latch number: 0
+[05/14 23:31:34     10s]   Not identified SBFF number: 0
+[05/14 23:31:34     10s]   Not identified MBFF number: 0
+[05/14 23:31:34     10s]   Not identified SB Latch number: 1
+[05/14 23:31:34     10s]   Not identified MB Latch number: 0
+[05/14 23:31:34     10s]   Number of sequential cells which are not FFs: 8
+[05/14 23:31:34     10s]  Visiting view : default_emulate_view
+[05/14 23:31:34     10s]    : PowerDomain = none : Weighted F : unweighted  = 10.20 (1.000) with rcCorner = 0
+[05/14 23:31:34     10s]    : PowerDomain = none : Weighted F : unweighted  = 9.50 (1.000) with rcCorner = -1
+[05/14 23:31:34     10s]  Visiting view : default_emulate_view
+[05/14 23:31:34     10s]    : PowerDomain = none : Weighted F : unweighted  = 10.20 (1.000) with rcCorner = 0
+[05/14 23:31:34     10s]    : PowerDomain = none : Weighted F : unweighted  = 9.50 (1.000) with rcCorner = -1
+[05/14 23:31:34     10s] TLC MultiMap info (StdDelay):
+[05/14 23:31:34     10s]   : default_emulate_delay_corner + default_emulate_libset_max + 1 + no RcCorner := 9.5ps
+[05/14 23:31:34     10s]   : default_emulate_delay_corner + default_emulate_libset_max + 1 + default_emulate_rc_corner := 10.2ps
+[05/14 23:31:34     10s]  Setting StdDelay to: 10.2ps
+[05/14 23:31:34     10s] 
+[05/14 23:31:34     10s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[05/14 23:31:34     10s] 
+[05/14 23:31:34     10s] TimeStamp Deleting Cell Server Begin ...
+[05/14 23:31:34     10s] 
+[05/14 23:31:34     10s] TimeStamp Deleting Cell Server End ...
+[05/14 23:31:34     10s] Extraction setup Started for TopCell gcd 
+[05/14 23:31:34     10s] Summary of Active RC-Corners : 
+[05/14 23:31:34     10s]  
+[05/14 23:31:34     10s]  Analysis View: default_emulate_view
+[05/14 23:31:34     10s]     RC-Corner Name        : default_emulate_rc_corner
+[05/14 23:31:34     10s]     RC-Corner Index       : 0
+[05/14 23:31:34     10s]     RC-Corner Temperature : 25 Celsius
+[05/14 23:31:34     10s]     RC-Corner Cap Table   : ''
+[05/14 23:31:34     10s]     RC-Corner PostRoute Res Factor        : 1
+[05/14 23:31:34     10s]     RC-Corner PostRoute Cap Factor        : 1
+[05/14 23:31:34     10s]     RC-Corner PostRoute XCap Factor       : 1
+[05/14 23:31:34     10s] eee: RC Grid memory freed = 1920 (4 X 4 X 10 X 12b)
+[05/14 23:31:34     10s] eee: RC Grid memory allocated = 1920 (4 X 4 X 10 X 12b)
+[05/14 23:31:34     10s] eee: pegSigSF=1.070000
+[05/14 23:31:34     10s] Initializing multi-corner resistance tables ...
+[05/14 23:31:34     10s] eee: Grid unit RC data computation started
+[05/14 23:31:34     10s] eee: Grid unit RC data computation completed
+[05/14 23:31:34     10s] eee: l=1 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=2 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=3 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=4 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=5 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: LAM-FP: thresh=1 ; dimX=259.821429 ; dimY=250.000000 ; multX=1.000000 ; multY=1.000000 ; minP=280 ; fpMult=1.000000 ;
+[05/14 23:31:34     10s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 pModAss=50 wcR=0.535700 crit=0.000000 siPrev=0 newSi=0.000000 wHLS=1.339300 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[05/14 23:31:34     10s] eee: NetCapCache creation started. (Current Mem: 3419.969M) 
+[05/14 23:31:34     10s] eee: NetCapCache completed. (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  Curr Mem: 3419.969M) 
+[05/14 23:31:34     10s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(36.375000, 35.000000)], Layers = [f(10) b(0)], Grid size = 14.000000 um, Grid Dim = (3 X 3)
+[05/14 23:31:34     10s] eee: Metal Layers Info:
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: |   metal1 |   1 |   0.070 |   0.065 |   0.140 |  0.000 |   5.43 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal2 |   2 |   0.070 |   0.070 |   0.190 |  0.000 |   3.57 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal3 |   3 |   0.070 |   0.070 |   0.140 |  0.000 |   3.57 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal4 |   4 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal5 |   5 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal6 |   6 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal7 |   7 |   0.400 |   0.400 |   0.840 |  0.000 |   0.19 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal8 |   8 |   0.400 |   0.400 |   0.840 |  0.000 |   0.19 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal9 |   9 |   0.800 |   0.800 |   1.600 |  0.000 |   0.04 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |  metal10 |  10 |   0.800 |   0.800 |   1.680 |  0.000 |   0.04 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: uC/uR for corner default_emulate_rc_corner, min-width/min-spacing, 30 perc over/under densities.
+[05/14 23:31:34     10s] Extraction setup Started for TopCell gcd 
+[05/14 23:31:34     10s] Summary of Active RC-Corners : 
+[05/14 23:31:34     10s]  
+[05/14 23:31:34     10s]  Analysis View: default_emulate_view
+[05/14 23:31:34     10s]     RC-Corner Name        : default_emulate_rc_corner
+[05/14 23:31:34     10s]     RC-Corner Index       : 0
+[05/14 23:31:34     10s]     RC-Corner Temperature : 25 Celsius
+[05/14 23:31:34     10s]     RC-Corner Cap Table   : ''
+[05/14 23:31:34     10s]     RC-Corner PostRoute Res Factor        : 1
+[05/14 23:31:34     10s]     RC-Corner PostRoute Cap Factor        : 1
+[05/14 23:31:34     10s]     RC-Corner PostRoute XCap Factor       : 1
+[05/14 23:31:34     10s] eee: RC Grid memory freed = 1920 (4 X 4 X 10 X 12b)
+[05/14 23:31:34     10s] eee: RC Grid memory allocated = 1920 (4 X 4 X 10 X 12b)
+[05/14 23:31:34     10s] eee: pegSigSF=1.070000
+[05/14 23:31:34     10s] Initializing multi-corner resistance tables ...
+[05/14 23:31:34     10s] eee: Grid unit RC data computation started
+[05/14 23:31:34     10s] eee: Grid unit RC data computation completed
+[05/14 23:31:34     10s] eee: l=1 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=2 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=3 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=4 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=5 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: LAM-FP: thresh=1 ; dimX=259.821429 ; dimY=250.000000 ; multX=1.000000 ; multY=1.000000 ; minP=280 ; fpMult=1.000000 ;
+[05/14 23:31:34     10s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 pModAss=50 wcR=0.535700 crit=0.000000 siPrev=0 newSi=0.000000 wHLS=1.339300 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[05/14 23:31:34     10s] eee: NetCapCache creation started. (Current Mem: 3419.969M) 
+[05/14 23:31:34     10s] eee: NetCapCache completed. (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  Curr Mem: 3419.969M) 
+[05/14 23:31:34     10s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(36.375000, 35.000000)], Layers = [f(10) b(0)], Grid size = 14.000000 um, Grid Dim = (3 X 3)
+[05/14 23:31:34     10s] eee: Metal Layers Info:
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: |   metal1 |   1 |   0.070 |   0.065 |   0.140 |  0.000 |   5.43 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal2 |   2 |   0.070 |   0.070 |   0.190 |  0.000 |   3.57 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal3 |   3 |   0.070 |   0.070 |   0.140 |  0.000 |   3.57 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal4 |   4 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal5 |   5 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal6 |   6 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal7 |   7 |   0.400 |   0.400 |   0.840 |  0.000 |   0.19 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal8 |   8 |   0.400 |   0.400 |   0.840 |  0.000 |   0.19 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal9 |   9 |   0.800 |   0.800 |   1.600 |  0.000 |   0.04 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |  metal10 |  10 |   0.800 |   0.800 |   1.680 |  0.000 |   0.04 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: uC/uR for corner default_emulate_rc_corner, min-width/min-spacing, 30 perc over/under densities.
+[05/14 23:31:34     10s] Extraction setup Started for TopCell gcd 
+[05/14 23:31:34     10s] Summary of Active RC-Corners : 
+[05/14 23:31:34     10s]  
+[05/14 23:31:34     10s]  Analysis View: default_emulate_view
+[05/14 23:31:34     10s]     RC-Corner Name        : default_emulate_rc_corner
+[05/14 23:31:34     10s]     RC-Corner Index       : 0
+[05/14 23:31:34     10s]     RC-Corner Temperature : 25 Celsius
+[05/14 23:31:34     10s]     RC-Corner Cap Table   : ''
+[05/14 23:31:34     10s]     RC-Corner PostRoute Res Factor        : 1
+[05/14 23:31:34     10s]     RC-Corner PostRoute Cap Factor        : 1
+[05/14 23:31:34     10s]     RC-Corner PostRoute XCap Factor       : 1
+[05/14 23:31:34     10s] eee: RC Grid memory freed = 1920 (4 X 4 X 10 X 12b)
+[05/14 23:31:34     10s] eee: RC Grid memory allocated = 1920 (4 X 4 X 10 X 12b)
+[05/14 23:31:34     10s] eee: pegSigSF=1.070000
+[05/14 23:31:34     10s] Initializing multi-corner resistance tables ...
+[05/14 23:31:34     10s] eee: Grid unit RC data computation started
+[05/14 23:31:34     10s] eee: Grid unit RC data computation completed
+[05/14 23:31:34     10s] eee: l=1 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=2 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=3 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=4 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=5 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: LAM-FP: thresh=1 ; dimX=259.821429 ; dimY=250.000000 ; multX=1.000000 ; multY=1.000000 ; minP=280 ; fpMult=1.000000 ;
+[05/14 23:31:34     10s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 pModAss=50 wcR=0.535700 crit=0.000000 siPrev=0 newSi=0.000000 wHLS=1.339300 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[05/14 23:31:34     10s] eee: NetCapCache creation started. (Current Mem: 3419.969M) 
+[05/14 23:31:34     10s] eee: NetCapCache completed. (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  Curr Mem: 3419.969M) 
+[05/14 23:31:34     10s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(36.375000, 35.000000)], Layers = [f(10) b(0)], Grid size = 14.000000 um, Grid Dim = (3 X 3)
+[05/14 23:31:34     10s] eee: Metal Layers Info:
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: |   metal1 |   1 |   0.070 |   0.065 |   0.140 |  0.000 |   5.43 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal2 |   2 |   0.070 |   0.070 |   0.190 |  0.000 |   3.57 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal3 |   3 |   0.070 |   0.070 |   0.140 |  0.000 |   3.57 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal4 |   4 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal5 |   5 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal6 |   6 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal7 |   7 |   0.400 |   0.400 |   0.840 |  0.000 |   0.19 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal8 |   8 |   0.400 |   0.400 |   0.840 |  0.000 |   0.19 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal9 |   9 |   0.800 |   0.800 |   1.600 |  0.000 |   0.04 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |  metal10 |  10 |   0.800 |   0.800 |   1.680 |  0.000 |   0.04 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: uC/uR for corner default_emulate_rc_corner, min-width/min-spacing, 30 perc over/under densities.
+[05/14 23:31:34     10s] <CMD> create_library_set -name libs_min -timing $timing_libs
+[05/14 23:31:34     10s] <CMD> create_library_set -name libs_max -timing $timing_libs
+[05/14 23:31:34     10s] <CMD> create_rc_corner -name nominal -qx_tech_file $qrc_tech_file
+[05/14 23:31:34     10s] <CMD> create_delay_corner -name corner_min -library_set libs_min -rc_corner nominal
+[05/14 23:31:34     10s] <CMD> create_delay_corner -name corner_max -library_set libs_max -rc_corner nominal
+[05/14 23:31:34     10s] <CMD> create_constraint_mode -name setup_func_mode -sdc_files $sdc_file
+[05/14 23:31:34     10s] <CMD> create_analysis_view -constraint_mode setup_func_mode \
+  -name setup_func \
+  -delay_corner corner_max
+[05/14 23:31:34     10s] <CMD> create_analysis_view -constraint_mode setup_func_mode \
+  -name hold_func \
+  -delay_corner corner_min
+[05/14 23:31:34     10s] <CMD> set_analysis_view -setup [list setup_func] -hold [list hold_func]
+[05/14 23:31:34     10s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[05/14 23:31:34     10s] Extraction setup Started for TopCell gcd 
+[05/14 23:31:34     10s] Summary of Active RC-Corners : 
+[05/14 23:31:34     10s]  
+[05/14 23:31:34     10s]  Analysis View: setup_func
+[05/14 23:31:34     10s]     RC-Corner Name        : nominal
+[05/14 23:31:34     10s]     RC-Corner Index       : 0
+[05/14 23:31:34     10s]     RC-Corner Temperature : 25 Celsius
+[05/14 23:31:34     10s]     RC-Corner Cap Table   : ''
+[05/14 23:31:34     10s]     RC-Corner PostRoute Res Factor        : 1
+[05/14 23:31:34     10s]     RC-Corner PostRoute Cap Factor        : 1
+[05/14 23:31:34     10s]     RC-Corner PostRoute XCap Factor       : 1
+[05/14 23:31:34     10s]     RC-Corner Technology file: '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/qrc/NG45.tch'
+[05/14 23:31:34     10s]  
+[05/14 23:31:34     10s]  Analysis View: hold_func
+[05/14 23:31:34     10s]     RC-Corner Name        : nominal
+[05/14 23:31:34     10s]     RC-Corner Index       : 0
+[05/14 23:31:34     10s]     RC-Corner Temperature : 25 Celsius
+[05/14 23:31:34     10s]     RC-Corner Cap Table   : ''
+[05/14 23:31:34     10s]     RC-Corner PostRoute Res Factor        : 1
+[05/14 23:31:34     10s]     RC-Corner PostRoute Cap Factor        : 1
+[05/14 23:31:34     10s]     RC-Corner PostRoute XCap Factor       : 1
+[05/14 23:31:34     10s]     RC-Corner Technology file: '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/qrc/NG45.tch'
+[05/14 23:31:34     10s] eee: RC Grid memory freed = 1920 (4 X 4 X 10 X 12b)
+[05/14 23:31:34     10s] eee: RC Grid memory allocated = 1920 (4 X 4 X 10 X 12b)
+[05/14 23:31:34     10s] eee: pegSigSF=1.070000
+[05/14 23:31:34     10s] Initializing multi-corner resistance tables ...
+[05/14 23:31:34     10s] eee: Grid unit RC data computation started
+[05/14 23:31:34     10s] eee: Grid unit RC data computation completed
+[05/14 23:31:34     10s] eee: l=1 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=2 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=3 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=4 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=5 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[05/14 23:31:34     10s] eee: LAM-FP: thresh=1 ; dimX=259.821429 ; dimY=250.000000 ; multX=1.000000 ; multY=1.000000 ; minP=280 ; fpMult=1.000000 ;
+[05/14 23:31:34     10s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 pModAss=50 wcR=0.535700 crit=0.000000 siPrev=0 newSi=0.000000 wHLS=1.339300 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[05/14 23:31:34     10s] eee: NetCapCache creation started. (Current Mem: 3419.969M) 
+[05/14 23:31:34     10s] eee: NetCapCache completed. (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  Curr Mem: 3419.969M) 
+[05/14 23:31:34     10s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(36.375000, 35.000000)], Layers = [f(10) b(0)], Grid size = 14.000000 um, Grid Dim = (3 X 3)
+[05/14 23:31:34     10s] eee: Metal Layers Info:
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: |   metal1 |   1 |   0.070 |   0.065 |   0.140 |  0.000 |   5.43 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal2 |   2 |   0.070 |   0.070 |   0.190 |  0.000 |   3.57 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal3 |   3 |   0.070 |   0.070 |   0.140 |  0.000 |   3.57 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal4 |   4 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal5 |   5 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal6 |   6 |   0.140 |   0.140 |   0.280 |  0.000 |   1.50 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal7 |   7 |   0.400 |   0.400 |   0.840 |  0.000 |   0.19 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal8 |   8 |   0.400 |   0.400 |   0.840 |  0.000 |   0.19 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: |   metal9 |   9 |   0.800 |   0.800 |   1.600 |  0.000 |   0.04 | H | 0 |  1 |
+[05/14 23:31:34     10s] eee: |  metal10 |  10 |   0.800 |   0.800 |   1.680 |  0.000 |   0.04 | V | 0 |  1 |
+[05/14 23:31:34     10s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[05/14 23:31:34     10s] eee: uC/uR for corner nominal, min-width/min-spacing, 30 perc over/under densities.
+[05/14 23:31:34     10s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2528.5M, current mem=2175.2M)
+[05/14 23:31:34     10s] Reading timing constraints file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.sdc' ...
+[05/14 23:31:34     11s] Current (total cpu=0:00:11.0, real=0:00:11.0, peak res=2537.5M, current mem=2490.4M)
+[05/14 23:31:34     11s] INFO (CTE): Constraints read successfully.
+[05/14 23:31:34     11s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2504.2M, current mem=2504.2M)
+[05/14 23:31:34     11s] Current (total cpu=0:00:11.1, real=0:00:11.0, peak res=2537.5M, current mem=2504.2M)
+[05/14 23:31:34     11s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[05/14 23:31:34     11s] 
+[05/14 23:31:34     11s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[05/14 23:31:34     11s] SB Latch Setting to complicate: TLAT_X1 complicate code: 9
+[05/14 23:31:34     11s] Summary for sequential cells identification: 
+[05/14 23:31:34     11s]   Identified SBFF number: 16
+[05/14 23:31:34     11s]   Identified MBFF number: 0
+[05/14 23:31:34     11s]   Identified SB Latch number: 4
+[05/14 23:31:34     11s]   Identified MB Latch number: 0
+[05/14 23:31:34     11s]   Not identified SBFF number: 0
+[05/14 23:31:34     11s]   Not identified MBFF number: 0
+[05/14 23:31:34     11s]   Not identified SB Latch number: 1
+[05/14 23:31:34     11s]   Not identified MB Latch number: 0
+[05/14 23:31:34     11s]   Number of sequential cells which are not FFs: 8
+[05/14 23:31:34     11s] Total number of combinational cells: 93
+[05/14 23:31:34     11s] Total number of sequential cells: 29
+[05/14 23:31:34     11s] Total number of tristate cells: 6
+[05/14 23:31:34     11s] Total number of level shifter cells: 0
+[05/14 23:31:34     11s] Total number of power gating cells: 0
+[05/14 23:31:34     11s] Total number of isolation cells: 0
+[05/14 23:31:34     11s] Total number of power switch cells: 0
+[05/14 23:31:34     11s] Total number of pulse generator cells: 0
+[05/14 23:31:34     11s] Total number of always on buffers: 0
+[05/14 23:31:34     11s] Total number of retention cells: 0
+[05/14 23:31:34     11s] Total number of physical cells: 7
+[05/14 23:31:34     11s] List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+[05/14 23:31:34     11s] Total number of usable buffers: 9
+[05/14 23:31:34     11s] List of unusable buffers:
+[05/14 23:31:34     11s] Total number of unusable buffers: 0
+[05/14 23:31:34     11s] List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+[05/14 23:31:34     11s] Total number of usable inverters: 6
+[05/14 23:31:34     11s] List of unusable inverters:
+[05/14 23:31:34     11s] Total number of unusable inverters: 0
+[05/14 23:31:34     11s] List of identified usable delay cells:
+[05/14 23:31:34     11s] Total number of identified usable delay cells: 0
+[05/14 23:31:34     11s] List of identified unusable delay cells:
+[05/14 23:31:34     11s] Total number of identified unusable delay cells: 0
+[05/14 23:31:34     11s] 
+[05/14 23:31:34     11s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[05/14 23:31:34     11s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[05/14 23:31:34     11s] 
+[05/14 23:31:34     11s] TimeStamp Deleting Cell Server Begin ...
+[05/14 23:31:34     11s] 
+[05/14 23:31:34     11s] TimeStamp Deleting Cell Server End ...
+[05/14 23:31:34     11s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2504.8M, current mem=2504.8M)
+[05/14 23:31:34     11s] 
+[05/14 23:31:34     11s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[05/14 23:31:34     11s] SB Latch Setting to complicate: TLAT_X1 complicate code: 9
+[05/14 23:31:34     11s] Summary for sequential cells identification: 
+[05/14 23:31:34     11s]   Identified SBFF number: 16
+[05/14 23:31:34     11s]   Identified MBFF number: 0
+[05/14 23:31:34     11s]   Identified SB Latch number: 4
+[05/14 23:31:34     11s]   Identified MB Latch number: 0
+[05/14 23:31:34     11s]   Not identified SBFF number: 0
+[05/14 23:31:34     11s]   Not identified MBFF number: 0
+[05/14 23:31:34     11s]   Not identified SB Latch number: 1
+[05/14 23:31:34     11s]   Not identified MB Latch number: 0
+[05/14 23:31:34     11s]   Number of sequential cells which are not FFs: 8
+[05/14 23:31:34     11s]  Visiting view : setup_func
+[05/14 23:31:34     11s]    : PowerDomain = none : Weighted F : unweighted  = 10.20 (1.000) with rcCorner = 0
+[05/14 23:31:34     11s]    : PowerDomain = none : Weighted F : unweighted  = 9.50 (1.000) with rcCorner = -1
+[05/14 23:31:34     11s]  Visiting view : hold_func
+[05/14 23:31:34     11s]    : PowerDomain = none : Weighted F : unweighted  = 10.20 (1.000) with rcCorner = 0
+[05/14 23:31:34     11s]    : PowerDomain = none : Weighted F : unweighted  = 9.50 (1.000) with rcCorner = -1
+[05/14 23:31:34     11s] TLC MultiMap info (StdDelay):
+[05/14 23:31:34     11s]   : corner_min + libs_min + 1 + no RcCorner := 9.5ps
+[05/14 23:31:34     11s]   : corner_min + libs_min + 1 + nominal := 10.2ps
+[05/14 23:31:34     11s]   : corner_max + libs_max + 1 + no RcCorner := 9.5ps
+[05/14 23:31:34     11s]   : corner_max + libs_max + 1 + nominal := 10.2ps
+[05/14 23:31:34     11s]  Setting StdDelay to: 10.2ps
+[05/14 23:31:34     11s] 
+[05/14 23:31:34     11s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[05/14 23:31:34     11s] 
+[05/14 23:31:34     11s] TimeStamp Deleting Cell Server Begin ...
+[05/14 23:31:34     11s] 
+[05/14 23:31:34     11s] TimeStamp Deleting Cell Server End ...
+[05/14 23:31:34     11s] <CMD> set_analysis_mode -analysisType onChipVariation -checkType hold
+[05/14 23:31:34     11s] **WARN: (IMPSYC-6134):	Setting analysis mode to hold does not have any impact on timing analysis as simultaneous setup/hold mode analysis is on. Use '-early' option to report hold timing reports.
+[05/14 23:31:34     11s] <CMD> set_design_mode -process 45
+[05/14 23:31:34     11s] ##  Process: 45            (User Set)               
+[05/14 23:31:34     11s] ##     Node: (not set)                           
+[05/14 23:31:34     11s] 
+##  Check design process and node:  
+##  Design tech node is not set.
+
+[05/14 23:31:34     11s] <CMD> read_def /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def
+[05/14 23:31:34     11s] Reading DEF file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def', current time is Thu May 14 23:31:34 2026 ...
+[05/14 23:31:34     11s] --- DIVIDERCHAR '/'
+[05/14 23:31:34     11s] --- UnitsPerDBU = 1.0000
+[05/14 23:31:34     11s] Start create_tracks
+[05/14 23:31:34     11s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[05/14 23:31:34     11s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[05/14 23:31:34     11s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[05/14 23:31:34     11s] --- DIEAREA (0 0) (71630 71630)
+[05/14 23:31:34     11s] Extracting standard cell pins and blockage ...... 
+[05/14 23:31:34     11s] Pin and blockage extraction finished
+[05/14 23:31:34     11s] Extracting macro/IO cell pins and blockage ...... 
+[05/14 23:31:34     11s] Pin and blockage extraction finished
+[05/14 23:31:34     11s] DEF file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def' is parsed, current time is Thu May 14 23:31:34 2026.
+[05/14 23:31:34     11s] Updating the floorplan ...
+[05/14 23:31:34     11s] floor plan core box changed from {{0.000000,0.000000},{35.815000,35.815000}} to {{1.140000,1.400000},{34.770000,33.600000}}
+[05/14 23:31:34     11s] <CMD> read_spef -rc_corner nominal /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.spef
+[05/14 23:31:34     11s] read_spef Option :  /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.spef -noStarN -rc_corner nominal 
+[05/14 23:31:34     11s] 
+[05/14 23:31:34     11s] SPEF files for RC Corner nominal:
+[05/14 23:31:34     11s] Top-level spef file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.spef'.
+[05/14 23:31:34     11s] Start spef parsing (MEM=3445.62).
+[05/14 23:31:34     11s] Number of corners: 1
+[05/14 23:31:34     11s] Number of parallel threads processing the nets is: 8
+[05/14 23:31:34     11s] Maximum backlog used in parser: 50.
+[05/14 23:31:34     11s] Reading multiple SPEF files in parallel.
+[05/14 23:31:34     11s] RCDB /tmp/ssv_tmpdir_2207965_e8wUPZ/gcd_2207965_CMWENN.rcdb.d/gcd.rcdb.d Creation Started (CPU Time= 0:00:00.0  MEM= 3454.6M)
+[05/14 23:31:34     11s] Creating parasitic data file '/tmp/ssv_tmpdir_2207965_e8wUPZ/gcd_2207965_CMWENN.rcdb.d/gcd.rcdb.d' for storing RC.
+[05/14 23:31:34     11s] SPEF file /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.spef.
+[05/14 23:31:34     11s] Number of Resistors     : 1693
+[05/14 23:31:34     11s] Number of Ground Caps   : 2136
+[05/14 23:31:34     11s] Number of Coupling Caps : 10036
+[05/14 23:31:34     11s] 
+[05/14 23:31:34     11s] RCDB /tmp/ssv_tmpdir_2207965_e8wUPZ/gcd_2207965_CMWENN.rcdb.d/gcd.rcdb.d Creation Completed (CPU Time= 0:00:00.1  MEM= 3492.6M)
+[05/14 23:31:34     11s] End spef parsing (MEM=3460.62 CPU=0:00:00.1 REAL=0:00:00.0).
+[05/14 23:31:34     11s] Spef for RC Corner 'nominal' was previously specified. Dropping the previous specification.
+[05/14 23:31:34     11s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=3452.625M)
+[05/14 23:31:34     11s] Opening parasitic data file '/tmp/ssv_tmpdir_2207965_e8wUPZ/gcd_2207965_CMWENN.rcdb.d/gcd.rcdb.d' for reading (mem: 3452.625M)
+[05/14 23:31:34     11s] Lumped Parasitic Loading Completed (total cpu=0:00:00.0, real=0:00:00.0, current mem=3452.625M)
+[05/14 23:31:34     11s] Closing parasitic data file '/tmp/ssv_tmpdir_2207965_e8wUPZ/gcd_2207965_CMWENN.rcdb.d/gcd.rcdb.d': 0 access done (mem: 3452.625M)
+[05/14 23:31:34     11s] 33 nets are missing in SPEF file. The names of these nets are saved in ./nominal.missing_nets.rpt.
+[05/14 23:31:34     11s] <CMD> set_default_switching_activity -input_activity 0.2 -period 10ns -seq_activity 0.1 -clock_gates_output_ratio 2.0
+[05/14 23:31:34     11s] <CMD> propagate_activity
+[05/14 23:31:34     11s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[05/14 23:31:35     11s] AAE DB initialization (MEM=3487.06 CPU=0:00:00.0 REAL=0:00:00.0) 
+[05/14 23:31:35     11s] #################################################################################
+[05/14 23:31:35     11s] # Design Name: gcd
+[05/14 23:31:35     11s] # Design Mode: 45nm
+[05/14 23:31:35     11s] # Analysis Mode: MMMC OCV 
+[05/14 23:31:35     11s] # Parasitics Mode: SPEF/RCDB 
+[05/14 23:31:35     11s] # Signoff Settings: SI Off 
+[05/14 23:31:35     11s] #################################################################################
+[05/14 23:31:35     11s] Topological Sorting (REAL = 0:00:00.0, MEM = 3624.3M, InitMEM = 3622.3M)
+[05/14 23:31:35     11s] Start delay calculation (fullDC) (8 T). (MEM=2611.97)
+[05/14 23:31:35     11s] Start AAE Lib Loading. (MEM=4172.3)
+[05/14 23:31:35     11s] End AAE Lib Loading. (MEM=4382.84 CPU=0:00:00.0 Real=0:00:00.0)
+[05/14 23:31:35     11s] End AAE Lib Interpolated Model. (MEM=4382.84 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:31:35     11s] Opening parasitic data file '/tmp/ssv_tmpdir_2207965_e8wUPZ/gcd_2207965_CMWENN.rcdb.d/gcd.rcdb.d' for reading (mem: 4421.461M)
+[05/14 23:31:35     11s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 4431.5M)
+[05/14 23:31:35     11s] AAE_INFO: 8 threads acquired from CTE.
+[05/14 23:31:35     11s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:31:35     11s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:31:35     11s] End delay calculation. (MEM=2796.73 CPU=0:00:00.1 REAL=0:00:00.0)
+[05/14 23:31:35     11s] Begin loading slews from CTE ...
+[05/14 23:31:35     11s] Loading slews from CTE completed...
+[05/14 23:31:35     11s] End delay calculation (fullDC). (MEM=2793.98 CPU=0:00:00.2 REAL=0:00:00.0)
+[05/14 23:31:35     12s] *** CDM Built up (cpu=0:00:00.6  real=0:00:00.0  mem= 4881.0M) ***
+[05/14 23:31:35     12s] core_clock(2173.91MHz) <CMD> set_power_analysis_mode -reset
+[05/14 23:31:35     12s] <CMD> set_power_analysis_mode -method static -write_static_currents true -create_binary_db true -binary_db_name staticPower.db
+[05/14 23:31:35     12s] <CMD> set_power_output_dir /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/static_db
+[05/14 23:31:35     12s] <CMD> report_power -rail_analysis_format VS -outfile /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/static_db/static_power.rpt
+[05/14 23:31:35     12s] env CDS_WORKAREA is set to /home/wei0829/voltus_tdt_question_ng45_gcd
+[05/14 23:31:35     12s] 
+[05/14 23:31:35     12s] Power Net Detected:
+[05/14 23:31:35     12s]         Voltage	    Name
+[05/14 23:31:35     12s]              0V	    VSS
+[05/14 23:31:35     12s]            1.1V	    VDD
+[05/14 23:31:35     12s]              0V	    VSS
+[05/14 23:31:35     12s]            1.1V	    VDD
+[05/14 23:31:35     12s]       ----------------------------------------------------------
+[05/14 23:31:35     12s]       # of cell(s) missing both power/leakage table: 0
+[05/14 23:31:35     12s]       # of cell(s) missing power table: 0
+[05/14 23:31:35     12s]       # of cell(s) missing leakage table: 0
+[05/14 23:31:35     12s]       ----------------------------------------------------------
+[05/14 23:31:35     12s] 
+[05/14 23:31:35     12s] 
+[05/14 23:31:35     12s]       # of MSMV cell(s) missing power_level: 0
+[05/14 23:31:35     12s] *
+
+
+
+[05/14 23:31:35     12s] Total Power
+[05/14 23:31:35     12s] -----------------------------------------------------------------------------------------
+[05/14 23:31:35     12s] Total Internal Power:        0.97738385 	   56.7266%
+[05/14 23:31:35     12s] Total Switching Power:       0.72065315 	   41.8261%
+[05/14 23:31:35     12s] Total Leakage Power:         0.02493724 	    1.4473%
+[05/14 23:31:35     12s] Total Power:                 1.72297424
+[05/14 23:31:35     12s] -----------------------------------------------------------------------------------------
+[05/14 23:31:35     12s] <CMD> set_power_analysis_mode -reset
+[05/14 23:31:35     12s] -binary_db_name ""
+[05/14 23:31:35     12s] -create_binary_db false
+[05/14 23:31:35     12s] -write_static_currents false
+[05/14 23:31:35     12s] <CMD> set_power_analysis_mode -method dynamic -create_binary_db true -binary_db_name dynamicPower.db
+[05/14 23:31:35     12s] <CMD> set_power_output_dir /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db
+[05/14 23:31:35     12s] <CMD> report_power -rail_analysis_format VS -outfile /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_power.rpt
+[05/14 23:31:35     12s] env CDS_WORKAREA is set to /home/wei0829/voltus_tdt_question_ng45_gcd
+[05/14 23:31:35     12s] -add_simulation false                     # bool, default=false
+[05/14 23:31:35     12s] -adjust_input_activity_in_iterations true
+[05/14 23:31:35     12s]                                           # bool, default=true
+[05/14 23:31:35     12s] -adjust_macro_activity_in_iterations true
+[05/14 23:31:35     12s]                                           # bool, default=true
+[05/14 23:31:35     12s] -annotation_detail_report false           # bool, default=false
+[05/14 23:31:35     12s] -auto_twf_delay_annotation false          # bool, default=false
+[05/14 23:31:35     12s] -average_rise_fall_cap false              # bool, default=false
+[05/14 23:31:35     12s] -binary_db_name dynamicPower.db           # string, default="", user setting
+[05/14 23:31:35     12s] -block_independent_peakpower false        # bool, default=false
+[05/14 23:31:35     12s] -boundary_gate_leakage_file {}            # string, default=""
+[05/14 23:31:35     12s] -boundary_gate_leakage_report false       # bool, default=false
+[05/14 23:31:35     12s] -boundary_leakage_cell_property_file {}   # string, default=""
+[05/14 23:31:35     12s] -boundary_leakage_edge_annotation_file {}
+[05/14 23:31:35     12s]                                           # string, default=""
+[05/14 23:31:35     12s] -boundary_leakage_multi_pgpin_support false
+[05/14 23:31:35     12s]                                           # bool, default=false
+[05/14 23:31:35     12s] -boundary_leakage_pessimism_removal true
+[05/14 23:31:35     12s]                                           # bool, default=true
+[05/14 23:31:35     12s] -boundary_leakage_PXE_support false       # bool, default=false
+[05/14 23:31:35     12s] -bulk_pins {}                             # string, default=""
+[05/14 23:31:35     12s] -capacity low                             # enums={low medium high}, default=low
+[05/14 23:31:35     12s] -case_insensitive_mapping false           # bool, default=false
+[05/14 23:31:35     12s] -clock_source_as_clock false              # bool, default=false
+[05/14 23:31:35     12s] -comprehensive_automapping false          # bool, default=false
+[05/14 23:31:35     12s] -constant_override false                  # bool, default=false
+[05/14 23:31:35     12s] -corner {}                                # string, default=""
+[05/14 23:31:35     12s] -create_binary_db true                    # bool, default=false, user setting
+[05/14 23:31:35     12s] -create_driver_db false                   # bool, default=false
+[05/14 23:31:35     12s] -create_gui_db true                       # bool, default=true
+[05/14 23:31:35     12s] -current_generation_method avg            # string, default=avg
+[05/14 23:31:35     12s] -custom_report_config {}                  # string, default=""
+[05/14 23:31:35     12s] -decap_cell_list {}                       # string, default=""
+[05/14 23:31:35     12s] -default_frequency -1                     # float, default=-1
+[05/14 23:31:35     12s] -default_slew {}                          # string, default=""
+[05/14 23:31:35     12s] -default_supply_voltage {}                # string, default=""
+[05/14 23:31:35     12s] -detailed_view_current_only true          # bool, default=true
+[05/14 23:31:35     12s] -disable_clock_gate_clipping true         # bool, default=true
+[05/14 23:31:35     12s] -disable_leakage_scaling false            # bool, default=false
+[05/14 23:31:35     12s] -disable_static false                     # bool, default=false
+[05/14 23:31:35     12s] -distribute_switching_power false         # bool, default=false
+[05/14 23:31:35     12s] -distributed_combine_report_format reduced
+[05/14 23:31:35     12s]                                           # string, default=reduced
+[05/14 23:31:35     12s] -distributed_setup {}                     # string, default=""
+[05/14 23:31:35     12s] -domain_based_clipping false              # bool, default=false
+[05/14 23:31:35     12s] -dynamic_glitch_filter -1                 # float, default=-1
+[05/14 23:31:35     12s] -dynamic_scale_clock_by_frequency {}      # string, default=""
+[05/14 23:31:35     12s] -dynamic_scale_clock_by_name {}           # string, default=""
+[05/14 23:31:35     12s] -dynamic_vectorless_ranking_methods {}    # string, default=""
+[05/14 23:31:35     12s] -enable_auto_mapping false                # bool, default=false
+[05/14 23:31:35     12s] -enable_auto_queue false                  # bool, default=false
+[05/14 23:31:35     12s] -enable_disk_mapping false                # bool, default=false
+[05/14 23:31:35     12s] -enable_duty_prop_with_global false       # bool, default=false
+[05/14 23:31:35     12s] -enable_dynamic_current_slew_load_interpolation false
+[05/14 23:31:35     12s]                                           # bool, default=false
+[05/14 23:31:35     12s] -enable_dynamic_scaling false             # bool, default=false
+[05/14 23:31:35     12s] -enable_flop_state_propagation false      # bool, default=false
+[05/14 23:31:35     12s] -enable_generated_clock true              # bool, default=true
+[05/14 23:31:35     12s] -enable_input_net_power false             # bool, default=false
+[05/14 23:31:35     12s] -enable_interactive_reports true          # bool, default=true
+[05/14 23:31:35     12s] -enable_mt_in_vectorbasedflow true        # bool, default=true
+[05/14 23:31:35     12s] -enable_mt_reports false                  # bool, default=false
+[05/14 23:31:35     12s] -enable_mt_state_propagation true         # bool, default=true
+[05/14 23:31:35     12s] -enable_pba_for_tempus_pi true            # bool, default=true
+[05/14 23:31:35     12s] -enable_power_target_flow false           # bool, default=false
+[05/14 23:31:35     12s] -enable_rtl_vectorbased_dynamic_analysis false
+[05/14 23:31:35     12s]                                           # bool, default=false
+[05/14 23:31:35     12s] -enable_scan_report false                 # bool, default=false
+[05/14 23:31:35     12s] -enable_single_cycle_scheduling false     # bool, default=false
+[05/14 23:31:35     12s] -enable_slew_based_ccs_pin_cap false      # bool, default=false
+[05/14 23:31:35     12s] -enable_stable_clock_gating false         # bool, default=false
+[05/14 23:31:35     12s] -enable_stable_flop_scheduling false      # bool, default=false
+[05/14 23:31:35     12s] -enable_state_propagation false           # bool, default=false
+[05/14 23:31:35     12s] -enable_tempus_pi false                   # bool, default=false
+[05/14 23:31:35     12s] -enable_xp false                          # bool, default=false
+[05/14 23:31:35     12s] -enhanced_blackbox_avg false              # bool, default=false
+[05/14 23:31:35     12s] -enhanced_blackbox_max false              # bool, default=false
+[05/14 23:31:35     12s] -equivalent_annotation false              # bool, default=false
+[05/14 23:31:35     12s] -event_based_leakage_power false          # bool, default=false
+[05/14 23:31:35     12s] -external_load_config_file {}             # string, default=""
+[05/14 23:31:35     12s] -extraction_tech_file {}                  # string, default=""
+[05/14 23:31:35     12s] -extractor_include {}                     # string, default=""
+[05/14 23:31:35     12s] -fanout_limit -1                          # int, default=-1
+[05/14 23:31:35     12s] -flatten_xpgv_block_instances {}          # string, default=""
+[05/14 23:31:35     12s] -force_library_merging false              # bool, default=false
+[05/14 23:31:35     12s] -from_x_transition_factor 0.5             # float, default=0.5
+[05/14 23:31:35     12s] -from_z_transition_factor 0.25            # float, default=0.25
+[05/14 23:31:35     12s] -generate_activity_mapping_report false   # bool, default=false
+[05/14 23:31:35     12s] -generate_current_for_rail {}             # string, default=""
+[05/14 23:31:35     12s] -generate_flop_ranking_data {}            # string, default=""
+[05/14 23:31:35     12s] -generate_leakage_power_map_based_on_calculated_leakage false
+[05/14 23:31:35     12s]                                           # bool, default=false
+[05/14 23:31:35     12s] -generate_static_report_from_state_propagation false
+[05/14 23:31:35     12s]                                           # bool, default=false
+[05/14 23:31:35     12s] -handle_glitch false                      # bool, default=false
+[05/14 23:31:35     12s] -handle_transport_glitch false            # bool, default=false
+[05/14 23:31:35     12s] -handle_tri_state false                   # bool, default=false
+[05/14 23:31:35     12s] -hier_delimiter {}                        # string, default=""
+[05/14 23:31:35     12s] -honor_combinational_logic_on_clock_net true
+[05/14 23:31:35     12s]                                           # bool, default=true
+[05/14 23:31:35     12s] -honor_negative_energy true               # bool, default=true
+[05/14 23:31:35     12s] -honor_net_activity true                  # bool, default=true
+[05/14 23:31:35     12s] -honor_non_mission_leakage false          # bool, default=false
+[05/14 23:31:35     12s] -hybrid_analysis false                    # bool, default=false
+[05/14 23:31:35     12s] -ignore_control_signals true              # bool, default=true
+[05/14 23:31:35     12s] -ignore_data_phase_for_clk false          # bool, default=false
+[05/14 23:31:35     12s] -ignore_end_toggles_in_profile false      # bool, default=false
+[05/14 23:31:35     12s] -ignore_glitches_at_same_time_stamp true
+[05/14 23:31:35     12s]                                           # bool, default=true
+[05/14 23:31:35     12s] -ignore_inout_pin_cap false               # bool, default=false
+[05/14 23:31:35     12s] -ignore_macro_leakage_scale_for_temp false
+[05/14 23:31:35     12s]                                           # bool, default=false
+[05/14 23:31:35     12s] -include_seq_clockpin_power false         # bool, default=false
+[05/14 23:31:35     12s] -include_timing_in_current_file false     # bool, default=false
+[05/14 23:31:35     12s] -ir_derated_timing_view {}                # string, default=""
+[05/14 23:31:35     12s] -keep_clock_gate_ratio_in_iterations false
+[05/14 23:31:35     12s]                                           # bool, default=false
+[05/14 23:31:35     12s] -leakage_scale_factor_for_temp 1          # float, default=1
+[05/14 23:31:35     12s] -library_preference voltage               # string, default=voltage
+[05/14 23:31:35     12s] -macro_pgv_leakage true                   # bool, default=true
+[05/14 23:31:35     12s] -macro_toggle_pin_percentage 0            # float, default=0
+[05/14 23:31:35     12s] -mbff_toggle_behavior independent         # enums={simultaneous independent sbff pin_percentage}, default=independent
+[05/14 23:31:35     12s] -mbff_toggle_pin_percentage 0             # float, default=0
+[05/14 23:31:35     12s] -memory_current_scaling_method 0          # int, default=0
+[05/14 23:31:35     12s] -merge_switched_net_currents false        # bool, default=false
+[05/14 23:31:35     12s] -method dynamic                           # enums={static dynamic dynamic_vectorless dynamic_vectorbased dynamic_mixed_mode vector_profile event_based}, default=static, user setting
+[05/14 23:31:35     12s] -min_leaf_count 0                         # int, default=0
+[05/14 23:31:35     12s] -multi_scenario_simulation false          # bool, default=false
+[05/14 23:31:35     12s] -off_pg_nets {}                           # string, default=""
+[05/14 23:31:35     12s] -output_current_data_prefix {}            # string, default=""
+[05/14 23:31:35     12s] -partition_count 0                        # int, default=0
+[05/14 23:31:35     12s] -partition_twf false                      # bool, default=false
+[05/14 23:31:35     12s] -pin_based_twf false                      # bool, default=false
+[05/14 23:31:35     12s] -power_grid_library {}                    # string, default=""
+[05/14 23:31:35     12s] -power_include_initial_x_transitions true
+[05/14 23:31:35     12s]                                           # bool, default=true
+[05/14 23:31:35     12s] -power_match_state_for_logic_x x          # string, default=x
+[05/14 23:31:35     12s] -pre_simulation_empty_period {}           # string, default=""
+[05/14 23:31:35     12s] -pre_simulation_period {}                 # string, default=""
+[05/14 23:31:35     12s] -pre_simulation_power_exclude_period {}   # string, default=""
+[05/14 23:31:35     12s] -precision 8                              # int, default=8
+[05/14 23:31:35     12s] -quit_on_activity_coverage_threshold 0    # float, default=0
+[05/14 23:31:35     12s] -read_rcdb false                          # bool, default=false
+[05/14 23:31:35     12s] -relax_arc_match false                    # bool, default=false
+[05/14 23:31:35     12s] -report_black_boxes false                 # bool, default=false
+[05/14 23:31:35     12s] -report_clock_instance_switching_info None
+[05/14 23:31:35     12s]                                           # string, default=None
+[05/14 23:31:35     12s] -report_idle_instances false              # bool, default=false
+[05/14 23:31:35     12s] -report_instance_switching_info none      # enums={all output_logic none}, default=none
+[05/14 23:31:35     12s] -report_instance_switching_list {}        # string, default=""
+[05/14 23:31:35     12s] -report_library_usage false               # bool, default=false
+[05/14 23:31:35     12s] -report_missing_bulk_connectivity false   # bool, default=false
+[05/14 23:31:35     12s] -report_missing_input false               # bool, default=false
+[05/14 23:31:35     12s] -report_missing_nets false                # bool, default=false
+[05/14 23:31:35     12s] -report_scan_chain_stats false            # bool, default=false
+[05/14 23:31:35     12s] -report_stat false                        # bool, default=false
+[05/14 23:31:35     12s] -report_time_display_fraction_digits -1   # int, default=-1
+[05/14 23:31:35     12s] -report_twf_attributes {}                 # string, default=""
+[05/14 23:31:35     12s] -reuse_flop_ranking_data {}               # string, default=""
+[05/14 23:31:35     12s] -reuse_flop_ranking_data_hier {}          # string, default=""
+[05/14 23:31:35     12s] -save_bbox false                          # bool, default=false
+[05/14 23:31:35     12s] -save_thermal_data false                  # bool, default=false
+[05/14 23:31:35     12s] -scale_to_sdc_clock_frequency false       # bool, default=false
+[05/14 23:31:35     12s] -scan_chain_activity {}                   # string, default=""
+[05/14 23:31:35     12s] -scan_chain_name {}                       # string, default=""
+[05/14 23:31:35     12s] -scan_control_file {}                     # string, default=""
+[05/14 23:31:35     12s] -scan_mbff_chain_type liberty             # string, default=liberty
+[05/14 23:31:35     12s] -set_power_event_based false              # bool, default=false
+[05/14 23:31:35     12s] -settling_buffer {}                       # string, default=""
+[05/14 23:31:35     12s] -smart_window false                       # bool, default=false
+[05/14 23:31:35     12s] -split_bus_power false                    # bool, default=false
+[05/14 23:31:35     12s] -start_time_alignment true                # bool, default=true
+[05/14 23:31:35     12s] -state_dependent_leakage true             # bool, default=true
+[05/14 23:31:35     12s] -stateprop_ignore_unannot_pins false      # bool, default=false
+[05/14 23:31:35     12s] -static_multi_mode_scenario_file {}       # string, default=""
+[05/14 23:31:35     12s] -static_netlist verilog                   # string, default=verilog
+[05/14 23:31:35     12s] -switching_power_on_rise_only false       # bool, default=false
+[05/14 23:31:35     12s] -thermal_input_file {}                    # string, default=""
+[05/14 23:31:35     12s] -thermal_leakage_temperature_scale_table_file {}
+[05/14 23:31:35     12s]                                           # string, default=""
+[05/14 23:31:35     12s] -to_x_transition_factor 0.5               # float, default=0.5
+[05/14 23:31:35     12s] -to_z_transition_factor 0.25              # float, default=0.25
+[05/14 23:31:35     12s] -transition_factor_based_duty false       # bool, default=false
+[05/14 23:31:35     12s] -transition_time_method max               # string, default=max
+[05/14 23:31:35     12s] -twf_delay_annotation avg                 # string, default=avg
+[05/14 23:31:35     12s] -twf_load_cap max                         # string, default=max
+[05/14 23:31:35     12s] -unified_power_switch_flow false          # bool, default=false
+[05/14 23:31:35     12s] -use_cell_leakage_power_density true      # bool, default=true
+[05/14 23:31:35     12s] -use_fastest_clock_for_dynamic_scheduling false
+[05/14 23:31:35     12s]                                           # bool, default=false
+[05/14 23:31:35     12s] -use_lef_for_missing_cells false          # bool, default=false
+[05/14 23:31:35     12s] -use_only_ddv_current true                # bool, default=true
+[05/14 23:31:35     12s] -use_physical_partition false             # bool, default=false
+[05/14 23:31:35     12s] -use_zero_delay_vector_file false         # bool, default=false
+[05/14 23:31:35     12s] -vector_profile_mode event_based          # enums={activity event_based power_density transient}, default=event_based
+[05/14 23:31:35     12s] -worst_case_vector_activity false         # bool, default=false
+[05/14 23:31:35     12s] -worst_step_size {}                       # string, default=""
+[05/14 23:31:35     12s] -worst_window_count 1                     # int, default=1
+[05/14 23:31:35     12s] -worst_window_coverage {}                 # string, default=""
+[05/14 23:31:35     12s] -worst_window_reports full                # string, default=full
+[05/14 23:31:35     12s] -worst_window_size {}                     # string, default=""
+[05/14 23:31:35     12s] -worst_window_type {}                     # string, default=""
+[05/14 23:31:35     12s] -write_boundary_leakage_edge_annotation false
+[05/14 23:31:35     12s]                                           # bool, default=false
+[05/14 23:31:35     12s] -write_default_uti true                   # bool, default=true
+[05/14 23:31:35     12s] -write_dynamic_currents false             # bool, default=false
+[05/14 23:31:35     12s] -write_profiling_db false                 # bool, default=false
+[05/14 23:31:35     12s] -write_simulation_db false                # bool, default=false
+[05/14 23:31:35     12s] -write_static_currents false              # bool, default=false
+[05/14 23:31:35     12s] -x_count_transition_using_3_states false
+[05/14 23:31:35     12s]                                           # bool, default=false
+[05/14 23:31:35     12s] -x_transition_factor 0.5                  # float, default=0.5
+[05/14 23:31:35     12s] -z_transition_factor 0.25                 # float, default=0.25
+[05/14 23:31:35     12s] -zero_delay_vector_toggle_shift {}        # string, default=""
+[05/14 23:31:35     12s] 
+[05/14 23:31:35     12s] #################################################################################
+[05/14 23:31:35     12s] # Design Name: gcd
+[05/14 23:31:35     12s] # Design Mode: 45nm
+[05/14 23:31:35     12s] # Analysis Mode: MMMC OCV 
+[05/14 23:31:35     12s] # Parasitics Mode: SPEF/RCDB 
+[05/14 23:31:35     12s] # Signoff Settings: SI Off 
+[05/14 23:31:35     12s] #################################################################################
+[05/14 23:31:35     12s] Start delay calculation (fullDC) (8 T). (MEM=2794.2)
+[05/14 23:31:35     12s] End AAE Lib Interpolated Model. (MEM=7022.91 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:31:35     12s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:31:35     12s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:31:35     12s] End delay calculation. (MEM=2904.99 CPU=0:00:00.1 REAL=0:00:00.0)
+[05/14 23:31:35     12s] Begin loading slews from CTE ...
+[05/14 23:31:35     12s] Loading slews from CTE completed...
+[05/14 23:31:35     12s] End delay calculation (fullDC). (MEM=2904.99 CPU=0:00:00.1 REAL=0:00:00.0)
+[05/14 23:31:36     12s] *** CDM Built up (cpu=0:00:00.4  real=0:00:01.0  mem= 4950.9M) ***
+[05/14 23:31:36     12s] **WARN: (TCLCMD-1233):	The -view option should be specified for the command write_timing_windows in MMMC mode. For now The tool will assume the view specified as 'setup_func' and write the timing windows corresponding to this view. For compatibility with future releases, update your scripts to provide -view option.
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Started Power Analysis at 23:31:35 05/14/2026
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Begin Processing Timing Library for Power Calculation
+[05/14 23:31:37     12s] /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lib/NangateOpenCellLibrary_typical.lib
+[05/14 23:31:37     12s] Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=168.48MB/7626.48MB/3006.76MB)
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.tech.lef
+[05/14 23:31:37     12s] /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.mod.lef
+[05/14 23:31:37     12s] /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/lef/NangateOpenCellLibrary.macro.rect.lef
+[05/14 23:31:37     12s] Begin Processing Netlist for Power Calculation
+[05/14 23:31:37     12s] ** INFO:  (VOLTUS_POWR-3013): Loading DEF file "/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def".
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s]   Netlist Statistics:
+[05/14 23:31:37     12s]     Cell         :  135
+[05/14 23:31:37     12s]     Instance     :  609
+[05/14 23:31:37     12s]     Decap/Filler :  0
+[05/14 23:31:37     12s]     Net          :  679
+[05/14 23:31:37     12s]     Port         :  54
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Ended Processing Netlist for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=677.25MB/13246.94MB/3515.53MB)
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Begin Processing Power Net/Grid for Power Calculation
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Rail status:
+[05/14 23:31:37     12s]   1.1V    VDD
+[05/14 23:31:37     12s]   0V    VSS
+[05/14 23:31:37     12s]   
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] ** WARN:  (VOLTUS_POWR-1757): Found (44) cells had multiple entries in the Cadence cell libraries.  Only the first entry was used.
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] AND2_X1
+[05/14 23:31:37     12s] AND2_X2
+[05/14 23:31:37     12s] AND2_X4
+[05/14 23:31:37     12s] AND3_X1
+[05/14 23:31:37     12s] AOI21_X1
+[05/14 23:31:37     12s] AOI21_X2
+[05/14 23:31:37     12s] AOI21_X4
+[05/14 23:31:37     12s] BUF_X1
+[05/14 23:31:37     12s] BUF_X16
+[05/14 23:31:37     12s] BUF_X2
+[05/14 23:31:37     12s] BUF_X4
+[05/14 23:31:37     12s] BUF_X8
+[05/14 23:31:37     12s] CLKBUF_X1
+[05/14 23:31:37     12s] CLKBUF_X3
+[05/14 23:31:37     12s] DFF_X1
+[05/14 23:31:37     12s] DFF_X2
+[05/14 23:31:37     12s] FILLCELL_X1
+[05/14 23:31:37     12s] FILLCELL_X16
+[05/14 23:31:37     12s] FILLCELL_X2
+[05/14 23:31:37     12s] FILLCELL_X32
+[05/14 23:31:37     12s] FILLCELL_X4
+[05/14 23:31:37     12s] FILLCELL_X8
+[05/14 23:31:37     12s] INV_X1
+[05/14 23:31:37     12s] INV_X2
+[05/14 23:31:37     12s] INV_X4
+[05/14 23:31:37     12s] MUX2_X1
+[05/14 23:31:37     12s] NAND2_X1
+[05/14 23:31:37     12s] NAND2_X2
+[05/14 23:31:37     12s] NAND2_X4
+[05/14 23:31:37     12s] NAND3_X1
+[05/14 23:31:37     12s] NAND3_X2
+[05/14 23:31:37     12s] NAND3_X4
+[05/14 23:31:37     12s] NAND4_X1
+[05/14 23:31:37     12s] NAND4_X4
+[05/14 23:31:37     12s] NOR2_X1
+[05/14 23:31:37     12s] NOR2_X2
+[05/14 23:31:37     12s] NOR2_X4
+[05/14 23:31:37     12s] NOR4_X1
+[05/14 23:31:37     12s] OAI21_X1
+[05/14 23:31:37     12s] OAI21_X2
+[05/14 23:31:37     12s] OAI21_X4
+[05/14 23:31:37     12s] OAI22_X1
+[05/14 23:31:37     12s] XNOR2_X1
+[05/14 23:31:37     12s] XNOR2_X2
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=677.25MB/13246.94MB/3515.53MB)
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Begin Processing Timing Window Data for Power Calculation
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s]   SPEF    : /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.spef
+[05/14 23:31:37     12s]     Name matched: 644/644
+[05/14 23:31:37     12s]     Annotation coverage for this file      : 644/677 (95.1256%)
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Starting Levelizing
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 10%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 20%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 30%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 40%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 50%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 60%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 70%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 80%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 90%
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Finished Levelizing
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+[05/14 23:31:37     12s]    core_clock(2173.91MHz) 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s]   Timing Window Statistics:
+[05/14 23:31:37     12s]     File name                                           : design.twf.gz
+[05/14 23:31:37     12s]     Generator                                           : Voltus IC Power Integrity Solution
+[05/14 23:31:37     12s]     Block of current design (read_twf -scope)           : ""
+[05/14 23:31:37     12s]     Remove hierarchy from TWF (read_twf -strip_prefix)  : ""
+[05/14 23:31:37     12s]     Waveform definitions parsed                         : 2
+[05/14 23:31:37     12s]     Clock roots assigned/parsed                         : 2/2 (100%)
+[05/14 23:31:37     12s]     Timing windows assigned/parsed                      : 1366/1366 (100%)
+[05/14 23:31:37     12s]     Nets with timing windows/Nets in design             : 677/677 (100%)
+[05/14 23:31:37     12s]     Constants assigned/parsed                           : 0/0 (0%)
+[05/14 23:31:37     12s]     Nets with constants/Nets in design                  : 0/677 (0%)
+[05/14 23:31:37     12s]     External loads assigned/parsed                      : 0/0 (0%)
+[05/14 23:31:37     12s]     Slews assigned/parsed                               : 1378/1378 (100%)
+[05/14 23:31:37     12s]     Nets with slew/Nets in design                       : 677/677 (100%)
+[05/14 23:31:37     12s]     Slew range                                          : 5e-12s - 2.18e-10s
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.26MB/13244.93MB/3516.54MB)
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Begin Processing VCD Vectors
+[05/14 23:31:37     12s] Ended Processing VCD Vectors: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.26MB/13244.93MB/3516.54MB)
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Begin Processing FSDB Vectors
+[05/14 23:31:37     12s] Ended Processing FSDB Vectors: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.26MB/13244.93MB/3516.54MB)
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Begin Processing User Attributes
+[05/14 23:31:37     12s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.26MB/13244.93MB/3516.54MB)
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Begin Processing Signal Activity
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Starting Activity Propagation
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 10%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 20%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 30%
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Finished Activity Propagation
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+[05/14 23:31:37     12s] Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.26MB/13244.93MB/3516.54MB)
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Begin Power Analysis
+[05/14 23:31:37     12s]   ----------------------------------------------------------
+[05/14 23:31:37     12s]   # of cell(s) missing both power/leakage table: 0
+[05/14 23:31:37     12s]   # of cell(s) missing power table: 7
+[05/14 23:31:37     12s]   # of cell(s) missing leakage table: 7
+[05/14 23:31:37     12s]   ----------------------------------------------------------
+[05/14 23:31:37     12s]   CellName                                  Missing Table(s)
+[05/14 23:31:37     12s]   FILLCELL_X1                               internal power, leakage power, 
+[05/14 23:31:37     12s]   FILLCELL_X16                              internal power, leakage power, 
+[05/14 23:31:37     12s]   FILLCELL_X2                               internal power, leakage power, 
+[05/14 23:31:37     12s]   FILLCELL_X32                              internal power, leakage power, 
+[05/14 23:31:37     12s]   FILLCELL_X4                               internal power, leakage power, 
+[05/14 23:31:37     12s]   FILLCELL_X8                               internal power, leakage power, 
+[05/14 23:31:37     12s]   TAPCELL_X1                                internal power, leakage power, 
+[05/14 23:31:37     12s]   
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Starting Calculating power
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+[05/14 23:31:37     12s]  ... Preparing power data for dynamic calculation
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 10%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 20%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 30%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 40%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 50%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 60%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 70%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 80%
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT): 90%
+[05/14 23:31:37     12s] 
+[05/14 23:31:37     12s] Finished Calculating power
+[05/14 23:31:37     12s] 2026-May-14 23:31:37 (2026-May-14 15:31:37 GMT)
+[05/14 23:31:37     12s]   # of MSMV cell(s) missing power_level: 0
+[05/14 23:31:37     12s] Begin Processing set_power
+[05/14 23:31:37     12s] Ended Processing set_power: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.83MB/13244.93MB/3517.11MB)
+[05/14 23:31:37     12s] Begin Processing set_power stats
+[05/14 23:31:37     12s] Ended Processing set_power stats: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.83MB/13244.93MB/3517.11MB)
+[05/14 23:31:42     12s] Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=678.83MB/13244.93MB/3517.11MB)
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] Begin Writing Current Files
+[05/14 23:31:42     12s]   CPU              : 8
+[05/14 23:31:42     12s]   Simulation Period: 0.92ns
+[05/14 23:31:42     12s]   Step Size        : 5ps
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] Scheduling events using timing window information
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] Starting Writing current file while scheduling
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT)
+[05/14 23:31:42     12s] ** INFO:  (VOLTUS_POWR-2042): Beginning parallel processing, using 8 CPUs
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 10%
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 20%
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 30%
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 40%
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 50%
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 60%
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 70%
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 80%
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT): 90%
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] Finished Writing current file while scheduling
+[05/14 23:31:42     12s] 2026-May-14 23:31:42 (2026-May-14 15:31:42 GMT)
+[05/14 23:31:42     12s] Ended Writing Current Files: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=682.58MB/13260.96MB/3520.86MB)
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] Power Analysis Statistics:
+[05/14 23:31:42     12s]   Warning messages: 1
+[05/14 23:31:42     12s]   Error messages: 0
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] Finished Power Analysis at 23:31:42 05/14/2026 (cpu=0:00:00, real=0:00:07, peak mem=3520.86MB)
+[05/14 23:31:42     12s] Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:14, real=0:00:20, mem=3520.86MB)
+[05/14 23:31:42     12s] 
+[05/14 23:31:42     12s] 
+[05/14 23:31:47     12s] 
+[05/14 23:31:47     12s] Exit code 0.
+[05/14 23:31:47     12s] Voltus Power Analysis exited successfully.
+[05/14 23:31:52     28s] <CMD> set_pg_nets -net VDD -voltage 1.1 -threshold 0.99
+[05/14 23:31:52     28s] <CMD> set_pg_nets -net VSS -voltage 0.0 -threshold 0.11
+[05/14 23:31:52     28s] <CMD> set_rail_analysis_domain -name PDcore -pwrnets VDD -gndnets VSS
+[05/14 23:31:52     28s] <CMD> set_power_data -reset
+[05/14 23:31:52     28s] <CMD> set_power_data -format current -scale 1 {/home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VDD.ptiavg /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VSS.ptiavg}
+[05/14 23:31:52     28s] <CMD> set_power_pads -reset
+[05/14 23:31:52     28s] <CMD> set_power_pads -net ALL -auto_voltage_source_creation true
+[05/14 23:31:52     28s] <CMD> set_rail_analysis_mode -method dynamic -accuracy hd -vsrc_search_distance 100 -power_grid_library /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/pgv/techonly.cl -temperature 25 -process_techgen_em_rules true -ict_em_models /home/wei0829/voltus_tdt_question_ng45_gcd/dummy_files/dummy_ictem.txt
+[05/14 23:31:52     28s] **WARN: (VOLTUS-1007):	The distributed processing (DP) mode will be made obsolete in a future release and it is recommended to use the Extensively Parallel (XP) mode. The obsolete DP mode still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your scripts to use the set_rail_analysis_mode -enable_xp true..
+[05/14 23:31:52     28s] <CMD> set_self_heat_analysis_mode -alpha_parameters {{metal1 0.74 0.85} {metal2 0.62 0.85} {metal3 0.53 0.85} {metal4 0.53 0.85} {metal5 0.53 0.85} {metal6 0.53 0.85} {metal7 0.53 0.85} {metal8 0.53 0.85} {metal9 0.53 0.85} {metal10 0.53 0.85}} -beta_parameters {0.00423 -0.00045 0.81534} -instance_power_file /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/static_db/instance_power.txt -cell_thermal_resistance_file /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dummy_TRF_area_based.txt -instance_delta_temperature_file /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/nangate45_gcd_idt.txt -tile_delta_temperature_file /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/nangate45_gcd_tdt.txt -tiles {100 100} -detail_delta_temperature_file /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/nangate45_gcd_detail.rpt
+[05/14 23:31:52     28s] <CMD> analyze_self_heat -domain PDcore -output_directory /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out
+[05/14 23:31:52     29s] 
+[05/14 23:31:52     29s] 
+[05/14 23:31:52     29s] Started Rail Analysis at 23:31:51 05/14/2026
+[05/14 23:31:52     29s] 
+[05/14 23:31:55     29s]  
+[05/14 23:31:55     29s] Opening dproc sockets
+[05/14 23:31:55     29s] connection complete
+[05/14 23:31:55     29s] 
+[05/14 23:31:55     29s] Multi-CPU Configuration:
+[05/14 23:31:55     29s] 	#CPU: 8
+[05/14 23:31:55     29s] 	Mode: local
+[05/14 23:31:55     29s] 	Host: TC-DL5
+[05/14 23:31:55     29s] 
+[05/14 23:31:55     29s] 
+[05/14 23:31:55     29s] Start distributed processes ...
+[05/14 23:31:55     29s] INFO (PRL-36): The timeout for a remote job to respond is 3600 seconds.
+[05/14 23:31:55     29s] 
+[05/14 23:31:55     29s] Submit command for task runs will be: local
+[05/14 23:31:55     29s] INFO (PRL-725): EDP: start server on TC-DL5:44545
+[05/14 23:31:55     29s] 
+[05/14 23:31:55     29s] INFO (PRL-725): EDP: start server on TC-DL5:48797
+[05/14 23:31:55     29s] 
+[05/14 23:31:55     29s] INFO (PRL-819): Connected to TC-DL5 60235 0 ( PID=2208387 ). Wait time was 1 seconds
+[05/14 23:31:55     29s] 
+[05/14 23:31:55     29s] INFO (PRL-819): Connected to TC-DL5 45347 1 ( PID=2208409 ). Wait time was 0 seconds
+[05/14 23:31:55     29s] 
+[05/14 23:31:55     29s] INFO (PRL-742): EDP: all 2 edp client(s) are launched
+[05/14 23:31:55     29s] 
+[05/14 23:31:55     29s] 
+[05/14 23:31:55     29s] Running OCI  extraction for /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/design/6_final.def ...
+[05/14 23:31:55     29s] 
+[05/14 23:31:56     29s] Extraction option setup as:
+[05/14 23:31:56     29s] setenv gray_data NONE
+[05/14 23:31:56     29s] setenv enable_cluster_overhang_via false
+[05/14 23:31:56     29s] setenv enable_dfm_mask_conflict_shape false
+[05/14 23:31:56     29s] Extraction option setup as:
+[05/14 23:31:56     29s] setenv gray_data NONE
+[05/14 23:31:56     29s] setenv enable_cluster_overhang_via false
+[05/14 23:31:56     29s] setenv enable_dfm_mask_conflict_shape false
+[05/14 23:31:56     29s] Extraction data found under work directory, data can be reused, skip extraction.
+[05/14 23:32:26     29s] 
+[05/14 23:32:26     29s] Analyze Rail Settings:
+[05/14 23:32:26     29s] 	Temp directory: /tmp/ssv_tmpdir_2207965_e8wUPZ
+[05/14 23:32:26     29s] 	Output directory: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out
+[05/14 23:32:26     29s] 	Run directory: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/
+[05/14 23:32:26     29s] 
+[05/14 23:32:26     29s] 
+[05/14 23:32:26     29s] (proc 1) Invoking: "/usr/cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_rail_smg -cmd /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/voltus_rail_smg.VDD.cmd -l /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/voltus_rail_smg.VDD.log" ...
+[05/14 23:32:26     29s] (proc 0) Invoking: "/usr/cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_rail_smg -cmd /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/voltus_rail_smg.VSS.cmd -l /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/voltus_rail_smg.VSS.log" ...
+[05/14 23:32:26     29s] (proc 0) Begin Merging power grid
+[05/14 23:32:26     29s] (proc 1) Begin Merging power grid
+[05/14 23:32:26     29s] (proc 0) Tech reference temperature: 25
+[05/14 23:32:26     29s] (proc 0) Target temperature: 25
+[05/14 23:32:26     29s] (proc 0) 
+[05/14 23:32:26     29s] (proc 1) Tech reference temperature: 25
+[05/14 23:32:26     29s] (proc 1) Target temperature: 25
+[05/14 23:32:26     29s] (proc 1) 
+[05/14 23:32:26     29s] (proc 0) Set Layer via6 for the Auto Ploc Vsrc feature
+[05/14 23:32:26     29s] (proc 1) Set Layer via3 for the Auto Ploc Vsrc feature
+[05/14 23:32:26     29s] (proc 1) Grid Statistics of Net VDD:
+[05/14 23:32:26     29s] (proc 1) - NODE
+[05/14 23:32:26     29s] (proc 1)   Total node: 2983
+[05/14 23:32:26     29s] (proc 1)     Top Level grid node: 2983
+[05/14 23:32:26     29s] (proc 1)       Top level interface node: 860
+[05/14 23:32:26     29s] (proc 1)     Missing interface node: 0
+[05/14 23:32:26     29s] (proc 1)     Cell internal node: 0
+[05/14 23:32:26     29s] (proc 1) - ELEM
+[05/14 23:32:26     29s] (proc 1)   Total element: 2982
+[05/14 23:32:26     29s] (proc 1)     Top Level grid element: 2982
+[05/14 23:32:26     29s] (proc 1)     Cell internal element: 0
+[05/14 23:32:26     29s] (proc 1) - INST
+[05/14 23:32:26     29s] (proc 1)   Instance logically connected: 860
+[05/14 23:32:26     29s] (proc 1)     Tech: 860
+[05/14 23:32:26     29s] (proc 1)     StdCell: 0
+[05/14 23:32:26     29s] (proc 1)     Macro:
+[05/14 23:32:26     29s] (proc 1)       Early: 0
+[05/14 23:32:26     29s] (proc 1)       IR: 0
+[05/14 23:32:26     29s] (proc 1)     Current Region:  0
+[05/14 23:32:26     29s] (proc 1)   Dropped instance due to missing/incomplete cell library: 0
+[05/14 23:32:26     29s] (proc 1) - TAP
+[05/14 23:32:26     29s] (proc 1)   Total tap: 860
+[05/14 23:32:26     29s] (proc 1) 
+[05/14 23:32:26     29s] (proc 1) Ended Merging power grid: (cpu=0:00:15, real=0:00:15, mem(process/total/peak)=35.83MB/22088.55MB/3520.86MB)
+[05/14 23:32:26     29s] (proc 0) Grid Statistics of Net VSS:
+[05/14 23:32:26     29s] (proc 0) - NODE
+[05/14 23:32:26     29s] (proc 0)   Total node: 2436
+[05/14 23:32:26     29s] (proc 0)     Top Level grid node: 2436
+[05/14 23:32:26     29s] (proc 0)       Top level interface node: 860
+[05/14 23:32:26     29s] (proc 0)     Missing interface node: 0
+[05/14 23:32:26     29s] (proc 0)     Cell internal node: 0
+[05/14 23:32:26     29s] (proc 0) - ELEM
+[05/14 23:32:26     29s] (proc 0)   Total element: 2449
+[05/14 23:32:26     29s] (proc 0)     Top Level grid element: 2449
+[05/14 23:32:26     29s] (proc 0)     Cell internal element: 0
+[05/14 23:32:26     29s] (proc 0) - INST
+[05/14 23:32:26     29s] (proc 0)   Instance logically connected: 860
+[05/14 23:32:26     29s] (proc 0)     Tech: 860
+[05/14 23:32:26     29s] (proc 0)     StdCell: 0
+[05/14 23:32:26     29s] (proc 0)     Macro:
+[05/14 23:32:26     29s] (proc 0)       Early: 0
+[05/14 23:32:26     29s] (proc 0)       IR: 0
+[05/14 23:32:26     29s] (proc 0)     Current Region:  0
+[05/14 23:32:26     29s] (proc 0)   Dropped instance due to missing/incomplete cell library: 0
+[05/14 23:32:26     29s] (proc 0) - TAP
+[05/14 23:32:26     29s] (proc 0)   Total tap: 860
+[05/14 23:32:26     29s] (proc 0) 
+[05/14 23:32:26     29s] (proc 0) Ended Merging power grid: (cpu=0:00:25, real=0:00:25, mem(process/total/peak)=35.95MB/19959.45MB/3520.86MB)
+[05/14 23:32:26     29s] 
+[05/14 23:32:26     29s] Begin Preparing Data for Rail Analysis
+[05/14 23:32:26     29s] 
+[05/14 23:32:26     29s] Net VSS
+[05/14 23:32:26     29s]   Power Pin Location File: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/VSS/VSS_vsrcs.rpt
+[05/14 23:32:26     29s]   # Voltage Source Added/Total (%): 6/6 (100.00%)
+[05/14 23:32:26     29s] 
+[05/14 23:32:26     29s]   Power Database: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VSS.ptiavg
+[05/14 23:32:26     29s]   # Current Taps Matched/Total (%): 609/609 (100.00%)
+[05/14 23:32:26     29s]   # Instances Matched: 609
+[05/14 23:32:26     29s] 
+[05/14 23:32:26     29s] Net VDD
+[05/14 23:32:26     29s]   Power Pin Location File: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/VDD/VDD_vsrcs.rpt
+[05/14 23:32:26     29s]   # Voltage Source Added/Total (%): 12/12 (100.00%)
+[05/14 23:32:26     29s] 
+[05/14 23:32:26     29s]   Power Database: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/dynamic_db/dynamic_VDD.ptiavg
+[05/14 23:32:26     29s]   # Current Taps Matched/Total (%): 609/609 (100.00%)
+[05/14 23:32:26     29s]   # Instances Matched: 609
+[05/14 23:32:26     29s] 
+[05/14 23:32:26     29s] Begin PowerGrid Integrity Analysis
+[05/14 23:32:26     29s] 
+[05/14 23:32:26     29s] Begin Redistribute Disconnected Cap
+[05/14 23:32:31     29s] Ended Redistribute Disconnected Cap: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=105.33MB/23456.42MB/3578.14MB)
+[05/14 23:32:31     29s] 
+[05/14 23:32:31     29s] Ended PowerGrid Integrity Analysis: (cpu=0:00:00, real=0:00:05, mem(process/total/peak)=105.96MB/23456.42MB/3578.14MB)
+[05/14 23:32:31     29s] 
+[05/14 23:32:31     29s] Ended Preparing Data for Rail Analysis: (cpu=0:00:00, real=0:00:05, mem(process/total/peak)=105.98MB/23456.42MB/3578.14MB)
+[05/14 23:32:31     29s] 
+[05/14 23:32:31     29s] 
+[05/14 23:32:31     29s] Begin Steady-State Analysis
+[05/14 23:32:31     29s] Ended Steady-State Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=116.05MB/72418.53MB/3578.14MB)
+[05/14 23:32:31     29s] 
+[05/14 23:32:31     29s] ** WARN: (VOLTUS_RAIL-5063): The following cells are not tagged as filler
+[05/14 23:32:31     29s] cell and is missing intrinsic capacitance.  Check the cell library by
+[05/14 23:32:31     29s] running "check_power_library -report_file <file> <cell_library>" to examine
+[05/14 23:32:31     29s] its content. Recharacterize this cell for more accurate IR Drop results. 
+[05/14 23:32:31     29s]   AND2_X1, AND2_X2, AND2_X4, AND3_X1, AOI21_X1, AOI21_X2, AOI21_X4, BUF_X1,
+[05/14 23:32:31     29s] BUF_X16, BUF_X2, BUF_X4, BUF_X8, CLKBUF_X1, CLKBUF_X3, DFF_X1, DFF_X2,
+[05/14 23:32:31     29s] FILLCELL_X1, FILLCELL_X16, FILLCELL_X2, FILLCELL_X32, FILLCELL_X4,
+[05/14 23:32:31     29s] FILLCELL_X8, INV_X1, INV_X2, INV_X4, MUX2_X1, NAND2_X1, NAND2_X2, NAND2_X4,
+[05/14 23:32:31     29s] NAND3_X1, NAND3_X2, NAND3_X4, NAND4_X1, NAND4_X4, NOR2_X1, NOR2_X2,
+[05/14 23:32:31     29s] NOR2_X4, NOR4_X1, OAI21_X1, OAI21_X2, OAI21_X4, OAI22_X1, TAPCELL_X1,
+[05/14 23:32:31     29s] XNOR2_X1, XNOR2_X2 
+[05/14 23:32:31     29s] 
+[05/14 23:32:31     29s] Begin Dynamic Rail Simulation
+[05/14 23:32:31     29s]   Start Time: 0s
+[05/14 23:32:31     29s]   End Time: 9.2e-10s
+[05/14 23:32:31     29s]   Steps: 184
+[05/14 23:32:31     29s]   Resolution: 5e-12s
+[05/14 23:32:31     29s]     0% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s]    10% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s]    20% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s]    30% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s]    40% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s]    50% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s]    60% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s]    70% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s]    80% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s]    90% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s]   100% at 23:32:31 05/14/26 
+[05/14 23:32:31     29s] Ended Dynamic Rail Simulation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=130.78MB/76499.55MB/3578.14MB)
+[05/14 23:32:32     29s] 
+[05/14 23:32:32     29s] Begin Report Generation
+[05/14 23:32:39     29s] The report generation will be performed on multiple processes and the voltus.log will be updated once all the reports are generated.
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Net VSS:
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Preparing Database for Report Generation
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Circuit profile:
+[05/14 23:32:39     29s]                                                       Current    Voltage
+[05/14 23:32:39     29s] Layer Name                       Nodes   Resistors    Sources    Sources
+[05/14 23:32:39     29s] ----- --------------------  ----------  ----------  ---------  ---------
+[05/14 23:32:39     29s] 0     metal7                        15          12          0          6
+[05/14 23:32:39     29s] 1     via6                           0           6          0          0
+[05/14 23:32:39     29s] 2     metal6                         6           0          0          0
+[05/14 23:32:39     29s] 3     via5                           0           6          0          0
+[05/14 23:32:39     29s] 4     metal5                         6           0          0          0
+[05/14 23:32:39     29s] 5     via4                           0           6          0          0
+[05/14 23:32:39     29s] 6     metal4                        36          34          0          0
+[05/14 23:32:39     29s] 7     via3                           0          24          0          0
+[05/14 23:32:39     29s] 8     metal3                        24           0          0          0
+[05/14 23:32:39     29s] 9     via2                           0          24          0          0
+[05/14 23:32:39     29s] 10    metal2                        24           0          0          0
+[05/14 23:32:39     29s] 11    via1                           0          24          0          0
+[05/14 23:32:39     29s] 12    metal1                      2325        2313        820          0
+[05/14 23:32:39     29s]                             ----------  ----------  ---------  ---------
+[05/14 23:32:39     29s] 13    Circuit total               2437        2449        820          6
+[05/14 23:32:39     29s] Ended Preparing Database for Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=353.31MB/83702.08MB/3651.14MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Initializing Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=353.31MB/83702.08MB/3651.87MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin IR Drop (Linear) Report Generation
+[05/14 23:32:39     29s]   Voltage: 0
+[05/14 23:32:39     29s]   Threshold: 0.11
+[05/14 23:32:39     29s]   Minimum, Average, Maximum IR Drop: 0.000V, 6.238mV, 15.542mV
+[05/14 23:32:39     29s]     Range 1(  13.600mV  -    15.544mV ):        90 (  3.69%)
+[05/14 23:32:39     29s]     Range 2(  11.657mV  -    13.600mV ):        39 (  1.60%)
+[05/14 23:32:39     29s]     Range 3(   9.714mV  -    11.657mV ):       194 (  7.96%)
+[05/14 23:32:39     29s]     Range 4(   7.771mV  -     9.714mV ):       377 ( 15.48%)
+[05/14 23:32:39     29s]     Range 5(   5.828mV  -     7.771mV ):       543 ( 22.29%)
+[05/14 23:32:39     29s]     Range 6(   3.886mV  -     5.828mV ):       637 ( 26.15%)
+[05/14 23:32:39     29s]     Range 7(   1.943mV  -     3.886mV ):       458 ( 18.80%)
+[05/14 23:32:39     29s]     Range 8(    0.000V  -     1.943mV ):        98 (  4.02%)
+[05/14 23:32:39     29s]     Layer with maximum IR Drop:  metal1
+[05/14 23:32:39     29s]       metal7: 7.3312e-12 [0 - 0]
+[05/14 23:32:39     29s]       metal6: 0.00054984 [0.00052851 - 0.0010784]
+[05/14 23:32:39     29s]       metal5: 0.00076977 [0.00073992 - 0.0015097]
+[05/14 23:32:39     29s]       metal4: 0.002039 [0.00095132 - 0.0029903]
+[05/14 23:32:39     29s]       metal3: 0.0026055 [0.0011257 - 0.0037312]
+[05/14 23:32:39     29s]       metal2: 0.0034873 [0.0011794 - 0.0046667]
+[05/14 23:32:39     29s]       metal1: 0.014309 [0.001233 - 0.015542]
+[05/14 23:32:39     29s]   Worst case interval: 149
+[05/14 23:32:39     29s]   IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/VSS.main.rpt
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/ir_linear.gif
+[05/14 23:32:39     29s] Ended IR Drop (Linear) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=401.50MB/83702.08MB/3711.23MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin IR Drop (Limit) Report Generation
+[05/14 23:32:39     29s]   Voltage: 0
+[05/14 23:32:39     29s]   Threshold: 0.11
+[05/14 23:32:39     29s]   Minimum, Average, Maximum IR Drop: 0.000V, 6.238mV, 15.542mV
+[05/14 23:32:39     29s]     Range 1(    0.110V  -      0.110V ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 2(    0.101V  -      0.110V ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 3(  91.667mV  -      0.101V ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 4(  82.500mV  -    91.667mV ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 5(  73.333mV  -    82.500mV ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 6(  64.167mV  -    73.333mV ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 7(  55.000mV  -    64.167mV ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 8(  -1.000uV  -    55.000mV ):      2436 (100.00%)
+[05/14 23:32:39     29s]     Layer with maximum IR Drop:  metal1
+[05/14 23:32:39     29s]       metal7: 7.3312e-12 [0 - 0]
+[05/14 23:32:39     29s]       metal6: 0.00054984 [0.00052851 - 0.0010784]
+[05/14 23:32:39     29s]       metal5: 0.00076977 [0.00073992 - 0.0015097]
+[05/14 23:32:39     29s]       metal4: 0.002039 [0.00095132 - 0.0029903]
+[05/14 23:32:39     29s]       metal3: 0.0026055 [0.0011257 - 0.0037312]
+[05/14 23:32:39     29s]       metal2: 0.0034873 [0.0011794 - 0.0046667]
+[05/14 23:32:39     29s]       metal1: 0.014309 [0.001233 - 0.015542]
+[05/14 23:32:39     29s]   Worst case interval: 149
+[05/14 23:32:39     29s]   IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/VSS.main.rpt
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/ir_limit.gif
+[05/14 23:32:39     29s] Ended IR Drop (Limit) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=403.50MB/83702.08MB/3713.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Tap Current Report Generation
+[05/14 23:32:39     29s]   Minimum, Average, Maximum Tap Current: -0.466mA, -30.693uA, 0.000A
+[05/14 23:32:39     29s]   Total Current: -25.168mA
+[05/14 23:32:39     29s]     Range 1(  -1.000GA  -    -1.000mA ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 2(  -1.000mA  -  -100.000uA ):        41 (  5.00%)
+[05/14 23:32:39     29s]     Range 3(-100.000uA  -   -10.000uA ):       501 ( 61.10%)
+[05/14 23:32:39     29s]     Range 4( -10.000uA  -    -1.000uA ):        47 (  5.73%)
+[05/14 23:32:39     29s]     Range 5(  -1.000uA  -  -100.000nA ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 6(-100.000nA  -   -10.000nA ):         3 (  0.37%)
+[05/14 23:32:39     29s]     Range 7( -10.000nA  -    -1.000nA ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 8(  -1.000nA  -      0.000A ):       228 ( 27.80%)
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/tc.gif
+[05/14 23:32:39     29s] Ended Tap Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=403.50MB/83702.08MB/3713.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Resistor Current Report Generation
+[05/14 23:32:39     29s]   Minimum, Average, Maximum Resistor Current: 0.000A, 0.102mA, 1.438mA
+[05/14 23:32:39     29s]     Range 1(   1.000mA  -     1.000GA ):         6 (  0.24%)
+[05/14 23:32:39     29s]     Range 2( 100.000uA  -     1.000mA ):       808 ( 32.99%)
+[05/14 23:32:39     29s]     Range 3(  10.000uA  -   100.000uA ):       533 ( 21.76%)
+[05/14 23:32:39     29s]     Range 4(   1.000uA  -    10.000uA ):         8 (  0.33%)
+[05/14 23:32:39     29s]     Range 5(   0.100uA  -     1.000uA ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 6(  10.000nA  -     0.100uA ):       290 ( 11.84%)
+[05/14 23:32:39     29s]     Range 7(   1.000nA  -    10.000nA ):       349 ( 14.25%)
+[05/14 23:32:39     29s]     Range 8(    0.000A  -     1.000nA ):       455 ( 18.58%)
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/rc.gif
+[05/14 23:32:39     29s] Ended Resistor Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=495.75MB/83702.08MB/3807.82MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Resistor Voltage Report Generation
+[05/14 23:32:39     29s]   Minimum, Average, Maximum Resistor Voltage: 0.000V, 93.978uV, 1.309mV
+[05/14 23:32:39     29s]     Range 1(   1.145mV  -     1.309mV ):         1 (  0.04%)
+[05/14 23:32:39     29s]     Range 2(   0.981mV  -     1.145mV ):        10 (  0.41%)
+[05/14 23:32:39     29s]     Range 3(   0.818mV  -     0.981mV ):        14 (  0.57%)
+[05/14 23:32:39     29s]     Range 4(   0.654mV  -     0.818mV ):        52 (  2.12%)
+[05/14 23:32:39     29s]     Range 5(   0.491mV  -     0.654mV ):        59 (  2.41%)
+[05/14 23:32:39     29s]     Range 6(   0.327mV  -     0.491mV ):        96 (  3.92%)
+[05/14 23:32:39     29s]     Range 7(   0.164mV  -     0.327mV ):       212 (  8.66%)
+[05/14 23:32:39     29s]     Range 8(    0.000V  -     0.164mV ):      2005 ( 81.87%)
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/rv.gif
+[05/14 23:32:39     29s] Ended Resistor Voltage Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=497.75MB/83702.08MB/3809.82MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Info: Using Layer-stack details from : '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/pgv/techonly.cl/NG45.tch'
+[05/14 23:32:39     29s] Info: Using EM Rules from : '/home/wei0829/voltus_tdt_question_ng45_gcd/dummy_files/dummy_ictem.txt'
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Current Density (JRMS/JMAX) Report Generation
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/jrms.gif
+[05/14 23:32:39     29s] Ended Current Density (JRMS/JMAX) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=511.63MB/83702.08MB/3823.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Self Heat deltaT Report Generation
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VSS/dtrms.gif
+[05/14 23:32:39     29s] Ended Self Heat deltaT Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=513.63MB/83702.08MB/3825.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Capacitance Report Generation
+[05/14 23:32:39     29s] 	Type                  disconnected          connected             used                
+[05/14 23:32:39     29s] 	Intrinsic-decap/filler  0.000F                0.000F                0.000F              
+[05/14 23:32:39     29s] 	Intrinsic-standard    0.000F                0.000F                0.000F              
+[05/14 23:32:39     29s] 	Intrinsic-macro       0.000F                0.000F                0.000F              
+[05/14 23:32:39     29s] 	Load Cap              0.000F                1.670pF               1.670pF             
+[05/14 23:32:39     29s] 	Grid Cap              0.000F                70.194fF              70.194fF            
+[05/14 23:32:39     29s] 	Total Cap             0.000F                1.740pF               1.740pF             
+[05/14 23:32:39     29s] Ended Capacitance Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=513.63MB/83702.08MB/3825.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Voltage Across Vias and Contacts Report Generation
+[05/14 23:32:39     29s] Ended Voltage Across Vias and Contacts Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=513.63MB/83702.08MB/3825.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Weak Grid Connectivity Report
+[05/14 23:32:39     29s] Ended Weak Grid Connectivity Report: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=513.63MB/83702.08MB/3825.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Grid Integrity Report Generation
+[05/14 23:32:39     29s]   # Missing Cell Power-Grid Views: 0
+[05/14 23:32:39     29s]   # Physically Disconnected Instances: 0
+[05/14 23:32:39     29s]   # Instances with Floating Power Pins: 0
+[05/14 23:32:39     29s]   # Disconnected Wire Segments: 0
+[05/14 23:32:39     29s]   # Weakly Connected Metal Segments: 0
+[05/14 23:32:39     29s]   # Dropped Voltage Sources: 0
+[05/14 23:32:39     29s] Ended Grid Integrity Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=513.63MB/83702.08MB/3825.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Net VDD:
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Preparing Database for Report Generation
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Circuit profile:
+[05/14 23:32:39     29s]                                                       Current    Voltage
+[05/14 23:32:39     29s] Layer Name                       Nodes   Resistors    Sources    Sources
+[05/14 23:32:39     29s] ----- --------------------  ----------  ----------  ---------  ---------
+[05/14 23:32:39     29s] 0     metal4                        15          14          0         12
+[05/14 23:32:39     29s] 1     via3                           0          12          0          0
+[05/14 23:32:39     29s] 2     metal3                        12           0          0          0
+[05/14 23:32:39     29s] 3     via2                           0          12          0          0
+[05/14 23:32:39     29s] 4     metal2                        12           0          0          0
+[05/14 23:32:39     29s] 5     via1                           0          12          0          0
+[05/14 23:32:39     29s] 6     metal1                      2944        2932        820          0
+[05/14 23:32:39     29s]                             ----------  ----------  ---------  ---------
+[05/14 23:32:39     29s] 7     Circuit total               2984        2982        820         12
+[05/14 23:32:39     29s] Ended Preparing Database for Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=345.88MB/83702.08MB/3671.05MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Initializing Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=345.88MB/83702.08MB/3671.05MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin IR Drop (Linear) Report Generation
+[05/14 23:32:39     29s]   Voltage: 1.1
+[05/14 23:32:39     29s]   Threshold: 0.99
+[05/14 23:32:39     29s]   Minimum, Average, Maximum IR Drop: 1.087V, 1.094V, 1.100V
+[05/14 23:32:39     29s]     Range 1(    1.086V  -      1.088V ):        97 (  3.25%)
+[05/14 23:32:39     29s]     Range 2(    1.088V  -      1.090V ):       296 (  9.92%)
+[05/14 23:32:39     29s]     Range 3(    1.090V  -      1.092V ):       322 ( 10.79%)
+[05/14 23:32:39     29s]     Range 4(    1.092V  -      1.093V ):       661 ( 22.16%)
+[05/14 23:32:39     29s]     Range 5(    1.093V  -      1.095V ):       528 ( 17.70%)
+[05/14 23:32:39     29s]     Range 6(    1.095V  -      1.097V ):       670 ( 22.46%)
+[05/14 23:32:39     29s]     Range 7(    1.097V  -      1.098V ):       371 ( 12.44%)
+[05/14 23:32:39     29s]     Range 8(    1.098V  -      1.100V ):        38 (  1.27%)
+[05/14 23:32:39     29s]     Layer with maximum IR Drop:  metal1
+[05/14 23:32:39     29s]       metal4: 0 [1.1 - 1.1]
+[05/14 23:32:39     29s]       metal3: 0.00086284 [1.0986 - 1.0995]
+[05/14 23:32:39     29s]       metal2: 0.0017258 [1.0972 - 1.0989]
+[05/14 23:32:39     29s]       metal1: 0.011822 [1.0866 - 1.0984]
+[05/14 23:32:39     29s]   Worst case interval: 62
+[05/14 23:32:39     29s]   IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/VDD.main.rpt
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/ir_linear.gif
+[05/14 23:32:39     29s] Ended IR Drop (Linear) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=345.88MB/83702.08MB/3701.23MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin IR Drop (Limit) Report Generation
+[05/14 23:32:39     29s]   Voltage: 1.1
+[05/14 23:32:39     29s]   Threshold: 0.99
+[05/14 23:32:39     29s]   Minimum, Average, Maximum IR Drop: 1.087V, 1.094V, 1.100V
+[05/14 23:32:39     29s]     Range 1(    0.990V  -      0.990V ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 2(    0.990V  -      0.999V ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 3(    0.999V  -      1.008V ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 4(    1.008V  -      1.018V ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 5(    1.018V  -      1.027V ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 6(    1.027V  -      1.036V ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 7(    1.036V  -      1.045V ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 8(    1.045V  -      1.100V ):      2983 (100.00%)
+[05/14 23:32:39     29s]     Layer with maximum IR Drop:  metal1
+[05/14 23:32:39     29s]       metal4: 0 [1.1 - 1.1]
+[05/14 23:32:39     29s]       metal3: 0.00086284 [1.0986 - 1.0995]
+[05/14 23:32:39     29s]       metal2: 0.0017258 [1.0972 - 1.0989]
+[05/14 23:32:39     29s]       metal1: 0.011822 [1.0866 - 1.0984]
+[05/14 23:32:39     29s]   Worst case interval: 62
+[05/14 23:32:39     29s]   IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/VDD.main.rpt
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/ir_limit.gif
+[05/14 23:32:39     29s] Ended IR Drop (Limit) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=345.88MB/83702.08MB/3711.23MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Tap Current Report Generation
+[05/14 23:32:39     29s]   Minimum, Average, Maximum Tap Current: 0.000A, 25.539uA, 0.478mA
+[05/14 23:32:39     29s]   Total Current: 20.942mA
+[05/14 23:32:39     29s]     Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 2( 100.000uA  -     1.000mA ):        16 (  1.95%)
+[05/14 23:32:39     29s]     Range 3(  10.000uA  -   100.000uA ):       479 ( 58.41%)
+[05/14 23:32:39     29s]     Range 4(   1.000uA  -    10.000uA ):        95 ( 11.59%)
+[05/14 23:32:39     29s]     Range 5( 100.000nA  -     1.000uA ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 6(  10.000nA  -   100.000nA ):         3 (  0.37%)
+[05/14 23:32:39     29s]     Range 7(   1.000nA  -    10.000nA ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 8(    0.000A  -     1.000nA ):       227 ( 27.68%)
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/tc.gif
+[05/14 23:32:39     29s] Ended Tap Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=345.88MB/83702.08MB/3713.23MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Resistor Current Report Generation
+[05/14 23:32:39     29s]   Minimum, Average, Maximum Resistor Current: 0.000A, 75.023uA, 0.834mA
+[05/14 23:32:39     29s]     Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+[05/14 23:32:39     29s]     Range 2( 100.000uA  -     1.000mA ):       754 ( 25.29%)
+[05/14 23:32:39     29s]     Range 3(  10.000uA  -   100.000uA ):       680 ( 22.80%)
+[05/14 23:32:39     29s]     Range 4(   1.000uA  -    10.000uA ):        19 (  0.64%)
+[05/14 23:32:39     29s]     Range 5(   0.100uA  -     1.000uA ):         1 (  0.03%)
+[05/14 23:32:39     29s]     Range 6(  10.000nA  -     0.100uA ):       487 ( 16.33%)
+[05/14 23:32:39     29s]     Range 7(   1.000nA  -    10.000nA ):       418 ( 14.02%)
+[05/14 23:32:39     29s]     Range 8(    0.000A  -     1.000nA ):       623 ( 20.89%)
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/rc.gif
+[05/14 23:32:39     29s] Ended Resistor Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=346.35MB/83702.08MB/3797.95MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Resistor Voltage Report Generation
+[05/14 23:32:39     29s]   Minimum, Average, Maximum Resistor Voltage: 0.000V, 63.986uV, 1.519mV
+[05/14 23:32:39     29s]     Range 1(   1.329mV  -     1.519mV ):         5 (  0.17%)
+[05/14 23:32:39     29s]     Range 2(   1.139mV  -     1.329mV ):         5 (  0.17%)
+[05/14 23:32:39     29s]     Range 3(   0.949mV  -     1.139mV ):        11 (  0.37%)
+[05/14 23:32:39     29s]     Range 4(   0.760mV  -     0.949mV ):        21 (  0.70%)
+[05/14 23:32:39     29s]     Range 5(   0.570mV  -     0.760mV ):        29 (  0.97%)
+[05/14 23:32:39     29s]     Range 6(   0.380mV  -     0.570mV ):        59 (  1.98%)
+[05/14 23:32:39     29s]     Range 7(   0.190mV  -     0.380mV ):       158 (  5.30%)
+[05/14 23:32:39     29s]     Range 8(    0.000V  -     0.190mV ):      2694 ( 90.34%)
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/rv.gif
+[05/14 23:32:39     29s] Ended Resistor Voltage Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=346.35MB/83702.08MB/3799.95MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Info: Using Layer-stack details from : '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/pgv/techonly.cl/NG45.tch'
+[05/14 23:32:39     29s] Info: Using EM Rules from : '/home/wei0829/voltus_tdt_question_ng45_gcd/dummy_files/dummy_ictem.txt'
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Current Density (JRMS/JMAX) Report Generation
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/jrms.gif
+[05/14 23:32:39     29s] Ended Current Density (JRMS/JMAX) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3809.82MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Self Heat deltaT Report Generation
+[05/14 23:32:39     29s]   GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5/Reports/VDD/dtrms.gif
+[05/14 23:32:39     29s] Ended Self Heat deltaT Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3823.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Capacitance Report Generation
+[05/14 23:32:39     29s] 	Type                  disconnected          connected             used                
+[05/14 23:32:39     29s] 	Intrinsic-decap/filler  0.000F                0.000F                0.000F              
+[05/14 23:32:39     29s] 	Intrinsic-standard    0.000F                0.000F                0.000F              
+[05/14 23:32:39     29s] 	Intrinsic-macro       0.000F                0.000F                0.000F              
+[05/14 23:32:39     29s] 	Load Cap              0.000F                1.670pF               1.670pF             
+[05/14 23:32:39     29s] 	Grid Cap              0.000F                63.902fF              63.902fF            
+[05/14 23:32:39     29s] 	Total Cap             0.000F                1.734pF               1.734pF             
+[05/14 23:32:39     29s] Ended Capacitance Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3823.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Voltage Across Vias and Contacts Report Generation
+[05/14 23:32:39     29s] Ended Voltage Across Vias and Contacts Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3823.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Weak Grid Connectivity Report
+[05/14 23:32:39     29s] Ended Weak Grid Connectivity Report: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3823.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] Begin Grid Integrity Report Generation
+[05/14 23:32:39     29s]   # Missing Cell Power-Grid Views: 0
+[05/14 23:32:39     29s]   # Physically Disconnected Instances: 0
+[05/14 23:32:39     29s]   # Instances with Floating Power Pins: 0
+[05/14 23:32:39     29s]   # Disconnected Wire Segments: 0
+[05/14 23:32:39     29s]   # Weakly Connected Metal Segments: 0
+[05/14 23:32:39     29s]   # Dropped Voltage Sources: 0
+[05/14 23:32:39     29s] Ended Grid Integrity Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=348.22MB/83702.08MB/3823.70MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:39     29s] - /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5//VSS/VSS.ttm
+[05/14 23:32:39     29s] - /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_5//VDD/VDD.ttm
+[05/14 23:32:39     29s] Ended Report Generation: (cpu=0:00:00, real=0:00:07, mem(process/total/peak)=105.25MB/83702.08MB/3825.72MB)
+[05/14 23:32:39     29s] 
+[05/14 23:32:40     29s] 
+[05/14 23:32:40     29s] Rail Analysis Statistics:
+[05/14 23:32:40     29s] Warning messages:      1
+[05/14 23:32:40     29s] Error messages:        0
+[05/14 23:32:40     29s] 
+[05/14 23:32:40     29s] Rail Analysis completed successfully.
+[05/14 23:32:40     29s] 
+[05/14 23:32:40     29s] Finished Rail Analysis at 23:32:40 05/14/2026 (cpu=0:00:01, real=0:00:49, peak mem=3826.95MB)
+[05/14 23:32:40     29s] Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:19, real=0:01:18, mem=2964.10MB)
+[05/14 23:35:40     29s] **WARN: (IMPVAC-263):	Option "-use_db_freq" is obsolete and will be removed in a future release. The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your scripts to use -toggle for setting frequency.
+[05/14 23:35:41     29s] 
+[05/14 23:35:41     29s] ******** Start: analyze_signal_self_heat ********
+[05/14 23:35:41     29s] Start Time: Thu May 14 23:35:41 2026
+[05/14 23:35:41     29s] 
+[05/14 23:35:41     29s] 
+[05/14 23:35:41     29s] ******** Start: verifyACLimit ********
+[05/14 23:35:41     29s] Start Time: Thu May 14 23:35:41 2026
+[05/14 23:35:41     29s] 
+[05/14 23:35:41     29s] Layer poly with id 64 --> poly  2
+[05/14 23:35:41     29s] **WARN: (IMPEXT-1221):	No poly layer found in the technology file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/qrc/NG45.tch'.
+[05/14 23:35:41     29s] **WARN: (IMPEXT-1222):	No CUT layer defined between the poly LAYER and first routing metal LAYER in LEF technology file '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/qrc/NG45.tch'.
+[05/14 23:35:41     29s] db Layer metal1 with id 1 --> metal1  4
+[05/14 23:35:41     29s] db Layer via1 with id 34 --> via1  5
+[05/14 23:35:41     29s] db Layer metal2 with id 2 --> metal2  6
+[05/14 23:35:41     29s] db Layer via2 with id 35 --> via2  7
+[05/14 23:35:41     29s] db Layer metal3 with id 3 --> metal3  8
+[05/14 23:35:41     29s] db Layer via3 with id 36 --> via3  9
+[05/14 23:35:41     29s] db Layer metal4 with id 4 --> metal4  10
+[05/14 23:35:41     29s] db Layer via4 with id 37 --> via4  11
+[05/14 23:35:41     29s] db Layer metal5 with id 5 --> metal5  12
+[05/14 23:35:41     29s] db Layer via5 with id 38 --> via5  13
+[05/14 23:35:41     29s] db Layer metal6 with id 6 --> metal6  14
+[05/14 23:35:41     29s] db Layer via6 with id 39 --> via6  15
+[05/14 23:35:41     29s] db Layer metal7 with id 7 --> metal7  16
+[05/14 23:35:41     29s] db Layer via7 with id 40 --> via7  17
+[05/14 23:35:41     29s] db Layer metal8 with id 8 --> metal8  18
+[05/14 23:35:41     29s] db Layer via8 with id 41 --> via8  19
+[05/14 23:35:41     29s] db Layer metal9 with id 9 --> metal9  20
+[05/14 23:35:41     29s] db Layer via9 with id 42 --> via9  21
+[05/14 23:35:41     29s] db Layer metal10 with id 10 --> metal10  22
+[05/14 23:35:41     29s] 
+[05/14 23:35:41     29s] QRCTech file: /home/wei0829/voltus_tdt_question_ng45_gcd/inputs/qrc/NG45.tch
+[05/14 23:35:41     29s] 
+[05/14 23:35:41     29s] ICTEM file: /home/wei0829/voltus_tdt_question_ng45_gcd/dummy_files/dummy_ictem.txt
+[05/14 23:35:41     29s] 
+[05/14 23:35:41     29s] LayerMapping file: VAC_LayerMap_2207965.txt
+[05/14 23:35:41     30s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[05/14 23:35:41     30s] #################################################################################
+[05/14 23:35:41     30s] # Design Name: gcd
+[05/14 23:35:41     30s] # Design Mode: 45nm
+[05/14 23:35:41     30s] # Analysis Mode: MMMC OCV 
+[05/14 23:35:41     30s] # Parasitics Mode: SPEF/RCDB 
+[05/14 23:35:41     30s] # Signoff Settings: SI Off 
+[05/14 23:35:41     30s] #################################################################################
+[05/14 23:35:41     30s] Topological Sorting (REAL = 0:00:00.0, MEM = 3925.5M, InitMEM = 3925.5M)
+[05/14 23:35:41     30s] Start delay calculation (fullDC) (8 T). (MEM=2873.95)
+[05/14 23:35:41     30s] Start AAE Lib Loading. (MEM=3961.53)
+[05/14 23:35:41     30s] End AAE Lib Loading. (MEM=4162.53 CPU=0:00:00.0 Real=0:00:00.0)
+[05/14 23:35:41     30s] End AAE Lib Interpolated Model. (MEM=4162.53 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:35:41     30s] Total number of fetched objects 680
+[05/14 23:35:41     30s] Total number of fetched objects 680
+[05/14 23:35:41     30s] Total number of fetched objects 680
+[05/14 23:35:41     30s] Total number of fetched objects 680
+[05/14 23:35:41     30s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:35:41     30s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:35:41     30s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:35:41     30s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/14 23:35:41     30s] End delay calculation. (MEM=3041.65 CPU=0:00:00.2 REAL=0:00:00.0)
+[05/14 23:35:41     30s] Begin loading slews from CTE ...
+[05/14 23:35:41     30s] Loading slews from CTE completed...
+[05/14 23:35:41     30s] End delay calculation (fullDC). (MEM=3030.62 CPU=0:00:00.4 REAL=0:00:00.0)
+[05/14 23:35:42     30s] *** CDM Built up (cpu=0:00:00.8  real=0:00:01.0  mem= 5508.2M) ***
+[05/14 23:35:42     30s] Timing Analysis Mode: CTE
+[05/14 23:35:42     30s] Irms Scale Factor: 1
+[05/14 23:35:42     30s] Verifying all signal nets.
+[05/14 23:35:42     30s] View hold_func and Hold mode is used in calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-397):	No corresponding tech layer name for LEF layer active.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-397):	No corresponding tech layer name for LEF layer OVERLAP.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net clk has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_rdy has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_val has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net reset has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net resp_rdy has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net resp_val has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[31] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[30] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[29] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[28] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[27] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[26] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[25] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[24] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[23] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[22] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[21] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[20] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[19] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (IMPVAC-216):	Net req_msg[18] has 0Hz frequency in the design. Tool will apply the frequency 1000000.0 Hz from option -default_freq_for_unconstrained_nets for the EM calculation.
+[05/14 23:35:42     30s] **WARN: (EMS-62):	Message <IMPVAC-216> has exceeded the default message display limit of 20.
+[05/14 23:35:42     30s] To avoid this warning, increase the display limit per unique message by
+[05/14 23:35:42     30s] using the set_message -limit <number> command.
+[05/14 23:35:42     30s] The message limit can be removed by using the set_message -no_limit command.
+[05/14 23:35:42     30s] Note that setting a very large number using the set_message -limit command
+[05/14 23:35:42     30s] or removing the message limit using the set_message -no_limit command can
+[05/14 23:35:42     30s] significantly increase the log file size.
+[05/14 23:35:42     30s] To suppress a message, use the set_message -suppress command.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _446_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _452_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _455_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _456_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _449_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _450_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _451_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _447_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _453_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _454_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _463_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _464_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _457_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _458_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (EMS-62):	Message <IMPVAC-131> has exceeded the default message display limit of 20.
+[05/14 23:35:42     31s] To avoid this warning, increase the display limit per unique message by
+[05/14 23:35:42     31s] using the set_message -limit <number> command.
+[05/14 23:35:42     31s] The message limit can be removed by using the set_message -no_limit command.
+[05/14 23:35:42     31s] Note that setting a very large number using the set_message -limit command
+[05/14 23:35:42     31s] or removing the message limit using the set_message -no_limit command can
+[05/14 23:35:42     31s] significantly increase the log file size.
+[05/14 23:35:42     31s] To suppress a message, use the set_message -suppress command.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _460_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _461_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _462_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _448_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _465_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (IMPVAC-131):	NET _459_ has no wire cap.
+[05/14 23:35:42     31s] **WARN: (EMS-62):	Message <IMPVAC-131> has exceeded the default message display limit of 20.
+[05/14 23:35:42     31s] To avoid this warning, increase the display limit per unique message by
+[05/14 23:35:42     31s] using the set_message -limit <number> command.
+[05/14 23:35:42     31s] The message limit can be removed by using the set_message -no_limit command.
+[05/14 23:35:42     31s] Note that setting a very large number using the set_message -limit command
+[05/14 23:35:42     31s] or removing the message limit using the set_message -no_limit command can
+[05/14 23:35:42     31s] significantly increase the log file size.
+[05/14 23:35:42     31s] To suppress a message, use the set_message -suppress command.
+[05/14 23:35:42     31s] 
+[05/14 23:35:42     31s] End Time: Thu May 14 23:35:42 2026
+[05/14 23:35:42     31s] ******** End: verifyACLimit ********
+[05/14 23:35:42     31s]   (CPU Time: 0:00:01.5  MEM: 187.965M)
+[05/14 23:35:42     31s] 
+[05/14 23:35:42     31s] 
+[05/14 23:35:42     31s] End Time: Thu May 14 23:35:42 2026
+[05/14 23:35:42     31s] ******** End: analyze_signal_self_heat ********
+[05/14 23:35:42     31s]   (CPU Time: 0:00:01.5  MEM: 187.664M)
+[05/14 23:35:42     31s] 
+[05/14 23:35:42     31s] 
+[05/14 23:35:42     31s] Rail Analysis Statistics:
+[05/14 23:35:42     31s] Warning messages:      0
+[05/14 23:35:42     31s] Error messages:        0
+[05/14 23:35:42     31s] 
+[05/14 23:35:42     31s] Rail Analysis completed successfully.
+[05/14 23:35:42     31s] 
+[05/14 23:35:42     31s] Finished Rail Analysis at 23:35:42 05/14/2026 (cpu=0:00:00, real=0:00:01, peak mem=3076.24MB)
+[05/14 23:35:42     31s] Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:21, real=0:04:20, mem=3076.24MB)
+[05/14 23:37:22     32s] <CMD> exit
+[05/14 23:37:22     32s] 
+--------------------------------------------------------------------------------
+Exiting Voltus IC Power Integrity Solution on Thu May 14 23:37:22 2026
+  Total CPU time:     0:00:21
+  Total real time:    0:06:00
+  Peak memory (main): 3826.95MB
+

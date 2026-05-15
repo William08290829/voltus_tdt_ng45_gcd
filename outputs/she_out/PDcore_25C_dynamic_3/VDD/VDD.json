@@ -1,0 +1,58 @@
+{
+    "net_name": "VDD",
+    "smg": {
+        "config": {
+            "name": "VDD",
+            "output_path": "\/home\/wei0829\/voltus_tdt_question_ng45_gcd\/outputs\/she_out\/PDcore_25C_dynamic_3\/\/VDD",
+            "nominal_voltage": "1.10000002",
+            "auto_vsrc_creation": "true",
+            "auto_vsrc_creation_setting": {
+                "num_of_bumps": {
+                    "upper": "1000000",
+                    "lower": "1"
+                },
+                "defShapeOnly": "true",
+                "considerPartialSmallTiles": "false",
+                "enableSwitchNetPlocGeneration": "false",
+                "layer": "metal4"
+            }
+        },
+        "result": {
+            "DefInstData": {
+                "path": "\/home\/wei0829\/voltus_tdt_question_ng45_gcd\/outputs\/she_out\/PDcore_25C_dynamic_3\/\/VDD\/VDD.defInstData",
+                "type": "proto::voltus.def_instdata_mgr.proto.DefInstDataManager"
+            },
+            "layerInfo": {
+                "path": "\/home\/wei0829\/voltus_tdt_question_ng45_gcd\/outputs\/she_out\/PDcore_25C_dynamic_3\/\/VDD\/layerInfo",
+                "type": "proto.voltus.layer_manager.LayerManager"
+            },
+            "pgdb": {
+                "path": "\/home\/wei0829\/voltus_tdt_question_ng45_gcd\/outputs\/she_out\/PDcore_25C_dynamic_3\/\/VDD"
+            },
+            "cellview": {
+                "path": "\/home\/wei0829\/voltus_tdt_question_ng45_gcd\/outputs\/she_out\/PDcore_25C_dynamic_3\/\/VDD\/VDD.cellviews",
+                "type": "txt"
+            },
+            "pgv_table": {
+                "path": "\/home\/wei0829\/voltus_tdt_question_ng45_gcd\/outputs\/she_out\/PDcore_25C_dynamic_3\/\/VDD\/VDD.pgv_table.rpt",
+                "type": "txt"
+            },
+            "pg_candidate": {
+                "dir": "\/home\/wei0829\/voltus_tdt_question_ng45_gcd\/outputs\/she_out\/PDcore_25C_dynamic_3\/\/VDD\/pg_candidate",
+                "net": "VDD"
+            },
+            "auto_ploc_vsrc": {
+                "path": "\/home\/wei0829\/voltus_tdt_question_ng45_gcd\/outputs\/she_out\/PDcore_25C_dynamic_3\/\/VDD\/VDD.auto_ploc_vsrc.pp",
+                "type": "txt"
+            },
+            "grid_report": {
+                "path": "\/home\/wei0829\/voltus_tdt_question_ng45_gcd\/outputs\/she_out\/PDcore_25C_dynamic_3\/\/VDD\/VDD.grid.report",
+                "type": "txt"
+            },
+            "missing_pgv": {
+                "path": "\/home\/wei0829\/voltus_tdt_question_ng45_gcd\/outputs\/she_out\/PDcore_25C_dynamic_3\/\/VDD\/VDD.missingPGVData.protobuf",
+                "type": "protobuf.VOLTUS.SMGDATA.MissingPGV"
+            }
+        }
+    }
+}

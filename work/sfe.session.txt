@@ -1,6 +1,6 @@
 run_status {
-  sfe_preparation: SUCCESS
-  sfe_zx: SUCCESS
+  sfe_preparation: SKIP
+  sfe_zx: SKIP
 }
 extraction_config {
   zx_config {

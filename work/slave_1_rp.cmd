@@ -1,4 +1,4 @@
-setvar temp_directory_name /tmp/ssv_tmpdir_942733_oQaO40/
+setvar temp_directory_name /tmp/ssv_tmpdir_2291767_pdhEcI/
 setvar enable_new_what_if true
 setvar dump_what_if_result true
 setvar enable_scheduler true 
@@ -13,7 +13,7 @@ setvar enable_report_db_dumptxt false
 setvar enable_report_db_node_reff true
 setvar enable_compress_report_db true
 setvar report_layers_above_pin_for_instance_ir false
-setvar analysis_output_directory /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_1//VSS
+setvar analysis_output_directory /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_7//VSS
 setvar enable_central_report true
 setvar enable_backward_compatibility_symlink true
 setvar work_directory_name ./work

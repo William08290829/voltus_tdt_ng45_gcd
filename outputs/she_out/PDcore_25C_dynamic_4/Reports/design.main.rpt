@@ -1,0 +1,25 @@
+RAIL ANALYSIS REPORT
+Generated Date: Thu May 14 23:19:02 2026
+Host Name: TC-DL5
+
+
+==============================
+
+==============================
+User: wei0829 
+Hostname: TC-DL5 
+Peak Memory: 0 Mbytes 
+Total CPU time: 00:00:00 
+Total Wall Clock time: 00:00:52 
+Exit status: Successful 
+State Directory: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4 
+Units: Volt, Amp, Ohm, fF 
+
+
+==============================
+POWER NETS
+==============================
+Net Name: VSS
+Net Name: VDD
+Analysis Method: dynamic 
+

@@ -1,0 +1,6 @@
+# design: gcd
+# area: # area: 0 0 35 35
+# net name: VSS
+# report format:
+# LayerName I_Static(mA)  Alpha  Beta dT_FEOL(C) dT_RMS(C)  dT_BEOL(C)   X1(um) Y1(um) X2(um) Y2(um)
+# coordinate unit: um

@@ -1,0 +1,29 @@
+
+REDUCED
+
+CSUBSTRATE
+active*
+poly*
+contact*2
+metal1"metal1*2
+via1"via1*2
+metal2"metal2*2
+via2"via2*	2
+	metal3"metal3*
+2
+
+via3"via3*2	
+metal4"metal4*2
+
+via4"via4*2
+metal5"metal5*2
+via5"via5*2
+metal6"metal6*2
+via6"via6*2
+metal7"metal7*2
+via7"via7*2
+metal8"metal8*2
+via8"via8*2
+metal9"metal9*2
+via9"via9*2
+metal10"metal102

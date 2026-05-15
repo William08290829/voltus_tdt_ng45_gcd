@@ -1,0 +1,215 @@
+INFO (PRL-725): EDP: start server on TC-DL5:35089
+
+INFO (PRL-756): Thu May 14 23:18:10 2026: Successfully connected to the client manager.
+
+INFO (PRL-760): sending server data to client TC-DL5 35089 0 2207166 
+
+Invoking: "/usr/cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_rail_smg -cmd /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/voltus_rail_smg.VSS.cmd -l /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/voltus_rail_smg.VSS.log" ...
+Begin Merging power grid
+Tech reference temperature: 25
+Target temperature: 25
+
+Set Layer via6 for the Auto Ploc Vsrc feature
+Grid Statistics of Net VSS:
+- NODE
+  Total node: 2436
+    Top Level grid node: 2436
+      Top level interface node: 860
+    Missing interface node: 0
+    Cell internal node: 0
+- ELEM
+  Total element: 2449
+    Top Level grid element: 2449
+    Cell internal element: 0
+- INST
+  Instance logically connected: 860
+    Tech: 860
+    StdCell: 0
+    Macro:
+      Early: 0
+      IR: 0
+      EM: 0
+    Current Region:  0
+  Dropped instance due to missing/incomplete cell library: 0
+- TAP
+  Total tap: 860
+
+Ended Merging power grid: (cpu=0:00:25, real=0:00:25, mem(process/total/peak)=40.68MB/19957.96MB/3480.82MB)
+
+Analysis_Output_Directory is /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4//VSS
+Analysis_Power_Domain is PDcore
+
+
+
+Begin Report Generation
+
+
+Net VSS:
+
+
+Begin Preparing Database for Report Generation
+
+Circuit profile:
+                                                      Current    Voltage
+Layer Name                       Nodes   Resistors    Sources    Sources
+----- --------------------  ----------  ----------  ---------  ---------
+0     metal7                        15          12          0          6
+1     via6                           0           6          0          0
+2     metal6                         6           0          0          0
+3     via5                           0           6          0          0
+4     metal5                         6           0          0          0
+5     via4                           0           6          0          0
+6     metal4                        36          34          0          0
+7     via3                           0          24          0          0
+8     metal3                        24           0          0          0
+9     via2                           0          24          0          0
+10    metal2                        24           0          0          0
+11    via1                           0          24          0          0
+12    metal1                      2325        2313        820          0
+                            ----------  ----------  ---------  ---------
+13    Circuit total               2437        2449        820          6
+Ended Preparing Database for Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=350.13MB/83700.59MB/3615.43MB)
+
+Initializing Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=350.13MB/83700.59MB/3615.79MB)
+
+Begin IR Drop (Linear) Report Generation
+  Voltage: 0
+  Threshold: 0.11
+  Minimum, Average, Maximum IR Drop: 0.000V, 6.238mV, 15.542mV
+    Range 1(  13.600mV  -    15.544mV ):        90 (  3.69%)
+    Range 2(  11.657mV  -    13.600mV ):        39 (  1.60%)
+    Range 3(   9.714mV  -    11.657mV ):       194 (  7.96%)
+    Range 4(   7.771mV  -     9.714mV ):       377 ( 15.48%)
+    Range 5(   5.828mV  -     7.771mV ):       543 ( 22.29%)
+    Range 6(   3.886mV  -     5.828mV ):       637 ( 26.15%)
+    Range 7(   1.943mV  -     3.886mV ):       458 ( 18.80%)
+    Range 8(    0.000V  -     1.943mV ):        98 (  4.02%)
+    Layer with maximum IR Drop:  metal1
+      metal7: 7.3312e-12 [0 - 0]
+      metal6: 0.00054984 [0.00052851 - 0.0010784]
+      metal5: 0.00076977 [0.00073992 - 0.0015097]
+      metal4: 0.002039 [0.00095132 - 0.0029903]
+      metal3: 0.0026055 [0.0011257 - 0.0037312]
+      metal2: 0.0034873 [0.0011794 - 0.0046667]
+      metal1: 0.014309 [0.001233 - 0.015542]
+  Worst case interval: 149
+  IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/VSS.main.rpt
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/ir_linear.gif
+Ended IR Drop (Linear) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=398.42MB/83700.59MB/3664.08MB)
+
+
+Begin IR Drop (Limit) Report Generation
+  Voltage: 0
+  Threshold: 0.11
+  Minimum, Average, Maximum IR Drop: 0.000V, 6.238mV, 15.542mV
+    Range 1(    0.110V  -      0.110V ):         0 (  0.00%)
+    Range 2(    0.101V  -      0.110V ):         0 (  0.00%)
+    Range 3(  91.667mV  -      0.101V ):         0 (  0.00%)
+    Range 4(  82.500mV  -    91.667mV ):         0 (  0.00%)
+    Range 5(  73.333mV  -    82.500mV ):         0 (  0.00%)
+    Range 6(  64.167mV  -    73.333mV ):         0 (  0.00%)
+    Range 7(  55.000mV  -    64.167mV ):         0 (  0.00%)
+    Range 8(  -1.000uV  -    55.000mV ):      2436 (100.00%)
+    Layer with maximum IR Drop:  metal1
+      metal7: 7.3312e-12 [0 - 0]
+      metal6: 0.00054984 [0.00052851 - 0.0010784]
+      metal5: 0.00076977 [0.00073992 - 0.0015097]
+      metal4: 0.002039 [0.00095132 - 0.0029903]
+      metal3: 0.0026055 [0.0011257 - 0.0037312]
+      metal2: 0.0034873 [0.0011794 - 0.0046667]
+      metal1: 0.014309 [0.001233 - 0.015542]
+  Worst case interval: 149
+  IR Report: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/VSS.main.rpt
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/ir_limit.gif
+Ended IR Drop (Limit) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=400.42MB/83700.59MB/3666.08MB)
+
+
+Begin Tap Current Report Generation
+  Minimum, Average, Maximum Tap Current: -0.466mA, -30.693uA, 0.000A
+  Total Current: -25.168mA
+    Range 1(  -1.000GA  -    -1.000mA ):         0 (  0.00%)
+    Range 2(  -1.000mA  -  -100.000uA ):        41 (  5.00%)
+    Range 3(-100.000uA  -   -10.000uA ):       501 ( 61.10%)
+    Range 4( -10.000uA  -    -1.000uA ):        47 (  5.73%)
+    Range 5(  -1.000uA  -  -100.000nA ):         0 (  0.00%)
+    Range 6(-100.000nA  -   -10.000nA ):         3 (  0.37%)
+    Range 7( -10.000nA  -    -1.000nA ):         0 (  0.00%)
+    Range 8(  -1.000nA  -      0.000A ):       228 ( 27.80%)
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/tc.gif
+Ended Tap Current Report Generation: (cpu=0:00:00, real=0:00:05, mem(process/total/peak)=400.66MB/83700.59MB/3668.52MB)
+
+
+Begin Resistor Current Report Generation
+  Minimum, Average, Maximum Resistor Current: 0.000A, 0.102mA, 1.438mA
+    Range 1(   1.000mA  -     1.000GA ):         6 (  0.24%)
+    Range 2( 100.000uA  -     1.000mA ):       808 ( 32.99%)
+    Range 3(  10.000uA  -   100.000uA ):       533 ( 21.76%)
+    Range 4(   1.000uA  -    10.000uA ):         8 (  0.33%)
+    Range 5(   0.100uA  -     1.000uA ):         0 (  0.00%)
+    Range 6(  10.000nA  -     0.100uA ):       290 ( 11.84%)
+    Range 7(   1.000nA  -    10.000nA ):       349 ( 14.25%)
+    Range 8(    0.000A  -     1.000nA ):       455 ( 18.58%)
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/rc.gif
+Ended Resistor Current Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=492.84MB/83700.59MB/3760.71MB)
+
+
+Begin Resistor Voltage Report Generation
+  Minimum, Average, Maximum Resistor Voltage: 0.000V, 93.978uV, 1.309mV
+    Range 1(   1.145mV  -     1.309mV ):         1 (  0.04%)
+    Range 2(   0.981mV  -     1.145mV ):        10 (  0.41%)
+    Range 3(   0.818mV  -     0.981mV ):        14 (  0.57%)
+    Range 4(   0.654mV  -     0.818mV ):        52 (  2.12%)
+    Range 5(   0.491mV  -     0.654mV ):        59 (  2.41%)
+    Range 6(   0.327mV  -     0.491mV ):        96 (  3.92%)
+    Range 7(   0.164mV  -     0.327mV ):       212 (  8.66%)
+    Range 8(    0.000V  -     0.164mV ):      2005 ( 81.87%)
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/rv.gif
+Ended Resistor Voltage Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=494.84MB/83700.59MB/3762.71MB)
+
+Info: Using Layer-stack details from : '/home/wei0829/voltus_tdt_question_ng45_gcd/inputs/pgv/techonly.cl/NG45.tch'
+Info: Using EM Rules from : '/home/wei0829/voltus_tdt_question_ng45_gcd/dummy_files/dummy_ictem.txt'
+
+Begin Current Density (JRMS/JMAX) Report Generation
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/jrms.gif
+Ended Current Density (JRMS/JMAX) Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=508.76MB/83700.59MB/3776.62MB)
+
+
+Begin Self Heat deltaT Report Generation
+  GIF plot: /home/wei0829/voltus_tdt_question_ng45_gcd/outputs/she_out/PDcore_25C_dynamic_4/Reports/VSS/dtrms.gif
+Ended Self Heat deltaT Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=512.76MB/83700.59MB/3780.62MB)
+
+
+Begin Capacitance Report Generation
+	Type                  disconnected          connected             used                
+	Intrinsic-decap/filler  0.000F                0.000F                0.000F              
+	Intrinsic-standard    0.000F                0.000F                0.000F              
+	Intrinsic-macro       0.000F                0.000F                0.000F              
+	Load Cap              0.000F                1.670pF               1.670pF             
+	Grid Cap              0.000F                70.194fF              70.194fF            
+	Total Cap             0.000F                1.740pF               1.740pF             
+Ended Capacitance Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=512.76MB/83700.59MB/3780.62MB)
+
+
+Begin Voltage Across Vias and Contacts Report Generation
+Ended Voltage Across Vias and Contacts Report Generation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=512.76MB/83700.59MB/3780.62MB)
+
+
+Begin Weak Grid Connectivity Report
+Ended Weak Grid Connectivity Report: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=512.76MB/83700.59MB/3780.62MB)
+
+
+Begin Grid Integrity Report Generation
+  # Missing Cell Power-Grid Views: 0
+  # Physically Disconnected Instances: 0
+  # Instances with Floating Power Pins: 0
+  # Disconnected Wire Segments: 0
+  # Weakly Connected Metal Segments: 0
+  # Dropped Voltage Sources: 0
+Ended Grid Integrity Report Generation: (cpu=0:00:00, real=0:00:05, mem(process/total/peak)=512.76MB/83700.59MB/3780.62MB)
+
+Ended Report Generation: (cpu=0:00:02, real=0:00:12, mem(process/total/peak)=512.76MB/83700.59MB/3780.62MB)
+
+INFO (PRL-700): EDP: Close channel handler 14 when receive message in connection server side
+
+INFO (PRL-701): EDP: Close channel handler 14 when meet event 25 in connection server side
+

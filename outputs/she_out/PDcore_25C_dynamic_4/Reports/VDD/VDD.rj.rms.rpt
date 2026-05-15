@@ -1,0 +1,78 @@
+# Design: gcd
+# Net name: VDD
+# EM rule deck: /home/wei0829/voltus_tdt_question_ng45_gcd/dummy_files/dummy_ictem.txt
+# EM analysis: RMS
+#
+# rms_delta_T(C): 5
+# Thickness (um): 
+#   metal10  2
+#   metal9  2
+#   metal8  0.8
+#   metal7  0.8
+#   metal6  0.28
+#   metal5  0.28
+#   metal4  0.28
+#   metal3  0.14
+#   metal2  0.14
+#   metal1  0.13
+#   CSUBSTRATE  0
+# Temperature: 25.0 (C)
+# Jmax_factor: 
+#   metal10  1.000000
+#   via9  1.000000
+#   metal9  1.000000
+#   via8  1.000000
+#   metal8  1.000000
+#   via7  1.000000
+#   metal7  1.000000
+#   via6  1.000000
+#   metal6  1.000000
+#   via5  1.000000
+#   metal5  1.000000
+#   via4  1.000000
+#   metal4  1.000000
+#   via3  1.000000
+#   metal3  1.000000
+#   via2  1.000000
+#   metal2  1.000000
+#   via1  1.000000
+#   metal1  1.000000
+#   contact  1.000000
+#   poly  1.000000
+#   active  1.000000
+#   CSUBSTRATE  1.000000
+#   REDUCED  1.000000
+# Jmax_life: 
+#   metal10  1.000000
+#   via9  1.000000
+#   metal9  1.000000
+#   via8  1.000000
+#   metal8  1.000000
+#   via7  1.000000
+#   metal7  1.000000
+#   via6  1.000000
+#   metal6  1.000000
+#   via5  1.000000
+#   metal5  1.000000
+#   via4  1.000000
+#   metal4  1.000000
+#   via3  1.000000
+#   metal3  1.000000
+#   via2  1.000000
+#   metal2  1.000000
+#   via1  1.000000
+#   metal1  1.000000
+#   contact  1.000000
+#   poly  1.000000
+#   active  1.000000
+#   CSUBSTRATE  1.000000
+#   REDUCED  1.000000
+#
+# The current or EM limit at via layer is reported as the value per cut for a via cluster
+# EM Reporting Threshold: 0.9
+# Total Violations: 0                       
+#
+# Report format:
+# I/Ilimit  I(mA)      Ilimit(mA)    Layer          Location            ShortLength    Width  ViaArea  Via   Fix Width/  Current    Benefit  J(A/cm^2)  Jmax(A/cm^2)  ResistorID 
+#                                                   {X1 Y1 X2 Y2}       (um)           (um)   (nm^2)   Cuts  Via         Direction  Factor  
+#

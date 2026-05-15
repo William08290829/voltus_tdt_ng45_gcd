@@ -1,0 +1,26 @@
+/usr/cad/cadence/SSV/SSV_23.11.000/tools.lnx86/ssvtools/bin/64bit/voltus_rail -cmd voltus_rail_2291767_2.cmd -machine TC-DL5 -hbPort -1 
+* voltus_rail
+*	Version v23.11-s059_1 (04/24/2024 16:19:08)
+*	Copyright 2007 - 2017 Cadence Design Systems, Inc.
+*
+*	Run by wei0829 on Fri May 15 23:25:22 2026
+
+*	Executing 64 bit version on host: TC-DL5
+*
+* Current Process Limit (in bytes):
+*    Data Size	: 18014398509481983k
+*    File Size	: 18014398509481983k
+*    Memory	: 18014398509481983k
+*    Stack Size	: 522240k
+*    Descriptors: 1024 
+*
+Executing: shutdown_launch_child 
+
+Rail Analysis Statistics:
+Warning messages:      0
+Error messages:        0
+
+Rail Analysis completed successfully.
+
+Finished Rail Analysis at 23:25:22 05/15/2026 (cpu=0:00:00, real=0:00:01, peak mem=3069.71MB)
+Current Voltus IC Power Integrity Solution resource usage: (total cpu=0:00:19, real=0:04:16, mem=3069.71MB)

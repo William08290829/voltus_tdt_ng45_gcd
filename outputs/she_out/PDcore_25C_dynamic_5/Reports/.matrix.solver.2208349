@@ -1,0 +1,102 @@
+
+#================================================
+# Matrix Solver Manager run time performance profile:
+	Stamp Matrix (1): 0.0001 user, 0.0000 system, 0.0002 real seconds
+	Factorize Matrix (1): 0.0021 user, 0.0014 system, 0.0021 real seconds
+	Solve Matrix (1): 0.0001 user, 0.0000 system, 0.0001 real seconds
+		Direct Solve (1): 0.0000 user, 0.0000 system, 0.0000 real seconds
+
+# Matrix Solver Manager memory performance profile:
+	Before DC Factorization: 10331.4800 peak virtual, 10331.4800 current virtual, 614.2080 peak resident, 111.3640 current resident mbytes
+	After DC Factorization: 10331.4800 peak virtual, 10331.4800 current virtual, 614.2080 peak resident, 113.9520 current resident mbytes
+#================================================
+
+#================================================
+# gcd_VSS:0 performance profile:
+	Stamping Stimulus:       0.0000 user, 0.0000 system, 0.0000 real seconds
+	Stamping DC:             0.0000 user, 0.0000 system, 0.0000 real seconds
+	Stamping Transient:      0.0000 user, 0.0000 system, 0.0000 real seconds
+	Stamping Transient Step: 0.0000 user, 0.0000 system, 0.0000 real seconds
+	Stamping Matrix Change:  0.0000 user, 0.0000 system, 0.0000 real seconds
+		Resistor             (2449      ,	0.0392    M):  0.0000 user, 0.0000 system, 0.0000 real seconds
+		VSource              (6         ,	0.0001    M):  0.0000 user, 0.0000 system, 0.0000 real seconds
+		Node                 (2436      ,	0.0292    M):  0.0000 user, 0.0000 system, 0.0000 real seconds
+	Equation Solver:        tesla
+	Factorization Time:     0.0015 user, 0.0002 system, 0.0010 real seconds
+	Forward Solve Time:     0.0000 user, 0.0000 system, 0.0000 real seconds
+	Backward Solve Time:    0.0000 user, 0.0000 system, 0.0000 real seconds
+#================================================
+
+#================================================
+# gcd_VDD:0 performance profile:
+	Stamping Stimulus:       0.0000 user, 0.0000 system, 0.0000 real seconds
+	Stamping DC:             0.0000 user, 0.0000 system, 0.0001 real seconds
+	Stamping Transient:      0.0000 user, 0.0000 system, 0.0000 real seconds
+	Stamping Transient Step: 0.0000 user, 0.0000 system, 0.0000 real seconds
+	Stamping Matrix Change:  0.0000 user, 0.0000 system, 0.0000 real seconds
+		Resistor             (2982      ,	0.0477    M):  0.0000 user, 0.0000 system, 0.0000 real seconds
+		VSource              (12        ,	0.0003    M):  0.0000 user, 0.0000 system, 0.0000 real seconds
+		Node                 (2983      ,	0.0358    M):  0.0000 user, 0.0000 system, 0.0000 real seconds
+	Equation Solver:        tesla
+	Factorization Time:     0.0005 user, 0.0012 system, 0.0010 real seconds
+	Forward Solve Time:     0.0000 user, 0.0000 system, 0.0000 real seconds
+	Backward Solve Time:    0.0000 user, 0.0000 system, 0.0000 real seconds
+#================================================
+
+#================================================
+# Matrix Solver Manager run time performance profile:
+	Stamp Matrix (184): 0.0188 user, 0.0235 system, 0.0342 real seconds
+	Factorize Matrix (2): 0.0055 user, 0.0002 system, 0.0035 real seconds
+	Solve Matrix (184): 0.0064 user, 0.0088 system, 0.0094 real seconds
+		Direct Solve (184): 0.0001 user, 0.0001 system, 0.0002 real seconds
+
+# Matrix Solver Manager memory performance profile:
+	Before DC Factorization: 60467.9120 peak virtual, 60467.9120 current virtual, 614.2080 peak resident, 139.6760 current resident mbytes
+	After DC Factorization: 60467.9120 peak virtual, 60467.9120 current virtual, 614.2080 peak resident, 139.6760 current resident mbytes
+	Before Transient Factorization: 60467.9120 peak virtual, 60467.9120 current virtual, 614.2080 peak resident, 139.9400 current resident mbytes
+	After Transient Factorization: 60467.9120 peak virtual, 60467.9120 current virtual, 614.2080 peak resident, 139.9400 current resident mbytes
+#================================================
+
+#================================================
+# gcd_VSS:0 performance profile:
+	Stamping Stimulus:       0.0007 user, 0.0009 system, 0.0012 real seconds
+	Stamping DC:             0.0001 user, 0.0000 system, 0.0001 real seconds
+	Stamping Transient:      0.0001 user, 0.0000 system, 0.0001 real seconds
+	Stamping Transient Step: 0.0072 user, 0.0090 system, 0.0138 real seconds
+	Stamping Matrix Change:  0.0000 user, 0.0000 system, 0.0000 real seconds
+		Resistor             (2449      ,	0.0392    M):  0.0001 user, 0.0001 system, 0.0003 real seconds
+		GroundCap            (1098      ,	0.0176    M):  0.0009 user, 0.0011 system, 0.0015 real seconds
+			Run at 1 jobs:
+			* Job (1 ): range is [0         	--	 1098      )
+		GroundSeriesRC       (606       ,	0.0194    M):  0.0009 user, 0.0011 system, 0.0015 real seconds
+			Run at 1 jobs:
+			* Job (1 ): range is [0         	--	 606       )
+		VSource              (6         ,	0.0001    M):  0.0001 user, 0.0002 system, 0.0003 real seconds
+		Node                 (2436      ,	0.0292    M):  0.0001 user, 0.0001 system, 0.0002 real seconds
+	Equation Solver:        tesla
+	Factorization Time:     0.0025 user, 0.0001 system, 0.0016 real seconds
+	Forward Solve Time:     0.0012 user, 0.0016 system, 0.0022 real seconds
+	Backward Solve Time:    0.0009 user, 0.0012 system, 0.0018 real seconds
+#================================================
+
+#================================================
+# gcd_VDD:0 performance profile:
+	Stamping Stimulus:       0.0007 user, 0.0011 system, 0.0013 real seconds
+	Stamping DC:             0.0001 user, 0.0000 system, 0.0001 real seconds
+	Stamping Transient:      0.0001 user, 0.0000 system, 0.0001 real seconds
+	Stamping Transient Step: 0.0071 user, 0.0092 system, 0.0139 real seconds
+	Stamping Matrix Change:  0.0000 user, 0.0000 system, 0.0000 real seconds
+		Resistor             (2982      ,	0.0477    M):  0.0001 user, 0.0001 system, 0.0003 real seconds
+		GroundCap            (1228      ,	0.0196    M):  0.0009 user, 0.0012 system, 0.0015 real seconds
+			Run at 1 jobs:
+			* Job (1 ): range is [0         	--	 1228      )
+		GroundSeriesRC       (606       ,	0.0194    M):  0.0009 user, 0.0011 system, 0.0015 real seconds
+			Run at 1 jobs:
+			* Job (1 ): range is [0         	--	 606       )
+		VSource              (12        ,	0.0003    M):  0.0001 user, 0.0001 system, 0.0002 real seconds
+		Node                 (2983      ,	0.0358    M):  0.0001 user, 0.0001 system, 0.0002 real seconds
+	Equation Solver:        tesla
+	Factorization Time:     0.0028 user, 0.0001 system, 0.0018 real seconds
+	Forward Solve Time:     0.0012 user, 0.0014 system, 0.0021 real seconds
+	Backward Solve Time:    0.0008 user, 0.0011 system, 0.0016 real seconds
+#================================================
